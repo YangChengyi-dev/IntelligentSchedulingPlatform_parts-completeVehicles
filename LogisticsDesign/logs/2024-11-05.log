@@ -1,0 +1,384 @@
+[2024-11-05 18:59:06|11692|INFO|base_model.py:91]  session [1606672806384] and [user] has an operator: QUERY.
+[2024-11-05 18:59:12|21948|INFO|base_model.py:91]  session [1606672806576] and [Part] has an operator: QUERY.
+[2024-11-05 18:59:12|21948|INFO|part_view.py:28]  part init successfully
+[2024-11-05 18:59:12|16396|INFO|base_model.py:91]  session [1606673206480] and [Part] has an operator: QUERY.
+[2024-11-05 18:59:12|16396|INFO|part_view.py:28]  part init successfully
+[2024-11-05 18:59:21|10608|INFO|base_model.py:91]  session [1606672807104] and [TransportCost] has an operator: QUERY.
+[2024-11-05 18:59:21|10608|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-11-05 18:59:21|5732|INFO|base_model.py:91]  session [1606673360112] and [TransportCost] has an operator: QUERY.
+[2024-11-05 18:59:21|5732|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-11-05 18:59:26|9056|INFO|base_model.py:91]  session [1606674160416] and [TransportCost] has an operator: QUERY.
+[2024-11-05 18:59:26|9056|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-11-05 18:59:32|14476|INFO|base_model.py:91]  session [1606674161280] and [TransportCost] has an operator: QUERY.
+[2024-11-05 18:59:32|14476|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-11-05 19:03:24|25920|INFO|base_model.py:91]  session [2683189096512] and [RegressPredict] has an operator: QUERY.
+[2024-11-05 19:03:24|25920|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-05 19:03:24|4100|INFO|base_model.py:91]  session [2683189097952] and [RegressPredict] has an operator: QUERY.
+[2024-11-05 19:03:24|4100|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-05 19:03:30|21364|INFO|sales_view.py:44]  使用随机森林回归预测2024/01~2024/06的汽车销量情况
+[2024-11-05 19:03:30|21364|INFO|base_model.py:32]  session [2683189359040] and [RegressPredict] has an operator: ADD.
+[2024-11-05 19:03:30|21364|INFO|base_model.py:91]  session [2683189359040] and [RegressPredict] has an operator: QUERY.
+[2024-11-05 19:03:30|21364|INFO|sales_view.py:56]  Regress Predict successfully
+[2024-11-05 19:05:49|1696|INFO|base_model.py:91]  session [3031445705488] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:05:49|25216|INFO|base_model.py:91]  session [3031445805520] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:05:49|1696|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-11-05 19:05:49|25216|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-11-05 19:05:53|19556|INFO|base_model.py:91]  session [3031445708272] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:05:53|19556|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-11-05 19:06:57|12952|INFO|base_model.py:91]  session [2768517362256] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:06:57|12952|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-11-05 19:11:15|2748|INFO|base_model.py:91]  session [1742737490848] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:11:15|2748|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-11-05 19:13:40|2932|INFO|base_model.py:91]  session [1742737493248] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:13:40|2932|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-11-05 19:13:51|14104|INFO|base_model.py:91]  session [2050774143568] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:13:51|14104|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-11-05 19:26:00|15716|INFO|base_model.py:91]  session [3060621390560] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:26:00|15716|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:26:00|15716|ERROR|__init__.py:115]  _raise_if_missing error, info is "None of [Index(['分拨节点', '历史销量(年)', '对应省/市销量(年)', '吞吐量(年)', '该省辐射的成本', '优化吞吐量', '优化辐射成本',\n       '类别', '是否受限', '方法'],\n      dtype='object')] are in the [columns]"
+[2024-11-05 19:26:00|15716|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 118, in transport_cost
+    df = df[order]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\frame.py", line 3767, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\indexes\base.py", line 5877, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\indexes\base.py", line 5938, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['分拨节点', '历史销量(年)', '对应省/市销量(年)', '吞吐量(年)', '该省辐射的成本', '优化吞吐量', '优化辐射成本',\n       '类别', '是否受限', '方法'],\n      dtype='object')] are in the [columns]"
+
+[2024-11-05 19:27:20|2404|INFO|base_model.py:91]  session [1158714913696] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:27:20|23472|INFO|base_model.py:91]  session [1158715029584] and [RegressPredict] has an operator: QUERY.
+[2024-11-05 19:27:20|2404|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:27:20|23472|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-05 19:27:20|2404|ERROR|__init__.py:115]  _raise_if_missing error, info is "None of [Index(['分拨节点', '历史销量(年)', '对应省/市销量(年)', '吞吐量(年)', '该省辐射的成本', '优化吞吐量', '优化辐射成本',\n       '类别', '是否受限', '方法'],\n      dtype='object')] are in the [columns]"
+[2024-11-05 19:27:20|2404|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 118, in transport_cost
+    df = df[order]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\frame.py", line 3767, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\indexes\base.py", line 5877, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\indexes\base.py", line 5938, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['分拨节点', '历史销量(年)', '对应省/市销量(年)', '吞吐量(年)', '该省辐射的成本', '优化吞吐量', '优化辐射成本',\n       '类别', '是否受限', '方法'],\n      dtype='object')] are in the [columns]"
+
+[2024-11-05 19:27:20|13460|INFO|base_model.py:91]  session [1158715031312] and [RegressPredict] has an operator: QUERY.
+[2024-11-05 19:27:20|13460|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-05 19:27:25|15828|INFO|sales_view.py:44]  使用弹性网络回归预测2024/01~2024/05的汽车销量情况
+[2024-11-05 19:27:26|15828|INFO|base_model.py:32]  session [1158714913840] and [RegressPredict] has an operator: ADD.
+[2024-11-05 19:27:26|15828|INFO|base_model.py:91]  session [1158714913840] and [RegressPredict] has an operator: QUERY.
+[2024-11-05 19:27:26|15828|INFO|sales_view.py:56]  Regress Predict successfully
+[2024-11-05 19:30:03|3648|INFO|base_model.py:91]  session [2030908113584] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:30:04|3648|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:30:04|3648|ERROR|__init__.py:115]  _raise_if_missing error, info is "None of [Index(['分拨节点', '历史销量(年)', '对应省/市销量(年)', '吞吐量(年)', '该省辐射的成本', '优化吞吐量', '优化辐射成本',\n       '类别', '是否受限', '方法'],\n      dtype='object')] are in the [columns]"
+[2024-11-05 19:30:04|3648|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 118, in transport_cost
+    df = df[order]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\frame.py", line 3767, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\indexes\base.py", line 5877, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\indexes\base.py", line 5938, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['分拨节点', '历史销量(年)', '对应省/市销量(年)', '吞吐量(年)', '该省辐射的成本', '优化吞吐量', '优化辐射成本',\n       '类别', '是否受限', '方法'],\n      dtype='object')] are in the [columns]"
+
+[2024-11-05 19:30:04|23540|INFO|base_model.py:91]  session [2030908518064] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:30:04|23540|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:30:04|23540|ERROR|__init__.py:115]  _raise_if_missing error, info is "None of [Index(['分拨节点', '历史销量(年)', '对应省/市销量(年)', '吞吐量(年)', '该省辐射的成本', '优化吞吐量', '优化辐射成本',\n       '类别', '是否受限', '方法'],\n      dtype='object')] are in the [columns]"
+[2024-11-05 19:30:04|23540|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 118, in transport_cost
+    df = df[order]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\frame.py", line 3767, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\indexes\base.py", line 5877, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\indexes\base.py", line 5938, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['分拨节点', '历史销量(年)', '对应省/市销量(年)', '吞吐量(年)', '该省辐射的成本', '优化吞吐量', '优化辐射成本',\n       '类别', '是否受限', '方法'],\n      dtype='object')] are in the [columns]"
+
+[2024-11-05 19:30:08|7980|INFO|base_model.py:91]  session [2030908617968] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:30:08|7980|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:30:08|7980|ERROR|__init__.py:115]  _raise_if_missing error, info is "None of [Index(['分拨节点', '历史销量(年)', '对应省/市销量(年)', '吞吐量(年)', '该省辐射的成本', '优化吞吐量', '优化辐射成本',\n       '类别', '是否受限', '方法'],\n      dtype='object')] are in the [columns]"
+[2024-11-05 19:30:08|7980|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 118, in transport_cost
+    df = df[order]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\frame.py", line 3767, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\indexes\base.py", line 5877, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\indexes\base.py", line 5938, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['分拨节点', '历史销量(年)', '对应省/市销量(年)', '吞吐量(年)', '该省辐射的成本', '优化吞吐量', '优化辐射成本',\n       '类别', '是否受限', '方法'],\n      dtype='object')] are in the [columns]"
+
+[2024-11-05 19:30:10|4716|INFO|base_model.py:91]  session [2030910718208] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:30:10|4716|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:30:10|4716|ERROR|__init__.py:115]  _raise_if_missing error, info is "None of [Index(['分拨节点', '历史销量(年)', '对应省/市销量(年)', '吞吐量(年)', '该省辐射的成本', '优化吞吐量', '优化辐射成本',\n       '类别', '是否受限', '方法'],\n      dtype='object')] are in the [columns]"
+[2024-11-05 19:30:10|4716|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 118, in transport_cost
+    df = df[order]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\frame.py", line 3767, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\indexes\base.py", line 5877, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\indexes\base.py", line 5938, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['分拨节点', '历史销量(年)', '对应省/市销量(年)', '吞吐量(年)', '该省辐射的成本', '优化吞吐量', '优化辐射成本',\n       '类别', '是否受限', '方法'],\n      dtype='object')] are in the [columns]"
+
+[2024-11-05 19:30:12|2436|INFO|base_model.py:91]  session [2030910809184] and [RegressPredict] has an operator: QUERY.
+[2024-11-05 19:30:12|2436|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-05 19:30:15|1212|INFO|base_model.py:91]  session [2030910811776] and [Part] has an operator: QUERY.
+[2024-11-05 19:30:15|1212|INFO|part_view.py:28]  part init successfully
+[2024-11-05 19:30:20|25024|INFO|base_model.py:91]  session [2030907877600] and [Transport] has an operator: QUERY.
+[2024-11-05 19:30:20|25024|INFO|vehicle_view.py:60]  transport init successfully
+[2024-11-05 19:30:20|23300|INFO|base_model.py:91]  session [2030910809616] and [Transport] has an operator: QUERY.
+[2024-11-05 19:30:20|23300|INFO|vehicle_view.py:60]  transport init successfully
+[2024-11-05 19:30:21|25088|INFO|base_model.py:91]  session [2030907878320] and [Vehicle] has an operator: QUERY.
+[2024-11-05 19:30:21|25088|INFO|vehicle_view.py:30]  Vehicle init successfully
+[2024-11-05 19:30:21|10236|INFO|base_model.py:91]  session [2030911604720] and [Vehicle] has an operator: QUERY.
+[2024-11-05 19:30:21|10236|INFO|vehicle_view.py:30]  Vehicle init successfully
+[2024-11-05 19:30:22|20468|INFO|base_model.py:91]  session [2030911373712] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:30:22|20468|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:30:22|20468|ERROR|__init__.py:115]  _raise_if_missing error, info is "None of [Index(['分拨节点', '历史销量(年)', '对应省/市销量(年)', '吞吐量(年)', '该省辐射的成本', '优化吞吐量', '优化辐射成本',\n       '类别', '是否受限', '方法'],\n      dtype='object')] are in the [columns]"
+[2024-11-05 19:30:22|20468|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 118, in transport_cost
+    df = df[order]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\frame.py", line 3767, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\indexes\base.py", line 5877, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\indexes\base.py", line 5938, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['分拨节点', '历史销量(年)', '对应省/市销量(年)', '吞吐量(年)', '该省辐射的成本', '优化吞吐量', '优化辐射成本',\n       '类别', '是否受限', '方法'],\n      dtype='object')] are in the [columns]"
+
+[2024-11-05 19:30:22|27512|INFO|base_model.py:91]  session [2030911376544] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:30:22|27512|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:30:22|27512|ERROR|__init__.py:115]  _raise_if_missing error, info is "None of [Index(['分拨节点', '历史销量(年)', '对应省/市销量(年)', '吞吐量(年)', '该省辐射的成本', '优化吞吐量', '优化辐射成本',\n       '类别', '是否受限', '方法'],\n      dtype='object')] are in the [columns]"
+[2024-11-05 19:30:22|27512|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 118, in transport_cost
+    df = df[order]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\frame.py", line 3767, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\indexes\base.py", line 5877, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\indexes\base.py", line 5938, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['分拨节点', '历史销量(年)', '对应省/市销量(年)', '吞吐量(年)', '该省辐射的成本', '优化吞吐量', '优化辐射成本',\n       '类别', '是否受限', '方法'],\n      dtype='object')] are in the [columns]"
+
+[2024-11-05 19:31:56|9600|INFO|base_model.py:91]  session [1605439611808] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:31:56|9600|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:31:56|9600|ERROR|__init__.py:115]  _validate_set_axis error, info is Length mismatch: Expected axis has 11 elements, new values have 10 elements
+[2024-11-05 19:31:56|9600|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 117, in transport_cost
+    df.columns = ['分拨节点', "历史销量(年)", "对应省/市销量(年)", "吞吐量(年)","该省辐射的成本","优化吞吐量","优化辐射成本","类别","是否受限","方法"]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\generic.py", line 6002, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\generic.py", line 730, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\internals\managers.py", line 225, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\internals\base.py", line 70, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 11 elements, new values have 10 elements
+
+[2024-11-05 19:32:37|2396|INFO|base_model.py:91]  session [2201919644576] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:32:37|8936|INFO|base_model.py:91]  session [2201919769424] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:32:37|8936|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:32:37|2396|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:32:37|8936|ERROR|__init__.py:115]  _validate_set_axis error, info is Length mismatch: Expected axis has 11 elements, new values have 10 elements
+[2024-11-05 19:32:37|2396|ERROR|__init__.py:115]  _validate_set_axis error, info is Length mismatch: Expected axis has 11 elements, new values have 10 elements
+[2024-11-05 19:32:37|8936|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 116, in transport_cost
+    df.columns = ['分拨节点', "历史销量(年)", "对应省/市销量(年)", "吞吐量(年)","该省辐射的成本","优化吞吐量","优化辐射成本","类别","是否受限","方法"]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\generic.py", line 6002, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\generic.py", line 730, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\internals\managers.py", line 225, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\internals\base.py", line 70, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 11 elements, new values have 10 elements
+
+[2024-11-05 19:32:37|2396|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 116, in transport_cost
+    df.columns = ['分拨节点', "历史销量(年)", "对应省/市销量(年)", "吞吐量(年)","该省辐射的成本","优化吞吐量","优化辐射成本","类别","是否受限","方法"]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\generic.py", line 6002, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\generic.py", line 730, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\internals\managers.py", line 225, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\internals\base.py", line 70, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 11 elements, new values have 10 elements
+
+[2024-11-05 19:33:28|11392|INFO|base_model.py:91]  session [1356322857840] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:33:28|11392|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:33:28|11392|ERROR|__init__.py:115]  _validate_set_axis error, info is Length mismatch: Expected axis has 11 elements, new values have 10 elements
+[2024-11-05 19:33:28|11392|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 117, in transport_cost
+    df.columns = ['分拨节点', "历史销量(年)", "对应省/市销量(年)", "吞吐量(年)","该省辐射的成本","优化吞吐量","优化辐射成本","类别","是否受限","方法"]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\generic.py", line 6002, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\generic.py", line 730, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\internals\managers.py", line 225, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\internals\base.py", line 70, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 11 elements, new values have 10 elements
+
+[2024-11-05 19:33:52|4988|INFO|base_model.py:91]  session [1794140890016] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:33:52|4988|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:34:07|24872|INFO|base_model.py:91]  session [1894516024224] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:34:07|24872|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:34:15|3304|INFO|base_model.py:91]  session [1894516444896] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:34:15|3304|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:35:40|24132|INFO|base_model.py:91]  session [1587751199456] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:35:40|24132|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:40:14|22228|INFO|base_model.py:91]  session [3033963783072] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:40:14|22228|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:40:53|24420|INFO|base_model.py:91]  session [2072055931760] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:40:53|24420|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:41:10|27444|INFO|base_model.py:91]  session [2072056352240] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:41:10|27444|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:47:17|10424|INFO|base_model.py:91]  session [2127980200336] and [user] has an operator: QUERY.
+[2024-11-05 19:47:24|17528|INFO|base_model.py:91]  session [2127980201344] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:47:24|17528|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:47:24|22684|INFO|base_model.py:91]  session [2127986077552] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:47:24|22684|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:47:50|3844|INFO|base_model.py:91]  session [2127986076352] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:47:50|3844|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:47:57|27456|INFO|base_model.py:91]  session [2127980929136] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:47:57|27456|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:48:19|20952|INFO|base_model.py:91]  session [2127980821952] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:48:19|20952|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:48:19|20952|ERROR|__init__.py:115]  _validate_set_axis error, info is Length mismatch: Expected axis has 0 elements, new values have 11 elements
+[2024-11-05 19:48:19|20952|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 116, in transport_cost
+    df.columns = ['序列','分拨节点', "历史销量(年)", "对应省/市销量(年)", "吞吐量(年)","该省辐射的成本","优化吞吐量","优化辐射成本","类别","是否受限","方法"]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\generic.py", line 6002, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\generic.py", line 730, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\internals\managers.py", line 225, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\internals\base.py", line 70, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 0 elements, new values have 11 elements
+
+[2024-11-05 19:48:24|18440|INFO|base_model.py:91]  session [2127988810752] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:48:24|18440|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:48:24|18440|ERROR|__init__.py:115]  _validate_set_axis error, info is Length mismatch: Expected axis has 0 elements, new values have 11 elements
+[2024-11-05 19:48:24|18440|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 116, in transport_cost
+    df.columns = ['序列','分拨节点', "历史销量(年)", "对应省/市销量(年)", "吞吐量(年)","该省辐射的成本","优化吞吐量","优化辐射成本","类别","是否受限","方法"]
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\generic.py", line 6002, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\generic.py", line 730, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\internals\managers.py", line 225, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\pandas\core\internals\base.py", line 70, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 0 elements, new values have 11 elements
+
+[2024-11-05 19:48:28|22044|INFO|base_model.py:91]  session [2127988812096] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:48:28|22044|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:49:57|9912|INFO|base_model.py:91]  session [2127988631488] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:49:57|9912|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:50:06|26924|INFO|base_model.py:91]  session [2127988567968] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:50:06|26924|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:50:06|1124|INFO|base_model.py:91]  session [2127988566480] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:50:06|1124|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:58:09|4144|INFO|base_model.py:91]  session [2127988629904] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:58:09|4144|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:58:09|15960|INFO|base_model.py:91]  session [2127987799424] and [TransportCost] has an operator: QUERY.
+[2024-11-05 19:58:09|15960|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-05 19:58:11|1928|INFO|base_model.py:91]  session [2127987799424] and [Transport] has an operator: QUERY.
+[2024-11-05 19:58:11|1928|INFO|vehicle_view.py:60]  transport init successfully
+[2024-11-05 19:58:11|7536|INFO|base_model.py:91]  session [2127988658864] and [Transport] has an operator: QUERY.
+[2024-11-05 19:58:11|7536|INFO|vehicle_view.py:60]  transport init successfully
+[2024-11-05 19:58:14|10752|INFO|base_model.py:91]  session [2127986106816] and [Vehicle] has an operator: QUERY.
+[2024-11-05 19:58:14|10752|INFO|vehicle_view.py:30]  Vehicle init successfully
+[2024-11-05 19:58:14|22376|INFO|base_model.py:91]  session [2127990683344] and [Vehicle] has an operator: QUERY.
+[2024-11-05 19:58:14|22376|INFO|vehicle_view.py:30]  Vehicle init successfully
+[2024-11-05 19:59:02|20776|INFO|base_model.py:91]  session [2127987877872] and [Vehicle] has an operator: QUERY.
+[2024-11-05 19:59:02|20776|INFO|vehicle_view.py:30]  Vehicle init successfully
+[2024-11-05 19:59:05|17440|INFO|base_model.py:91]  session [2127988915648] and [Vehicle] has an operator: QUERY.
+[2024-11-05 19:59:05|17440|INFO|vehicle_view.py:30]  Vehicle init successfully
+[2024-11-05 19:59:09|16072|INFO|base_model.py:91]  session [2127988913872] and [Vehicle] has an operator: QUERY.
+[2024-11-05 19:59:09|16072|INFO|vehicle_view.py:49]  Vehicle explore successfully
+[2024-11-05 20:56:09|28696|INFO|base_model.py:91]  session [2127988660640] and [Part] has an operator: QUERY.
+[2024-11-05 20:56:09|28696|INFO|part_view.py:28]  part init successfully
+[2024-11-05 20:56:09|31188|INFO|base_model.py:91]  session [2127988662032] and [Part] has an operator: QUERY.
+[2024-11-05 20:56:09|31188|INFO|part_view.py:28]  part init successfully
+[2024-11-05 20:56:13|31600|INFO|base_model.py:91]  session [2127988915552] and [Transport] has an operator: QUERY.
+[2024-11-05 20:56:13|31600|INFO|vehicle_view.py:60]  transport init successfully
+[2024-11-05 20:56:14|1584|INFO|base_model.py:91]  session [2127988914544] and [Transport] has an operator: QUERY.
+[2024-11-05 20:56:14|1584|INFO|vehicle_view.py:60]  transport init successfully
+[2024-11-05 20:56:15|29480|INFO|base_model.py:91]  session [2127990684160] and [Transport] has an operator: QUERY.
+[2024-11-05 20:56:15|29480|INFO|vehicle_view.py:60]  transport init successfully

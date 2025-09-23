@@ -1,0 +1,151 @@
+[2024-11-22 15:36:42|13216|INFO|base_model.py:91]  session [2612574868864] and [user] has an operator: QUERY.
+[2024-11-22 15:36:50|6996|INFO|base_model.py:91]  session [2612575362544] and [TransportCost] has an operator: QUERY.
+[2024-11-22 15:36:50|24684|INFO|base_model.py:91]  session [2612575551296] and [TransportCost] has an operator: QUERY.
+[2024-11-22 15:36:50|6996|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-22 15:36:51|24684|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-22 15:41:21|23528|ERROR|__init__.py:115]  _request error, info is Error code: 400, with error text {"error":{"code":"1213","message":"未正常接收到prompt参数。"}}
+[2024-11-22 15:41:21|23528|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\part_view.py", line 76, in ai_chat
+    response = client.chat.completions.create(
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\zhipuai\api_resource\chat\completions.py", line 94, in create
+    return self._post(
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\zhipuai\core\_http_client.py", line 809, in post
+    return cast(ResponseT, self.request(cast_type, opts, stream=stream, stream_cls=stream_cls))
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\zhipuai\core\_http_client.py", line 495, in request
+    return self._request(
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\zhipuai\core\_http_client.py", line 582, in _request
+    raise self._make_status_error(err.response) from None
+zhipuai.core._errors.APIRequestFailedError: Error code: 400, with error text {"error":{"code":"1213","message":"未正常接收到prompt参数。"}}
+
+[2024-11-22 15:41:24|27040|ERROR|__init__.py:115]  _request error, info is Error code: 400, with error text {"error":{"code":"1213","message":"未正常接收到prompt参数。"}}
+[2024-11-22 15:41:24|27040|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\part_view.py", line 76, in ai_chat
+    response = client.chat.completions.create(
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\zhipuai\api_resource\chat\completions.py", line 94, in create
+    return self._post(
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\zhipuai\core\_http_client.py", line 809, in post
+    return cast(ResponseT, self.request(cast_type, opts, stream=stream, stream_cls=stream_cls))
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\zhipuai\core\_http_client.py", line 495, in request
+    return self._request(
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\zhipuai\core\_http_client.py", line 582, in _request
+    raise self._make_status_error(err.response) from None
+zhipuai.core._errors.APIRequestFailedError: Error code: 400, with error text {"error":{"code":"1213","message":"未正常接收到prompt参数。"}}
+
+[2024-11-22 16:11:55|7036|ERROR|__init__.py:115]  ai_chat error, info is local variable 'client' referenced before assignment
+[2024-11-22 16:11:55|7036|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\part_view.py", line 79, in ai_chat
+    response = client.chat.completions.create(
+UnboundLocalError: local variable 'client' referenced before assignment
+
+[2024-11-22 16:13:09|27212|ERROR|__init__.py:115]  ai_chat error, info is local variable 'client' referenced before assignment
+[2024-11-22 16:13:09|27212|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\part_view.py", line 79, in ai_chat
+    response = client.chat.completions.create(
+UnboundLocalError: local variable 'client' referenced before assignment
+
+[2024-11-22 16:14:34|27108|ERROR|__init__.py:115]  ai_chat error, info is local variable 'client' referenced before assignment
+[2024-11-22 16:14:34|27108|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\part_view.py", line 80, in ai_chat
+    response = client.chat.completions.create(
+UnboundLocalError: local variable 'client' referenced before assignment
+
+[2024-11-22 16:15:00|27820|ERROR|__init__.py:115]  ai_chat error, info is local variable 'client' referenced before assignment
+[2024-11-22 16:15:00|27820|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\part_view.py", line 81, in ai_chat
+    response = client.chat.completions.create(
+UnboundLocalError: local variable 'client' referenced before assignment
+
+[2024-11-22 16:16:08|1884|ERROR|__init__.py:115]  ai_chat error, info is local variable 'client' referenced before assignment
+[2024-11-22 16:16:08|1884|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\part_view.py", line 81, in ai_chat
+    response = client.chat.completions.create(
+UnboundLocalError: local variable 'client' referenced before assignment
+
+[2024-11-22 16:33:50|8856|ERROR|__init__.py:117]  ai_chat error, info is 'dict' object has no attribute 'chat'
+[2024-11-22 16:33:50|8856|ERROR|__init__.py:118]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\part_view.py", line 77, in ai_chat
+    response = client.chat.completions.create(
+AttributeError: 'dict' object has no attribute 'chat'
+
+[2024-11-22 16:33:57|20936|ERROR|__init__.py:117]  ai_chat error, info is 'dict' object has no attribute 'chat'
+[2024-11-22 16:33:57|20936|ERROR|__init__.py:118]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\part_view.py", line 77, in ai_chat
+    response = client.chat.completions.create(
+AttributeError: 'dict' object has no attribute 'chat'
+
+[2024-11-22 16:35:01|25220|ERROR|__init__.py:117]  ai_chat error, info is 'dict' object has no attribute 'chat'
+[2024-11-22 16:35:01|25220|ERROR|__init__.py:118]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\part_view.py", line 77, in ai_chat
+    response = client.chat.completions.create(
+AttributeError: 'dict' object has no attribute 'chat'
+
+[2024-11-22 16:36:05|18632|ERROR|__init__.py:117]  ai_chat error, info is 'dict' object has no attribute 'chat'
+[2024-11-22 16:36:05|18632|ERROR|__init__.py:118]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\part_view.py", line 77, in ai_chat
+    response = client.chat.completions.create(
+AttributeError: 'dict' object has no attribute 'chat'
+
+[2024-11-22 16:36:26|24200|ERROR|__init__.py:117]  ai_chat error, info is 'dict' object has no attribute 'chat'
+[2024-11-22 16:36:26|24200|ERROR|__init__.py:118]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\part_view.py", line 77, in ai_chat
+    response = client.chat.completions.create(
+AttributeError: 'dict' object has no attribute 'chat'
+
+[2024-11-22 16:38:09|25260|ERROR|__init__.py:117]  ai_chat error, info is 'dict' object has no attribute 'chat'
+[2024-11-22 16:38:09|25260|ERROR|__init__.py:118]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\part_view.py", line 77, in ai_chat
+    response = client.chat.completions.create(
+AttributeError: 'dict' object has no attribute 'chat'
+

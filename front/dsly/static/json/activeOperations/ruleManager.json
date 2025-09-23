@@ -1,0 +1,66 @@
+{
+  "data": [{
+      "UNIT_NAME": "秦皇岛市",
+      "TYPE_NAME": "北戴河区",
+      "CAPACITY": "沪蓉高速黄栗墅服务区站（成都方向）",
+      "END_TIME": "全部",
+      "FILE_NAME": "80",
+      "MARKET_NAME": "60",
+      "START_TIME": "巡视工单"
+    },
+    {
+      "UNIT_NAME": "南京市",
+      "TYPE_NAME": "玄武区",
+      "CAPACITY": "沪蓉高速三桥服务区站（成都方向）",
+      "END_TIME": "全部",
+      "FILE_NAME": "10",
+      "MARKET_NAME": "50",
+      "START_TIME": "巡视工单"
+    },
+    {
+      "UNIT_NAME": "广州市",
+      "TYPE_NAME": "东山区",
+      "CAPACITY": "沪蓉高速三桥服务区站（上海方向）",
+      "END_TIME": "公共站",
+      "FILE_NAME": "6",
+      "MARKET_NAME": "0",
+      "START_TIME": "巡视工单"
+    },
+    {
+      "UNIT_NAME": "邯郸市",
+      "TYPE_NAME": "峰峰矿区",
+      "CAPACITY": "沪蓉高速三桥服务区站（成都方向）",
+      "END_TIME": "出租站",
+      "FILE_NAME": "0",
+      "MARKET_NAME": "0",
+      "START_TIME": "巡视工单"
+    },
+    {
+      "UNIT_NAME": "和平区",
+      "TYPE_NAME": "",
+      "CAPACITY": "沪蓉高速黄栗墅服务区站（上海方向）",
+      "END_TIME": "公共站",
+      "FILE_NAME": "0",
+      "MARKET_NAME": "0",
+      "START_TIME": "巡视工单"
+    },
+    {
+      "UNIT_NAME": "",
+      "TYPE_NAME": "",
+      "CAPACITY": "",
+      "END_TIME": "全部",
+      "FILE_NAME": "0",
+      "MARKET_NAME": "0",
+      "START_TIME": "巡视工单"
+    },
+    {
+      "UNIT_NAME": "",
+      "TYPE_NAME": "",
+      "CAPACITY": "",
+      "END_TIME": "全部",
+      "FILE_NAME": "0",
+      "MARKET_NAME": "0",
+      "START_TIME": "巡视工单"
+    }
+  ]
+}

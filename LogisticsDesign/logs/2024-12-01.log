@@ -1,0 +1,5 @@
+[2024-12-01 12:43:39|25556|INFO|base_model.py:91]  session [2598044396192] and [user] has an operator: QUERY.
+[2024-12-01 12:45:00|25080|INFO|base_model.py:91]  session [2598044397296] and [Transport] has an operator: QUERY.
+[2024-12-01 12:45:00|25080|INFO|vehicle_view.py:60]  transport init successfully
+[2024-12-01 12:45:00|25232|INFO|base_model.py:91]  session [2598044394704] and [Transport] has an operator: QUERY.
+[2024-12-01 12:45:00|25232|INFO|vehicle_view.py:60]  transport init successfully

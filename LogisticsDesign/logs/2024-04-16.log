@@ -1,0 +1,47 @@
+[2024-04-16 22:26:00|17780|INFO|base_model.py:91]  session [1500670322064] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:05:21|27972|INFO|base_model.py:91]  session [2491290544752] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:05:21|27972|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:13:41|17860|INFO|base_model.py:91]  session [2491290548160] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:13:41|17860|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:14:14|31512|INFO|base_model.py:91]  session [2491292012448] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:14:14|31512|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:15:23|9652|INFO|base_model.py:91]  session [1481416239920] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:15:23|9652|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:15:28|30444|INFO|base_model.py:91]  session [1481417671008] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:15:28|30444|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:15:31|26752|INFO|base_model.py:91]  session [1481417671440] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:15:31|26752|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:15:51|32608|INFO|base_model.py:91]  session [1481417678256] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:15:51|32608|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:15:56|31304|INFO|base_model.py:91]  session [1481417680656] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:15:56|31304|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:19:32|31588|INFO|base_model.py:91]  session [1481417683776] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:19:32|31588|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:20:28|10760|INFO|base_model.py:91]  session [1481417675808] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:20:28|10760|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:20:55|20296|INFO|base_model.py:91]  session [1481417677296] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:20:55|20296|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:22:02|22880|INFO|base_model.py:91]  session [1481417686656] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:22:02|22880|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:22:58|2420|INFO|base_model.py:91]  session [1481417677104] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:22:58|2420|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:24:54|29064|INFO|base_model.py:91]  session [1481417682432] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:24:54|29064|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:25:12|31432|INFO|base_model.py:91]  session [1481417680608] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:25:12|31432|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:26:34|30780|INFO|base_model.py:91]  session [1481417819712] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:26:34|30780|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:26:59|23144|INFO|base_model.py:91]  session [1481417676480] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:26:59|23144|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:27:55|20836|INFO|base_model.py:91]  session [1481417686944] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:27:55|20836|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:28:03|14808|INFO|base_model.py:91]  session [1481417824800] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:28:03|14808|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:32:15|31900|INFO|base_model.py:91]  session [1481417823744] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:32:16|31900|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:32:28|6140|INFO|base_model.py:91]  session [1481417683680] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:32:28|6140|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:32:41|30740|INFO|base_model.py:91]  session [1481417677968] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:32:41|30740|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-16 23:32:50|31328|INFO|base_model.py:91]  session [1481417682000] and [EmptyCar] has an operator: QUERY.
+[2024-04-16 23:32:50|31328|INFO|vehicle_view.py:139]  Empty car search successfully

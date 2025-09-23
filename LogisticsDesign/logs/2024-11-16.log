@@ -1,0 +1,10 @@
+[2024-11-16 12:35:57|21852|INFO|base_model.py:91]  session [1995165442976] and [user] has an operator: QUERY.
+[2024-11-16 13:10:39|30156|INFO|base_model.py:91]  session [1995167526096] and [Vehicle] has an operator: QUERY.
+[2024-11-16 13:10:39|30156|INFO|vehicle_view.py:30]  Vehicle init successfully
+[2024-11-16 13:10:39|26140|INFO|base_model.py:91]  session [1995167488800] and [Vehicle] has an operator: QUERY.
+[2024-11-16 13:10:39|26140|INFO|vehicle_view.py:30]  Vehicle init successfully
+[2024-11-16 13:11:13|4828|INFO|base_model.py:91]  session [1995167489904] and [EmptyCar] has an operator: QUERY.
+[2024-11-16 13:11:13|4828|INFO|vehicle_view.py:159]  Empty car search successfully
+[2024-11-16 13:11:16|25952|INFO|base_model.py:91]  session [1995167540464] and [EmptyCar] has an operator: QUERY.
+[2024-11-16 13:11:16|25952|INFO|vehicle_view.py:159]  Empty car search successfully
+[2024-11-16 14:37:04|22856|INFO|base_model.py:91]  session [1995167878592] and [user] has an operator: QUERY.

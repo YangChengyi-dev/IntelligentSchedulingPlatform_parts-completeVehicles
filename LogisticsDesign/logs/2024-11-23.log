@@ -1,0 +1,58 @@
+[2024-11-23 16:06:38|1440|INFO|base_model.py:91]  session [2787051285616] and [user] has an operator: QUERY.
+[2024-11-23 17:12:12|14448|INFO|base_model.py:91]  session [1701351210336] and [user] has an operator: QUERY.
+[2024-11-23 17:47:49|22036|ERROR|__init__.py:117]  _request error, info is Error code: 400, with error text {"contentFilter":[{"level":2,"role":"user"}],"error":{"code":"1301","message":"系统检测到输入或生成内容可能包含不安全或敏感内容，请您避免输入易产生敏感内容的提示语，感谢您的配合。"}}
+[2024-11-23 17:47:49|22036|ERROR|__init__.py:118]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\part_view.py", line 79, in ai_chat
+    response = client.images.generations(
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\zhipuai\api_resource\images.py", line 43, in generations
+    return self._post(
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\zhipuai\core\_http_client.py", line 809, in post
+    return cast(ResponseT, self.request(cast_type, opts, stream=stream, stream_cls=stream_cls))
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\zhipuai\core\_http_client.py", line 495, in request
+    return self._request(
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\zhipuai\core\_http_client.py", line 582, in _request
+    raise self._make_status_error(err.response) from None
+zhipuai.core._errors.APIRequestFailedError: Error code: 400, with error text {"contentFilter":[{"level":2,"role":"user"}],"error":{"code":"1301","message":"系统检测到输入或生成内容可能包含不安全或敏感内容，请您避免输入易产生敏感内容的提示语，感谢您的配合。"}}
+
+[2024-11-23 22:25:05|21196|INFO|base_model.py:91]  session [1701368640656] and [RegressPredict] has an operator: QUERY.
+[2024-11-23 22:25:05|21196|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-23 22:25:05|26292|INFO|base_model.py:91]  session [1701368673376] and [RegressPredict] has an operator: QUERY.
+[2024-11-23 22:25:05|26292|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-23 22:25:33|29936|INFO|base_model.py:91]  session [1701368641616] and [Vehicle] has an operator: QUERY.
+[2024-11-23 22:25:33|29936|INFO|vehicle_view.py:30]  Vehicle init successfully
+[2024-11-23 22:25:33|10320|INFO|base_model.py:91]  session [1701368672704] and [Vehicle] has an operator: QUERY.
+[2024-11-23 22:25:33|10320|INFO|vehicle_view.py:30]  Vehicle init successfully
+[2024-11-23 22:25:39|30128|INFO|base_model.py:91]  session [1701368674864] and [Part] has an operator: QUERY.
+[2024-11-23 22:25:39|30128|INFO|part_view.py:29]  part init successfully
+[2024-11-23 22:25:39|11792|INFO|base_model.py:91]  session [1701368674336] and [Part] has an operator: QUERY.
+[2024-11-23 22:25:39|11792|INFO|part_view.py:29]  part init successfully
+[2024-11-23 22:25:49|21644|INFO|base_model.py:91]  session [1701368641136] and [RegressPredict] has an operator: QUERY.
+[2024-11-23 22:25:49|21644|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-23 22:25:49|25488|INFO|base_model.py:91]  session [1701368690336] and [RegressPredict] has an operator: QUERY.
+[2024-11-23 22:25:49|25488|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-23 22:26:14|28844|INFO|base_model.py:91]  session [1701368692064] and [TransportCost] has an operator: QUERY.
+[2024-11-23 22:26:14|28844|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-23 22:26:14|27436|INFO|base_model.py:91]  session [1701349700176] and [TransportCost] has an operator: QUERY.
+[2024-11-23 22:26:14|27436|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-23 22:26:25|27328|INFO|base_model.py:91]  session [1701349700464] and [TransportCost] has an operator: QUERY.
+[2024-11-23 22:26:25|27328|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-23 22:26:25|2696|INFO|base_model.py:91]  session [1701371331968] and [TransportCost] has an operator: QUERY.
+[2024-11-23 22:26:25|2696|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-23 22:26:27|14772|INFO|base_model.py:91]  session [1701368672800] and [Transport] has an operator: QUERY.
+[2024-11-23 22:26:27|14772|INFO|vehicle_view.py:60]  transport init successfully
+[2024-11-23 22:26:27|6268|INFO|base_model.py:91]  session [1701371332160] and [Transport] has an operator: QUERY.
+[2024-11-23 22:26:27|6268|INFO|vehicle_view.py:60]  transport init successfully
+[2024-11-23 22:26:29|1880|INFO|base_model.py:91]  session [1701371331680] and [Vehicle] has an operator: QUERY.
+[2024-11-23 22:26:29|1880|INFO|vehicle_view.py:30]  Vehicle init successfully
+[2024-11-23 22:26:29|28888|INFO|base_model.py:91]  session [1701368643536] and [Vehicle] has an operator: QUERY.
+[2024-11-23 22:26:29|28888|INFO|vehicle_view.py:30]  Vehicle init successfully
+[2024-11-23 22:26:31|25784|INFO|base_model.py:91]  session [1701375662640] and [Transport] has an operator: QUERY.
+[2024-11-23 22:26:31|25784|INFO|vehicle_view.py:60]  transport init successfully
+[2024-11-23 22:26:34|18924|INFO|base_model.py:91]  session [1701351015040] and [RegressPredict] has an operator: QUERY.
+[2024-11-23 22:26:34|18924|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-23 22:26:34|27084|INFO|base_model.py:91]  session [1701375546032] and [RegressPredict] has an operator: QUERY.
+[2024-11-23 22:26:34|27084|INFO|sales_view.py:31]  Regress Predict init successfully

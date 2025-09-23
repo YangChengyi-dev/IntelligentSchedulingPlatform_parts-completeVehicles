@@ -1,0 +1,84 @@
+[2024-07-16 18:07:41|11452|ERROR|__init__.py:110]  send_from_directory error, info is 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2024-07-16 18:07:41|11452|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 260, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore # noqa: B950
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 308, in send_static_file
+    return send_from_directory(
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\helpers.py", line 552, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\werkzeug\utils.py", line 574, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+[2024-07-16 18:07:53|28356|ERROR|__init__.py:110]  send_from_directory error, info is 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2024-07-16 18:07:53|28356|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 260, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore # noqa: B950
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 308, in send_static_file
+    return send_from_directory(
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\helpers.py", line 552, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\werkzeug\utils.py", line 574, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+[2024-07-16 18:08:44|14244|ERROR|__init__.py:110]  send_from_directory error, info is 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2024-07-16 18:08:44|14244|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 260, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore # noqa: B950
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 308, in send_static_file
+    return send_from_directory(
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\helpers.py", line 552, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\werkzeug\utils.py", line 574, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+[2024-07-16 18:11:39|14424|ERROR|__init__.py:110]  send_from_directory error, info is 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2024-07-16 18:11:39|14424|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 260, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore # noqa: B950
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 308, in send_static_file
+    return send_from_directory(
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\helpers.py", line 552, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\werkzeug\utils.py", line 574, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+[2024-07-16 19:39:27|26320|INFO|base_model.py:91]  session [1688410429264] and [Vehicle] has an operator: QUERY.
+[2024-07-16 19:39:27|26320|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-07-16 19:39:27|26908|INFO|base_model.py:91]  session [1688410430944] and [Vehicle] has an operator: QUERY.
+[2024-07-16 19:39:27|26908|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-07-16 19:39:28|21196|INFO|base_model.py:91]  session [1688412858848] and [Transport] has an operator: QUERY.
+[2024-07-16 19:39:28|21196|INFO|vehicle_view.py:58]  transport init successfully
+[2024-07-16 19:39:29|27044|INFO|base_model.py:91]  session [1688412859040] and [Transport] has an operator: QUERY.
+[2024-07-16 19:39:29|27044|INFO|vehicle_view.py:58]  transport init successfully
+[2024-07-17 09:32:20|26732|INFO|base_model.py:91]  session [1688413111344] and [Vehicle] has an operator: QUERY.
+[2024-07-17 09:32:20|26732|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-07-17 09:33:27|27612|INFO|base_model.py:91]  session [1688413112736] and [Transport] has an operator: QUERY.
+[2024-07-17 09:33:27|27612|INFO|vehicle_view.py:58]  transport init successfully
+[2024-07-17 09:33:28|27324|INFO|base_model.py:91]  session [1688413111728] and [Vehicle] has an operator: QUERY.
+[2024-07-17 09:33:28|27324|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-07-17 09:35:55|15536|INFO|base_model.py:91]  session [1688413116048] and [RegressPredict] has an operator: QUERY.
+[2024-07-17 09:35:55|15536|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-07-17 09:35:55|16260|INFO|base_model.py:91]  session [1688412856880] and [RegressPredict] has an operator: QUERY.
+[2024-07-17 09:35:55|16260|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-07-17 14:34:33|9512|INFO|base_model.py:91]  session [1688413115904] and [Vehicle] has an operator: QUERY.
+[2024-07-17 14:34:33|9512|INFO|vehicle_view.py:28]  Vehicle init successfully

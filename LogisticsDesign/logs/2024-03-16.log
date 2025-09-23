@@ -1,0 +1,682 @@
+[2024-03-16 21:51:10|4904|INFO|base_model.py:91]  session [1713951813840] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 21:51:10|4904|INFO|sales_view.py:25]  Regress Predict init successfully
+[2024-03-16 21:51:10|9312|INFO|base_model.py:91]  session [1713951814128] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 21:51:10|9312|INFO|sales_view.py:25]  Regress Predict init successfully
+[2024-03-16 21:53:50|26380|ERROR|__init__.py:110]  send_from_directory error, info is 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2024-03-16 21:53:50|26380|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 260, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore # noqa: B950
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 308, in send_static_file
+    return send_from_directory(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\helpers.py", line 552, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\werkzeug\utils.py", line 574, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+[2024-03-16 21:54:00|26528|INFO|sales_view.py:42]  使用线性回归预测2024/1~2024/10的汽车销量情况
+[2024-03-16 21:54:00|26528|ERROR|db_connection.py:53]  [Except]transaction function error, info is [Errno 2] No such file or directory: '一汽数据处理.xlsx'
+[2024-03-16 21:54:00|26528|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 44, in sales_regress
+    res_dict = predict(method, start, end)
+  File "F:\python\LogisticsDesign\business\sales\sales_predict.py", line 12, in predict
+    model = LinearRegressionPredict()
+  File "F:\python\LogisticsDesign\business\sales\linear_regess.py", line 8, in __init__
+    super().__init__(LinearRegression(), sheet_name)
+  File "F:\python\LogisticsDesign\business\sales\base_regress.py", line 11, in __init__
+    df = pd.read_excel('一汽数据处理.xlsx', sheet_name=sheet_name)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: '一汽数据处理.xlsx'
+
+[2024-03-16 21:54:00|26528|ERROR|__init__.py:110]  get_handle error, info is [Errno 2] No such file or directory: '一汽数据处理.xlsx'
+[2024-03-16 21:54:00|26528|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 44, in sales_regress
+    res_dict = predict(method, start, end)
+  File "F:\python\LogisticsDesign\business\sales\sales_predict.py", line 12, in predict
+    model = LinearRegressionPredict()
+  File "F:\python\LogisticsDesign\business\sales\linear_regess.py", line 8, in __init__
+    super().__init__(LinearRegression(), sheet_name)
+  File "F:\python\LogisticsDesign\business\sales\base_regress.py", line 11, in __init__
+    df = pd.read_excel('一汽数据处理.xlsx', sheet_name=sheet_name)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: '一汽数据处理.xlsx'
+
+[2024-03-16 21:55:14|25904|INFO|sales_view.py:42]  使用线性回归预测2024/1~2024/10的汽车销量情况
+[2024-03-16 21:55:14|25904|ERROR|db_connection.py:53]  [Except]transaction function error, info is [Errno 2] No such file or directory: './一汽数据处理.xlsx'
+[2024-03-16 21:55:14|25904|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 44, in sales_regress
+    res_dict = predict(method, start, end)
+  File "F:\python\LogisticsDesign\business\sales\sales_predict.py", line 12, in predict
+    model = LinearRegressionPredict()
+  File "F:\python\LogisticsDesign\business\sales\linear_regess.py", line 8, in __init__
+    super().__init__(LinearRegression(), sheet_name)
+  File "F:\python\LogisticsDesign\business\sales\base_regress.py", line 11, in __init__
+    df = pd.read_excel('./一汽数据处理.xlsx', sheet_name=sheet_name)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: './一汽数据处理.xlsx'
+
+[2024-03-16 21:55:14|25904|ERROR|__init__.py:110]  get_handle error, info is [Errno 2] No such file or directory: './一汽数据处理.xlsx'
+[2024-03-16 21:55:14|25904|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 44, in sales_regress
+    res_dict = predict(method, start, end)
+  File "F:\python\LogisticsDesign\business\sales\sales_predict.py", line 12, in predict
+    model = LinearRegressionPredict()
+  File "F:\python\LogisticsDesign\business\sales\linear_regess.py", line 8, in __init__
+    super().__init__(LinearRegression(), sheet_name)
+  File "F:\python\LogisticsDesign\business\sales\base_regress.py", line 11, in __init__
+    df = pd.read_excel('./一汽数据处理.xlsx', sheet_name=sheet_name)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: './一汽数据处理.xlsx'
+
+[2024-03-16 21:55:22|6684|INFO|sales_view.py:42]  使用线性回归预测2024/1~2024/10的汽车销量情况
+[2024-03-16 21:55:22|6684|ERROR|db_connection.py:53]  [Except]transaction function error, info is [Errno 2] No such file or directory: './一汽数据处理.xlsx'
+[2024-03-16 21:55:22|6684|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 44, in sales_regress
+    res_dict = predict(method, start, end)
+  File "F:\python\LogisticsDesign\business\sales\sales_predict.py", line 12, in predict
+    model = LinearRegressionPredict()
+  File "F:\python\LogisticsDesign\business\sales\linear_regess.py", line 8, in __init__
+    super().__init__(LinearRegression(), sheet_name)
+  File "F:\python\LogisticsDesign\business\sales\base_regress.py", line 11, in __init__
+    df = pd.read_excel('./一汽数据处理.xlsx', sheet_name=sheet_name)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: './一汽数据处理.xlsx'
+
+[2024-03-16 21:55:22|6684|ERROR|__init__.py:110]  get_handle error, info is [Errno 2] No such file or directory: './一汽数据处理.xlsx'
+[2024-03-16 21:55:22|6684|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 44, in sales_regress
+    res_dict = predict(method, start, end)
+  File "F:\python\LogisticsDesign\business\sales\sales_predict.py", line 12, in predict
+    model = LinearRegressionPredict()
+  File "F:\python\LogisticsDesign\business\sales\linear_regess.py", line 8, in __init__
+    super().__init__(LinearRegression(), sheet_name)
+  File "F:\python\LogisticsDesign\business\sales\base_regress.py", line 11, in __init__
+    df = pd.read_excel('./一汽数据处理.xlsx', sheet_name=sheet_name)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: './一汽数据处理.xlsx'
+
+[2024-03-16 21:57:46|17512|INFO|sales_view.py:42]  使用线性回归预测2024/1~2024/10的汽车销量情况
+[2024-03-16 21:57:46|17512|ERROR|db_connection.py:53]  [Except]transaction function error, info is [Errno 2] No such file or directory: './一汽数据处理.xlsx'
+[2024-03-16 21:57:46|17512|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 44, in sales_regress
+    res_dict = predict(method, start, end)
+  File "F:\python\LogisticsDesign\business\sales\sales_predict.py", line 12, in predict
+    model = LinearRegressionPredict()
+  File "F:\python\LogisticsDesign\business\sales\linear_regess.py", line 8, in __init__
+    super().__init__(LinearRegression(), sheet_name)
+  File "F:\python\LogisticsDesign\business\sales\base_regress.py", line 11, in __init__
+    df = pd.read_excel(r'./一汽数据处理.xlsx', sheet_name=sheet_name)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: './一汽数据处理.xlsx'
+
+[2024-03-16 21:57:46|17512|ERROR|__init__.py:110]  get_handle error, info is [Errno 2] No such file or directory: './一汽数据处理.xlsx'
+[2024-03-16 21:57:46|17512|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 44, in sales_regress
+    res_dict = predict(method, start, end)
+  File "F:\python\LogisticsDesign\business\sales\sales_predict.py", line 12, in predict
+    model = LinearRegressionPredict()
+  File "F:\python\LogisticsDesign\business\sales\linear_regess.py", line 8, in __init__
+    super().__init__(LinearRegression(), sheet_name)
+  File "F:\python\LogisticsDesign\business\sales\base_regress.py", line 11, in __init__
+    df = pd.read_excel(r'./一汽数据处理.xlsx', sheet_name=sheet_name)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: './一汽数据处理.xlsx'
+
+[2024-03-16 22:00:39|4376|INFO|sales_view.py:42]  使用线性回归预测2024/1~2024/10的汽车销量情况
+[2024-03-16 22:00:39|4376|ERROR|db_connection.py:53]  [Except]transaction function error, info is Cannot save file into a non-existent directory: '..\..\data\prediction'
+[2024-03-16 22:00:39|4376|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 44, in sales_regress
+    res_dict = predict(method, start, end)
+  File "F:\python\LogisticsDesign\business\sales\sales_predict.py", line 25, in predict
+    write_data(data, method, start, end)
+  File "F:\python\LogisticsDesign\business\sales\base_regress.py", line 103, in write_data
+    with pd.ExcelWriter(f"../../data/prediction/{method}预测{start}~{end}.xlsx") as writer:
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_openpyxl.py", line 61, in __init__
+    super().__init__(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1246, in __init__
+    self._handles = get_handle(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '..\..\data\prediction'
+
+[2024-03-16 22:00:39|4376|ERROR|__init__.py:110]  check_parent_directory error, info is Cannot save file into a non-existent directory: '..\..\data\prediction'
+[2024-03-16 22:00:39|4376|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 44, in sales_regress
+    res_dict = predict(method, start, end)
+  File "F:\python\LogisticsDesign\business\sales\sales_predict.py", line 25, in predict
+    write_data(data, method, start, end)
+  File "F:\python\LogisticsDesign\business\sales\base_regress.py", line 103, in write_data
+    with pd.ExcelWriter(f"../../data/prediction/{method}预测{start}~{end}.xlsx") as writer:
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_openpyxl.py", line 61, in __init__
+    super().__init__(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\excel\_base.py", line 1246, in __init__
+    self._handles = get_handle(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '..\..\data\prediction'
+
+[2024-03-16 22:02:11|22784|INFO|sales_view.py:42]  使用线性回归预测2024/1~2024/10的汽车销量情况
+[2024-03-16 22:02:11|22784|ERROR|db_connection.py:53]  [Except]transaction function error, info is 'regress_res' is an invalid keyword argument for RegressPredict
+[2024-03-16 22:02:11|22784|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 45, in sales_regress
+    rp_add = rp(operate=operates, regress_res=str(res_dict),
+  File "<string>", line 4, in __init__
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\state.py", line 566, in _initialize_instance
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\state.py", line 564, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\decl_base.py", line 2142, in _declarative_constructor
+    raise TypeError(
+TypeError: 'regress_res' is an invalid keyword argument for RegressPredict
+
+[2024-03-16 22:02:11|22784|ERROR|__init__.py:110]  _declarative_constructor error, info is 'regress_res' is an invalid keyword argument for RegressPredict
+[2024-03-16 22:02:11|22784|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 45, in sales_regress
+    rp_add = rp(operate=operates, regress_res=str(res_dict),
+  File "<string>", line 4, in __init__
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\state.py", line 566, in _initialize_instance
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\state.py", line 564, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\decl_base.py", line 2142, in _declarative_constructor
+    raise TypeError(
+TypeError: 'regress_res' is an invalid keyword argument for RegressPredict
+
+[2024-03-16 22:02:57|10032|INFO|sales_view.py:42]  使用线性回归预测2024/1~2024/10的汽车销量情况
+[2024-03-16 22:02:57|10032|INFO|base_model.py:32]  session [1966169860288] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:02:57|10032|INFO|base_model.py:91]  session [1966169860288] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:02:57|10032|INFO|sales_view.py:51]  Regress Predict successfully
+[2024-03-16 22:02:57|10032|ERROR|db_connection.py:53]  [Except]transaction function error, info is Object of type ndarray is not JSON serializable
+[2024-03-16 22:02:57|10032|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 52, in sales_regress
+    return jsonify({
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\json\provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\json\provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+  File "F:\python\pythonSDK310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "F:\python\pythonSDK310\lib\json\encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "F:\python\pythonSDK310\lib\json\encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "F:\python\pythonSDK310\lib\json\encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "F:\python\pythonSDK310\lib\json\encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "F:\python\pythonSDK310\lib\json\encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "F:\python\pythonSDK310\lib\json\encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\json\provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type ndarray is not JSON serializable
+
+[2024-03-16 22:02:58|10032|ERROR|__init__.py:110]  _default error, info is Object of type ndarray is not JSON serializable
+[2024-03-16 22:02:58|10032|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 52, in sales_regress
+    return jsonify({
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\json\provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\json\provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+  File "F:\python\pythonSDK310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "F:\python\pythonSDK310\lib\json\encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "F:\python\pythonSDK310\lib\json\encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "F:\python\pythonSDK310\lib\json\encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "F:\python\pythonSDK310\lib\json\encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "F:\python\pythonSDK310\lib\json\encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "F:\python\pythonSDK310\lib\json\encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\json\provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type ndarray is not JSON serializable
+
+[2024-03-16 22:04:03|25708|INFO|sales_view.py:42]  使用线性回归预测2024/1~2024/10的汽车销量情况
+[2024-03-16 22:04:03|25708|INFO|base_model.py:32]  session [2269129681328] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:04:03|25708|INFO|base_model.py:91]  session [2269129681328] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:04:03|25708|INFO|sales_view.py:51]  Regress Predict successfully
+[2024-03-16 22:06:09|26084|INFO|sales_view.py:42]  使用多元线性回归预测2024/2~2024/11的汽车销量情况
+[2024-03-16 22:06:09|26084|INFO|base_model.py:32]  session [1432563673328] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:06:09|26084|INFO|base_model.py:91]  session [1432563673328] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:06:09|26084|INFO|sales_view.py:51]  Regress Predict successfully
+[2024-03-16 22:07:02|4376|INFO|sales_view.py:42]  使用多元线性回归预测2024/2~2024/12的汽车销量情况
+[2024-03-16 22:07:02|4376|INFO|base_model.py:32]  session [2164430203216] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:07:02|4376|INFO|base_model.py:91]  session [2164430203216] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:07:02|4376|ERROR|db_connection.py:53]  [Except]transaction function error, info is list indices must be integers or slices, not str
+[2024-03-16 22:07:02|4376|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 52, in sales_regress
+    json_data["regress_data"] = eval(json_data["regress_data"])
+TypeError: list indices must be integers or slices, not str
+
+[2024-03-16 22:07:02|4376|ERROR|__init__.py:110]  sales_regress error, info is list indices must be integers or slices, not str
+[2024-03-16 22:07:02|4376|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 52, in sales_regress
+    json_data["regress_data"] = eval(json_data["regress_data"])
+TypeError: list indices must be integers or slices, not str
+
+[2024-03-16 22:07:51|23152|INFO|sales_view.py:42]  使用多元线性回归预测2024/2~2024/12的汽车销量情况
+[2024-03-16 22:07:51|23152|INFO|base_model.py:32]  session [2089036802384] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:07:51|23152|INFO|base_model.py:91]  session [2089036802384] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:07:51|23152|INFO|sales_view.py:53]  Regress Predict successfully
+[2024-03-16 22:26:07|26376|INFO|base_model.py:91]  session [1417915018512] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:26:07|26376|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 22:26:26|22548|INFO|sales_view.py:45]  使用随机森林回归预测2024/07~2025/05的汽车销量情况
+[2024-03-16 22:26:27|22548|INFO|base_model.py:32]  session [1417915915552] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:26:27|22548|INFO|base_model.py:91]  session [1417915915552] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:26:27|22548|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-16 22:27:45|21300|INFO|base_model.py:91]  session [1417924670224] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:27:45|21300|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 22:27:54|9592|INFO|sales_view.py:45]  使用弹性网络回归预测2024/02~2024/10的汽车销量情况
+[2024-03-16 22:27:54|9592|INFO|base_model.py:32]  session [1417924666576] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:27:54|9592|INFO|base_model.py:91]  session [1417924666576] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:27:54|9592|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-16 22:28:36|22784|INFO|sales_view.py:45]  使用多元线性回归预测2024/2~2024/11的汽车销量情况
+[2024-03-16 22:28:37|22784|INFO|base_model.py:32]  session [2870064064704] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:28:37|22784|INFO|base_model.py:91]  session [2870064064704] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:28:37|22784|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-16 22:29:00|25900|INFO|sales_view.py:45]  使用支持向量机回归预测2024/02~2024/10的汽车销量情况
+[2024-03-16 22:29:01|25900|INFO|base_model.py:32]  session [2870071788928] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:29:01|25900|INFO|base_model.py:91]  session [2870071788928] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:29:01|25900|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-16 22:29:27|25152|INFO|sales_view.py:45]  使用随机森林回归预测2024/01~2024/06的汽车销量情况
+[2024-03-16 22:29:28|25152|INFO|base_model.py:32]  session [2059398801456] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:29:28|25152|INFO|base_model.py:91]  session [2059398801456] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:29:28|25152|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-16 22:29:59|19532|INFO|base_model.py:91]  session [2059398802224] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:29:59|19532|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 22:31:10|26292|INFO|base_model.py:91]  session [2058990814400] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:31:10|26292|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 22:31:21|21132|INFO|sales_view.py:45]  使用多元线性回归预测2024/06~2024/08的汽车销量情况
+[2024-03-16 22:31:21|21132|INFO|base_model.py:32]  session [2058990819584] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:31:21|21132|INFO|base_model.py:91]  session [2058990819584] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:31:21|21132|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-16 22:32:28|18624|INFO|base_model.py:91]  session [2059406640128] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:32:28|18624|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 22:32:35|8544|INFO|sales_view.py:45]  使用随机森林回归预测2024/07~2024/11的汽车销量情况
+[2024-03-16 22:32:36|8544|INFO|base_model.py:32]  session [2059405361216] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:32:36|8544|INFO|base_model.py:91]  session [2059405361216] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:32:36|8544|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-16 22:33:31|26440|INFO|sales_view.py:45]  使用多元线性回归预测2024/2~2024/11的汽车销量情况
+[2024-03-16 22:33:32|26440|ERROR|db_connection.py:53]  [Except]transaction function error, info is cannot reshape array of size 10 into shape (1,)
+[2024-03-16 22:33:32|26440|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 47, in sales_regress
+    res_dict = predict(method, start, end)
+  File "F:\python\LogisticsDesign\business\sales\sales_predict.py", line 24, in predict
+    data, res_dict = model.predict(start, end)
+  File "F:\python\LogisticsDesign\business\sales\base_regress.py", line 44, in predict
+    res_dict = {"time": data_list, "result": x_predict.reshape(1).tolist()}
+ValueError: cannot reshape array of size 10 into shape (1,)
+
+[2024-03-16 22:33:32|26440|ERROR|__init__.py:110]  predict error, info is cannot reshape array of size 10 into shape (1,)
+[2024-03-16 22:33:32|26440|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 47, in sales_regress
+    res_dict = predict(method, start, end)
+  File "F:\python\LogisticsDesign\business\sales\sales_predict.py", line 24, in predict
+    data, res_dict = model.predict(start, end)
+  File "F:\python\LogisticsDesign\business\sales\base_regress.py", line 44, in predict
+    res_dict = {"time": data_list, "result": x_predict.reshape(1).tolist()}
+ValueError: cannot reshape array of size 10 into shape (1,)
+
+[2024-03-16 22:34:56|18904|INFO|sales_view.py:45]  使用多元线性回归预测2024/2~2024/11的汽车销量情况
+[2024-03-16 22:34:56|18904|INFO|base_model.py:32]  session [1560710490256] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:34:56|18904|INFO|base_model.py:91]  session [1560710490256] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:34:56|18904|ERROR|db_connection.py:53]  [Except]transaction function error, info is name 'array' is not defined
+[2024-03-16 22:34:56|18904|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 56, in sales_regress
+    data["regress_data"] = eval(data["regress_data"])
+  File "<string>", line 1, in <module>
+NameError: name 'array' is not defined
+
+[2024-03-16 22:34:56|18904|ERROR|__init__.py:110]  <module> error, info is name 'array' is not defined
+[2024-03-16 22:34:56|18904|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 56, in sales_regress
+    data["regress_data"] = eval(data["regress_data"])
+  File "<string>", line 1, in <module>
+NameError: name 'array' is not defined
+
+[2024-03-16 22:37:17|21040|INFO|sales_view.py:45]  使用多元线性回归预测2024/2~2024/11的汽车销量情况
+[2024-03-16 22:37:17|21040|INFO|base_model.py:32]  session [1560710490208] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:37:17|21040|INFO|base_model.py:91]  session [1560710490208] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:37:17|21040|ERROR|db_connection.py:53]  [Except]transaction function error, info is name 'array' is not defined
+[2024-03-16 22:37:17|21040|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 56, in sales_regress
+    data["regress_data"] = eval(data["regress_data"])
+  File "<string>", line 1, in <module>
+NameError: name 'array' is not defined
+
+[2024-03-16 22:37:17|21040|ERROR|__init__.py:110]  <module> error, info is name 'array' is not defined
+[2024-03-16 22:37:17|21040|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 56, in sales_regress
+    data["regress_data"] = eval(data["regress_data"])
+  File "<string>", line 1, in <module>
+NameError: name 'array' is not defined
+
+[2024-03-16 22:40:26|25276|INFO|sales_view.py:45]  使用多元线性回归预测2024/2~2024/11的汽车销量情况
+[2024-03-16 22:40:26|25276|INFO|base_model.py:32]  session [2349402827088] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:40:26|25276|INFO|base_model.py:91]  session [2349402827088] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:40:26|25276|ERROR|db_connection.py:53]  [Except]transaction function error, info is dictionary update sequence element #0 has length 1; 2 is required
+[2024-03-16 22:40:26|25276|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 56, in sales_regress
+    data["regress_data"] = dict(data["regress_data"])
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+[2024-03-16 22:40:26|25276|ERROR|__init__.py:110]  sales_regress error, info is dictionary update sequence element #0 has length 1; 2 is required
+[2024-03-16 22:40:26|25276|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 56, in sales_regress
+    data["regress_data"] = dict(data["regress_data"])
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+[2024-03-16 22:41:55|20484|INFO|sales_view.py:45]  使用多元线性回归预测2024/2~2024/11的汽车销量情况
+[2024-03-16 22:41:55|20484|INFO|base_model.py:32]  session [2772193192176] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:41:55|20484|INFO|base_model.py:91]  session [2772193192176] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:41:55|20484|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-16 22:42:14|19476|INFO|sales_view.py:45]  使用多元线性回归预测2024/2~2024/12的汽车销量情况
+[2024-03-16 22:42:14|19476|INFO|base_model.py:32]  session [1373857507568] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:42:14|19476|INFO|base_model.py:91]  session [1373857507568] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:42:14|19476|ERROR|db_connection.py:53]  [Except]transaction function error, info is dictionary update sequence element #0 has length 1; 2 is required
+[2024-03-16 22:42:14|19476|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 56, in sales_regress
+    data["regress_data"] = dict(data["regress_data"])
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+[2024-03-16 22:42:14|19476|ERROR|__init__.py:110]  sales_regress error, info is dictionary update sequence element #0 has length 1; 2 is required
+[2024-03-16 22:42:14|19476|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 56, in sales_regress
+    data["regress_data"] = dict(data["regress_data"])
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+[2024-03-16 22:42:32|292|INFO|sales_view.py:45]  使用多元线性回归预测2024/2~2024/12的汽车销量情况
+[2024-03-16 22:42:33|292|INFO|base_model.py:32]  session [2692320143552] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:42:33|292|INFO|base_model.py:91]  session [2692320143552] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:42:33|292|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-16 22:43:48|25724|INFO|sales_view.py:45]  使用随机森林回归预测2024/03~2024/11的汽车销量情况
+[2024-03-16 22:43:48|25724|INFO|base_model.py:32]  session [2692327883392] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:43:48|25724|INFO|base_model.py:91]  session [2692327883392] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:43:48|25724|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-16 22:43:58|26320|INFO|sales_view.py:45]  使用线性回归预测2024/03~2024/11的汽车销量情况
+[2024-03-16 22:43:58|26320|INFO|base_model.py:32]  session [2692326704704] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:43:58|26320|INFO|base_model.py:91]  session [2692326704704] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:43:58|26320|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-16 22:44:51|24276|INFO|sales_view.py:45]  使用多元线性回归预测2024/03~2024/11的汽车销量情况
+[2024-03-16 22:44:51|24276|INFO|base_model.py:32]  session [2692329404544] and [RegressPredict] has an operator: ADD.
+[2024-03-16 22:44:51|24276|INFO|base_model.py:91]  session [2692329404544] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:44:51|24276|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-16 22:54:51|23976|INFO|base_model.py:91]  session [2692326505392] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:54:51|23976|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 22:55:15|12616|INFO|base_model.py:91]  session [2692329397296] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:55:15|12616|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 22:56:54|25616|INFO|base_model.py:91]  session [2692328049680] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:56:54|25616|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 22:59:50|6544|INFO|base_model.py:91]  session [2692328052656] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:59:50|6544|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 22:59:50|19148|INFO|base_model.py:91]  session [2692329079376] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 22:59:50|19148|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:00:14|25584|INFO|base_model.py:91]  session [2692326505392] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:00:14|25584|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:06:16|25396|INFO|base_model.py:91]  session [2692326588864] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:06:16|25396|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:06:59|24148|INFO|base_model.py:91]  session [2692326503520] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:06:59|24148|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:08:18|26004|INFO|base_model.py:91]  session [2692328056928] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:08:18|26004|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:08:44|21768|INFO|base_model.py:91]  session [2692328049680] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:08:44|21768|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:08:56|12876|INFO|base_model.py:91]  session [2692327896256] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:08:56|12876|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:09:39|24408|INFO|sales_view.py:45]  使用支持向量机回归预测2024/01~2024/11的汽车销量情况
+[2024-03-16 23:09:39|24408|INFO|base_model.py:32]  session [2692326589584] and [RegressPredict] has an operator: ADD.
+[2024-03-16 23:09:39|24408|INFO|base_model.py:91]  session [2692326589584] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:09:39|24408|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-16 23:09:57|18484|INFO|base_model.py:91]  session [2692326597840] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:09:57|18484|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:10:03|26488|INFO|sales_view.py:45]  使用弹性网络回归预测2024/06~2024/10的汽车销量情况
+[2024-03-16 23:10:03|26488|INFO|base_model.py:32]  session [2692326594960] and [RegressPredict] has an operator: ADD.
+[2024-03-16 23:10:03|26488|INFO|base_model.py:91]  session [2692326594960] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:10:03|26488|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-16 23:12:34|18580|INFO|base_model.py:91]  session [2692328056160] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:12:34|18580|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:12:37|17848|INFO|base_model.py:91]  session [2692364505568] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:12:37|17848|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:16:54|25896|INFO|base_model.py:91]  session [2692364501824] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:16:54|25896|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:18:54|23740|INFO|base_model.py:91]  session [2692365764064] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:18:54|23740|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:18:58|25888|INFO|base_model.py:91]  session [2692365764016] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:18:58|25888|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:19:26|25548|INFO|base_model.py:91]  session [2692365765792] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:19:26|25548|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:19:37|24924|INFO|base_model.py:91]  session [2692364505184] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:19:37|24924|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:19:52|26344|INFO|base_model.py:91]  session [2692364504176] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:19:52|26344|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:21:10|26164|INFO|base_model.py:91]  session [2692365768528] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:21:10|26164|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:21:16|26396|INFO|base_model.py:91]  session [2692328058992] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:21:16|26396|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:23:43|15852|INFO|sales_view.py:45]  使用多元线性回归预测2024/01~2024/05的汽车销量情况
+[2024-03-16 23:23:44|15852|INFO|base_model.py:32]  session [2692365764064] and [RegressPredict] has an operator: ADD.
+[2024-03-16 23:23:44|15852|INFO|base_model.py:91]  session [2692365764064] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:23:44|15852|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-16 23:23:51|26200|INFO|sales_view.py:45]  使用多元线性回归预测2024/09~2024/12的汽车销量情况
+[2024-03-16 23:23:51|26200|INFO|base_model.py:32]  session [2692326595584] and [RegressPredict] has an operator: ADD.
+[2024-03-16 23:23:51|26200|INFO|base_model.py:91]  session [2692326595584] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:23:51|26200|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-16 23:23:59|17264|INFO|base_model.py:91]  session [2692367642208] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:23:59|17264|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:24:30|19968|INFO|base_model.py:91]  session [2692365774816] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:24:30|19968|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:24:57|980|INFO|base_model.py:91]  session [2692364502784] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:24:57|980|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:25:23|18616|INFO|base_model.py:91]  session [2692364504704] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:25:23|18616|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-16 23:27:47|15716|INFO|base_model.py:91]  session [2692365899120] and [RegressPredict] has an operator: QUERY.
+[2024-03-16 23:27:47|15716|INFO|sales_view.py:28]  Regress Predict init successfully

@@ -1,0 +1,94 @@
+[2024-05-12 12:17:07|23380|INFO|base_model.py:91]  session [2681579287456] and [RegressPredict] has an operator: QUERY.
+[2024-05-12 12:17:07|23380|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-05-12 12:17:07|11660|INFO|base_model.py:91]  session [2681579289040] and [RegressPredict] has an operator: QUERY.
+[2024-05-12 12:17:07|11660|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-05-12 12:18:02|2172|INFO|base_model.py:91]  session [2681579283856] and [RegressPredict] has an operator: QUERY.
+[2024-05-12 12:18:02|2172|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-05-12 12:18:02|14972|INFO|base_model.py:91]  session [2681579283376] and [RegressPredict] has an operator: QUERY.
+[2024-05-12 12:18:02|14972|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-05-12 12:19:55|20568|INFO|base_model.py:91]  session [2681581687792] and [RegressPredict] has an operator: QUERY.
+[2024-05-12 12:19:55|20568|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-05-12 12:19:55|5376|INFO|base_model.py:91]  session [2681581417616] and [RegressPredict] has an operator: QUERY.
+[2024-05-12 12:19:55|5376|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-05-12 12:20:10|9104|INFO|base_model.py:59]  session [2681581417472] and [RegressPredict] has an operator: DELETE.
+[2024-05-12 12:20:10|9104|INFO|sales_view.py:78]  Regress Predict delete successfully
+[2024-05-12 12:20:10|9104|INFO|sales_view.py:86]  F:\python\LogisticsDesign\data/prediction\循环神经网络预测2024-04~2025-03.xlsx 已被删除
+[2024-05-12 12:20:21|19276|INFO|sales_view.py:46]  使用支持向量机回归预测2024/02~2024/12的汽车销量情况
+[2024-05-12 12:20:21|19276|INFO|base_model.py:32]  session [2681581698736] and [RegressPredict] has an operator: ADD.
+[2024-05-12 12:20:21|19276|INFO|base_model.py:91]  session [2681581698736] and [RegressPredict] has an operator: QUERY.
+[2024-05-12 12:20:21|19276|INFO|sales_view.py:58]  Regress Predict successfully
+[2024-05-12 12:22:48|17420|INFO|base_model.py:91]  session [2681588227600] and [PartOptimize] has an operator: QUERY.
+[2024-05-12 12:22:48|17420|INFO|part_view.py:102]  part optimize successfully
+[2024-05-12 12:23:00|22872|INFO|base_model.py:91]  session [2681588233744] and [RegressPredict] has an operator: QUERY.
+[2024-05-12 12:23:00|22872|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-05-12 21:58:51|20524|INFO|base_model.py:91]  session [2226325205824] and [Part] has an operator: QUERY.
+[2024-05-12 21:58:51|20524|INFO|part_view.py:33]  part init successfully
+[2024-05-12 21:58:52|11596|INFO|base_model.py:91]  session [2226325204960] and [Part] has an operator: QUERY.
+[2024-05-12 21:58:52|11596|INFO|part_view.py:33]  part init successfully
+[2024-05-12 21:59:18|20780|INFO|base_model.py:91]  session [2226327619184] and [Part] has an operator: QUERY.
+[2024-05-12 21:59:18|20780|INFO|part_view.py:83]  part search successfully
+[2024-05-12 21:59:38|19300|INFO|base_model.py:91]  session [2226327627056] and [Part] has an operator: QUERY.
+[2024-05-12 21:59:38|19300|INFO|part_view.py:83]  part search successfully
+[2024-05-12 22:00:00|24932|INFO|base_model.py:91]  session [2226327624080] and [Part] has an operator: QUERY.
+[2024-05-12 22:00:00|24932|INFO|part_view.py:33]  part init successfully
+[2024-05-12 22:00:30|26468|INFO|base_model.py:91]  session [2226327622496] and [Part] has an operator: QUERY.
+[2024-05-12 22:00:30|26468|INFO|part_view.py:83]  part search successfully
+[2024-05-12 22:00:45|13320|INFO|base_model.py:91]  session [2226327620192] and [Part] has an operator: QUERY.
+[2024-05-12 22:00:45|13320|INFO|part_view.py:83]  part search successfully
+[2024-05-12 22:00:46|7508|INFO|base_model.py:91]  session [2226327628304] and [Part] has an operator: QUERY.
+[2024-05-12 22:00:46|7508|INFO|part_view.py:33]  part init successfully
+[2024-05-12 22:01:55|25524|INFO|base_model.py:91]  session [2226327627872] and [Part] has an operator: QUERY.
+[2024-05-12 22:01:55|25524|INFO|part_view.py:83]  part search successfully
+[2024-05-12 22:01:58|14324|INFO|base_model.py:91]  session [2226327626864] and [Part] has an operator: QUERY.
+[2024-05-12 22:01:58|14324|INFO|part_view.py:33]  part init successfully
+[2024-05-12 22:23:37|27780|INFO|base_model.py:91]  session [2226327619280] and [Vehicle] has an operator: QUERY.
+[2024-05-12 22:23:37|27780|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-05-12 22:23:38|27572|INFO|base_model.py:91]  session [2226327621776] and [Vehicle] has an operator: QUERY.
+[2024-05-12 22:23:38|27572|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-05-12 22:23:59|27500|INFO|base_model.py:91]  session [2226327620336] and [Vehicle] has an operator: QUERY.
+[2024-05-12 22:23:59|27500|INFO|vehicle_view.py:50]  Vehicle explore successfully
+[2024-05-12 22:24:01|26840|INFO|base_model.py:91]  session [2226327623360] and [Vehicle] has an operator: QUERY.
+[2024-05-12 22:24:01|26840|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-05-12 22:26:41|26992|INFO|base_model.py:91]  session [2226327626384] and [Transport] has an operator: QUERY.
+[2024-05-12 22:26:41|26992|INFO|vehicle_view.py:65]  transport init successfully
+[2024-05-12 22:26:42|23616|INFO|base_model.py:91]  session [2226327621632] and [Transport] has an operator: QUERY.
+[2024-05-12 22:26:42|23616|INFO|vehicle_view.py:65]  transport init successfully
+[2024-05-12 22:27:03|27840|INFO|base_model.py:91]  session [2226326686496] and [Transport] has an operator: QUERY.
+[2024-05-12 22:27:03|27840|INFO|vehicle_view.py:94]  transport search successfully
+[2024-05-12 22:27:14|27216|INFO|base_model.py:91]  session [2226327632240] and [Transport] has an operator: QUERY.
+[2024-05-12 22:27:14|27216|INFO|vehicle_view.py:65]  transport init successfully
+[2024-05-12 22:27:46|27324|INFO|base_model.py:91]  session [2226327626096] and [Transport] has an operator: QUERY.
+[2024-05-12 22:27:46|27324|INFO|vehicle_view.py:94]  transport search successfully
+[2024-05-12 22:27:51|12592|INFO|base_model.py:91]  session [2226326691200] and [Transport] has an operator: QUERY.
+[2024-05-12 22:27:51|12592|INFO|vehicle_view.py:65]  transport init successfully
+[2024-05-12 22:39:06|11712|INFO|base_model.py:91]  session [2226326694416] and [RegressPredict] has an operator: QUERY.
+[2024-05-12 22:39:06|11712|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-05-12 22:39:06|10460|INFO|base_model.py:91]  session [2226327629840] and [RegressPredict] has an operator: QUERY.
+[2024-05-12 22:39:06|10460|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-05-12 22:39:24|27052|INFO|base_model.py:59]  session [2226326695424] and [RegressPredict] has an operator: DELETE.
+[2024-05-12 22:39:24|27052|INFO|sales_view.py:78]  Regress Predict delete successfully
+[2024-05-12 22:39:24|27052|INFO|sales_view.py:86]  F:\python\LogisticsDesign\data/prediction\随机森林回归预测2024-03~2024-12.xlsx 已被删除
+[2024-05-12 22:39:34|20976|INFO|sales_view.py:46]  使用随机森林回归预测2024/03~2024/12的汽车销量情况
+[2024-05-12 22:39:35|20976|INFO|base_model.py:32]  session [2226326689520] and [RegressPredict] has an operator: ADD.
+[2024-05-12 22:39:35|20976|INFO|base_model.py:91]  session [2226326689520] and [RegressPredict] has an operator: QUERY.
+[2024-05-12 22:39:35|20976|INFO|sales_view.py:58]  Regress Predict successfully
+[2024-05-12 22:43:55|24096|INFO|base_model.py:91]  session [2226327622112] and [RegressPredict] has an operator: QUERY.
+[2024-05-12 22:43:55|24096|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-05-12 22:44:20|24620|INFO|base_model.py:91]  session [2226327623024] and [PartOptimize] has an operator: QUERY.
+[2024-05-12 22:44:20|24620|INFO|part_view.py:102]  part optimize successfully
+[2024-05-12 22:46:16|28128|INFO|base_model.py:91]  session [2226334352816] and [PartOptimize] has an operator: QUERY.
+[2024-05-12 22:46:16|28128|INFO|part_view.py:102]  part optimize successfully
+[2024-05-12 22:53:02|26404|INFO|base_model.py:91]  session [2226334361696] and [Transport] has an operator: QUERY.
+[2024-05-12 22:53:02|26404|INFO|vehicle_view.py:65]  transport init successfully
+[2024-05-12 22:53:02|8460|INFO|base_model.py:91]  session [2226334361168] and [Transport] has an operator: QUERY.
+[2024-05-12 22:53:02|8460|INFO|vehicle_view.py:65]  transport init successfully
+[2024-05-12 23:03:28|24492|INFO|base_model.py:91]  session [2226334357040] and [TransportCost] has an operator: QUERY.
+[2024-05-12 23:03:28|24492|INFO|vehicle_view.py:125]  transport cost successfully
+[2024-05-12 23:03:28|25672|INFO|base_model.py:91]  session [2226334366832] and [TransportCost] has an operator: QUERY.
+[2024-05-12 23:03:28|25672|INFO|vehicle_view.py:125]  transport cost successfully
+[2024-05-12 23:03:44|27436|INFO|base_model.py:91]  session [2226334355408] and [TransportCost] has an operator: QUERY.
+[2024-05-12 23:03:44|27436|INFO|vehicle_view.py:125]  transport cost successfully
+[2024-05-12 23:07:16|13812|INFO|base_model.py:91]  session [2226335274448] and [TransportCost] has an operator: QUERY.
+[2024-05-12 23:07:16|13812|INFO|vehicle_view.py:125]  transport cost successfully
+[2024-05-12 23:07:37|27248|INFO|base_model.py:91]  session [2226335276272] and [EmptyCar] has an operator: QUERY.
+[2024-05-12 23:07:37|27248|INFO|vehicle_view.py:168]  Empty car search successfully

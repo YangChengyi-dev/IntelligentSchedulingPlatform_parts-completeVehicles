@@ -1,0 +1,60 @@
+[2024-04-28 21:58:16|24780|INFO|base_model.py:91]  session [2434086070224] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 21:58:17|24780|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 22:06:28|11292|INFO|base_model.py:91]  session [2434086074064] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 22:06:28|11292|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 22:07:52|6456|INFO|base_model.py:91]  session [2433678295536] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 22:07:52|6456|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 22:09:26|26572|INFO|base_model.py:91]  session [2433678299232] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 22:09:26|26572|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 22:09:34|4384|INFO|base_model.py:91]  session [2434086074976] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 22:09:34|4384|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 22:10:06|27080|INFO|base_model.py:91]  session [2434086067968] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 22:10:06|27080|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 22:11:26|23212|INFO|base_model.py:91]  session [2433678295776] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 22:11:26|23212|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 22:29:52|17008|INFO|base_model.py:91]  session [2433678296688] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 22:29:52|17008|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 22:36:35|22724|INFO|base_model.py:91]  session [2434088158736] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 22:36:35|22724|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 22:37:29|22668|INFO|base_model.py:91]  session [2433678307872] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 22:37:29|22668|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 22:43:05|19932|INFO|base_model.py:91]  session [2433678305472] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 22:43:05|19932|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 22:43:34|3748|INFO|base_model.py:91]  session [2433678302544] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 22:43:34|3748|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 22:44:19|28332|INFO|base_model.py:91]  session [2433678308112] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 22:44:19|28332|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 22:45:51|23320|INFO|base_model.py:91]  session [2433678297888] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 22:45:51|23320|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 22:47:11|22612|INFO|base_model.py:91]  session [2433678297072] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 22:47:11|22612|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 22:47:24|11052|INFO|base_model.py:91]  session [2434088617728] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 22:47:24|11052|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 22:59:34|26804|INFO|base_model.py:91]  session [2433678307824] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 22:59:34|26804|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 23:00:07|25660|INFO|base_model.py:91]  session [2433678309360] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 23:00:07|25660|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 23:04:12|25040|INFO|base_model.py:91]  session [2433678310320] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 23:04:12|25040|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 23:05:36|14768|INFO|base_model.py:91]  session [2434088616096] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 23:05:36|14768|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 23:06:35|28400|INFO|base_model.py:91]  session [2433678308880] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 23:06:35|28400|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 23:07:18|20796|INFO|base_model.py:91]  session [2433678309600] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 23:07:18|20796|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 23:07:53|8952|INFO|base_model.py:91]  session [2434088621184] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 23:07:53|8952|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 23:25:19|296|INFO|base_model.py:91]  session [2434088620656] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 23:25:19|296|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 23:25:24|16544|INFO|base_model.py:91]  session [2433678300240] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 23:25:24|16544|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 23:25:32|13220|INFO|base_model.py:91]  session [2433678309936] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 23:25:32|13220|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 23:25:36|1884|INFO|base_model.py:91]  session [2434088623392] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 23:25:36|1884|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 23:25:40|24844|INFO|base_model.py:91]  session [2434088616480] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 23:25:40|24844|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 23:26:00|19880|INFO|base_model.py:91]  session [2434088617824] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 23:26:00|19880|INFO|part_view.py:100]  part optimize successfully
+[2024-04-28 23:26:09|21868|INFO|base_model.py:91]  session [2433678309120] and [PartOptimize] has an operator: QUERY.
+[2024-04-28 23:26:09|21868|INFO|part_view.py:100]  part optimize successfully

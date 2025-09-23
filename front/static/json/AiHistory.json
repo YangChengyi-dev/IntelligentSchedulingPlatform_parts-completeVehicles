@@ -1,0 +1,74 @@
+[
+    {
+        "userInfo": "admin",
+        "history": [
+            {
+                "name": "小邮",
+                "time": "2024-11-20 10:00:00",
+                "content": [
+                    {
+                        "type": "received",
+                        "content": "您好，我是智能助手小邮，有任何问题可以向我提问哦!",
+                        "isImage": false
+                    },
+                    {
+                        "type": "sent",
+                        "content": "请你解释一下多式联运常用的作业方式",
+                        "isImage": false
+                    },
+                    {
+                        "type": "received",
+                        "content": "多式联运常用的作业方式有：1. 集装箱运输：将货物装载到集装箱中，通过铁路、公路、水路或航空运输进行运输。",
+                        "isImage": false
+                    }
+                ]
+            },
+            {
+                "name": "小邮",
+                "time": "2024-11-21 10:01:00",
+                "content": [
+                    {
+                        "type": "received",
+                        "content": "您好，我是智能助手小邮，有任何问题可以向我提问哦!",
+                        "isImage": false
+                    },
+                    {
+                        "type": "sent",
+                        "content": "介绍一下快递的知识点吧",
+                        "isImage": false
+                    },
+                    {
+                        "type": "received",
+                        "content": "多式联运常用的作业方式有：1. 集装箱运输：将货物装载到集装箱中，通过铁路、公路、水路或航空运输进行运输。",
+                        "isImage": false
+                    }
+                ]
+            },
+            {
+                "name": "小邮",
+                "time": "2024-11-22 10:01:00",
+                "content": [
+                    {
+                        "type": "received",
+                        "content": "您好，我是智能助手小邮，有任何问题可以向我提问哦!",
+                        "isImage": false
+                    },
+                    {
+                        "type": "sent",
+                        "content": "介绍一下物流的知识点",
+                        "isImage": false
+                    },
+                    {
+                        "type": "received",
+                        "content": "多式联运常用的作业方式有：1. 集装箱运输：将货物装载到集装箱中，通过铁路、公路、水路或航空运输进行运输。",
+                        "isImage": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "userInfo": "user",
+        "history": []
+    }
+]

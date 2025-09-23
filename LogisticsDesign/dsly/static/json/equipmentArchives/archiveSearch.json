@@ -1,0 +1,47 @@
+{
+    "data":[
+        {
+            "UNIT_NAME":"江苏省",
+            "MARKET_NAME":"南京市",
+            "TYPE_NAME":"栖霞区",
+            "CAPACITY":"南京市栖霞区尚东广场站",
+            "START_TIME":"2号桩",
+            "END_TIME":"长园深瑞继保自动化有限公司",
+            "FILE_NAME":"CYSR500V60kW",
+            "YEAR":"2018-11-01 15:59:18"
+
+        },
+        {
+            "UNIT_NAME":"江苏省",
+            "MARKET_NAME":"南京市",
+            "TYPE_NAME":"六合区",
+            "CAPACITY":"长深高速六合服务区快",
+            "START_TIME":"4号充电桩",
+            "END_TIME":"平高集团有限公司",
+            "FILE_NAME":"PGJT500V120kW",
+            "YEAR":"2018-04-10 14:37:41"
+        },
+        {
+            "UNIT_NAME":"江苏省",
+            "MARKET_NAME":"南京市",
+            "TYPE_NAME":"栖霞区",
+            "CAPACITY":"南京市栖霞区尚东广场站",
+            "START_TIME":"3号桩",
+            "END_TIME":"长园深瑞继保自动化有限公司",
+            "FILE_NAME":"CYSR500V60kW",
+            "YEAR":"2018-11-01 15:59:17"
+
+        },
+        {
+            "UNIT_NAME":"江苏省",
+            "MARKET_NAME":"南京市",
+            "TYPE_NAME":"栖霞区",
+            "CAPACITY":"南京市栖霞区尚东广场站",
+            "START_TIME":"7号桩",
+            "END_TIME":"长园深瑞继保自动化有限公司",
+            "FILE_NAME":"CYSR500V60kW",
+            "YEAR":"2018-11-01 15:59:21"
+
+        }
+    ]
+}

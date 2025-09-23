@@ -1,0 +1,92 @@
+[2024-03-24 09:36:52|21088|INFO|base_model.py:91]  session [1923446457968] and [RegressPredict] has an operator: QUERY.
+[2024-03-24 09:36:52|21088|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-24 09:36:53|12396|INFO|base_model.py:91]  session [1923446460848] and [RegressPredict] has an operator: QUERY.
+[2024-03-24 09:36:53|12396|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-24 09:37:44|8228|INFO|sales_view.py:45]  使用循环神经网络预测2024/03~2024/03的汽车销量情况
+[2024-03-24 09:37:45|8228|INFO|base_model.py:32]  session [1923038167776] and [RegressPredict] has an operator: ADD.
+[2024-03-24 09:37:45|8228|INFO|base_model.py:91]  session [1923038167776] and [RegressPredict] has an operator: QUERY.
+[2024-03-24 09:37:45|8228|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-24 09:37:57|488|INFO|base_model.py:59]  session [1923455110112] and [RegressPredict] has an operator: DELETE.
+[2024-03-24 09:37:57|488|INFO|sales_view.py:77]  Regress Predict delete successfully
+[2024-03-24 09:37:57|488|INFO|sales_view.py:85]  F:\python\LogisticsDesign\data/prediction\循环神经网络预测2024-03~2024-03.xlsx 已被删除
+[2024-03-24 09:38:53|16068|INFO|sales_view.py:45]  使用循环神经网络预测2024/03~2025/03的汽车销量情况
+[2024-03-24 09:38:53|16068|INFO|base_model.py:32]  session [1923454826384] and [RegressPredict] has an operator: ADD.
+[2024-03-24 09:38:53|16068|INFO|base_model.py:91]  session [1923454826384] and [RegressPredict] has an operator: QUERY.
+[2024-03-24 09:38:53|16068|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-24 09:40:00|15056|INFO|base_model.py:91]  session [1923455121296] and [RegressPredict] has an operator: QUERY.
+[2024-03-24 09:40:00|15056|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-24 09:40:04|21456|INFO|base_model.py:91]  session [1923455107136] and [Part] has an operator: QUERY.
+[2024-03-24 09:40:04|21456|INFO|part_view.py:33]  part init successfully
+[2024-03-24 09:40:04|19788|INFO|base_model.py:91]  session [1923455112272] and [Part] has an operator: QUERY.
+[2024-03-24 09:40:04|19788|INFO|part_view.py:33]  part init successfully
+[2024-03-24 09:43:25|17836|INFO|base_model.py:91]  session [1923445963456] and [PartOptimize] has an operator: QUERY.
+[2024-03-24 09:43:25|17836|INFO|part_view.py:100]  part optimize successfully
+[2024-03-24 09:44:53|21756|INFO|base_model.py:91]  session [1923455572224] and [Vehicle] has an operator: QUERY.
+[2024-03-24 09:44:53|21756|INFO|vehicle_view.py:23]  Vehicle init successfully
+[2024-03-24 09:44:53|21796|INFO|base_model.py:91]  session [1923455120672] and [Vehicle] has an operator: QUERY.
+[2024-03-24 09:44:53|21796|INFO|vehicle_view.py:23]  Vehicle init successfully
+[2024-03-24 09:45:10|21800|INFO|base_model.py:91]  session [1923455115344] and [Transport] has an operator: QUERY.
+[2024-03-24 09:45:10|21800|INFO|vehicle_view.py:60]  transport init successfully
+[2024-03-24 09:45:11|22096|INFO|base_model.py:91]  session [1923455107136] and [Transport] has an operator: QUERY.
+[2024-03-24 09:45:11|22096|INFO|vehicle_view.py:60]  transport init successfully
+[2024-03-24 11:52:21|8576|INFO|base_model.py:91]  session [2645573616544] and [RegressPredict] has an operator: QUERY.
+[2024-03-24 11:52:21|8576|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-24 11:52:21|14712|INFO|base_model.py:91]  session [2645573618416] and [RegressPredict] has an operator: QUERY.
+[2024-03-24 11:52:21|14712|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-24 11:52:28|23244|INFO|sales_view.py:45]  使用线性回归预测2024/01~2024/12的汽车销量情况
+[2024-03-24 11:52:28|23244|INFO|base_model.py:32]  session [2645574484032] and [RegressPredict] has an operator: ADD.
+[2024-03-24 11:52:28|23244|INFO|base_model.py:91]  session [2645574484032] and [RegressPredict] has an operator: QUERY.
+[2024-03-24 11:52:28|23244|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-24 11:53:15|21768|INFO|sales_view.py:45]  使用多元线性回归预测2024-01~2024-12的汽车销量情况
+[2024-03-24 11:53:15|21768|ERROR|db_connection.py:53]  [Except]transaction function error, info is invalid literal for int() with base 10: '2024-01'
+[2024-03-24 11:53:15|21768|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 47, in sales_regress
+    res_dict = predict(method, start, end)
+  File "F:\python\LogisticsDesign\business\sales\sales_predict.py", line 24, in predict
+    data, res_dict = model.predict(start, end)
+  File "F:\python\LogisticsDesign\business\sales\base_regress.py", line 39, in predict
+    start_id = handle_date(self.last_date, self.last_time_id, start_time)
+  File "F:\python\LogisticsDesign\business\sales\base_regress.py", line 74, in handle_date
+    start_year = int(start_date[0])
+ValueError: invalid literal for int() with base 10: '2024-01'
+
+[2024-03-24 11:53:15|21768|ERROR|__init__.py:110]  handle_date error, info is invalid literal for int() with base 10: '2024-01'
+[2024-03-24 11:53:15|21768|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "F:\python\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 47, in sales_regress
+    res_dict = predict(method, start, end)
+  File "F:\python\LogisticsDesign\business\sales\sales_predict.py", line 24, in predict
+    data, res_dict = model.predict(start, end)
+  File "F:\python\LogisticsDesign\business\sales\base_regress.py", line 39, in predict
+    start_id = handle_date(self.last_date, self.last_time_id, start_time)
+  File "F:\python\LogisticsDesign\business\sales\base_regress.py", line 74, in handle_date
+    start_year = int(start_date[0])
+ValueError: invalid literal for int() with base 10: '2024-01'
+
+[2024-03-24 11:53:42|14052|INFO|base_model.py:91]  session [2645581049488] and [RegressPredict] has an operator: QUERY.
+[2024-03-24 11:53:42|14052|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-24 11:54:02|23196|INFO|sales_view.py:45]  使用多元线性回归预测2024/01~2024/12的汽车销量情况
+[2024-03-24 11:54:02|23196|INFO|base_model.py:32]  session [2645581344304] and [RegressPredict] has an operator: ADD.
+[2024-03-24 11:54:02|23196|INFO|base_model.py:91]  session [2645581344304] and [RegressPredict] has an operator: QUERY.
+[2024-03-24 11:54:02|23196|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-24 11:55:02|2084|INFO|sales_view.py:45]  使用随机森林回归预测2024/01~2024/12的汽车销量情况
+[2024-03-24 11:55:02|2084|INFO|base_model.py:32]  session [2645581049248] and [RegressPredict] has an operator: ADD.
+[2024-03-24 11:55:02|2084|INFO|base_model.py:91]  session [2645581049248] and [RegressPredict] has an operator: QUERY.
+[2024-03-24 11:55:02|2084|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-24 11:55:32|23180|INFO|sales_view.py:45]  使用弹性网络回归预测2024/01~2024/12的汽车销量情况
+[2024-03-24 11:55:32|23180|INFO|base_model.py:32]  session [2645584577296] and [RegressPredict] has an operator: ADD.
+[2024-03-24 11:55:32|23180|INFO|base_model.py:91]  session [2645584577296] and [RegressPredict] has an operator: QUERY.
+[2024-03-24 11:55:32|23180|INFO|sales_view.py:57]  Regress Predict successfully
+[2024-03-24 11:56:00|23088|INFO|sales_view.py:45]  使用支持向量机回归预测2024/01~2024/12的汽车销量情况
+[2024-03-24 11:56:00|23088|INFO|base_model.py:32]  session [2645581049776] and [RegressPredict] has an operator: ADD.
+[2024-03-24 11:56:00|23088|INFO|base_model.py:91]  session [2645581049776] and [RegressPredict] has an operator: QUERY.
+[2024-03-24 11:56:00|23088|INFO|sales_view.py:57]  Regress Predict successfully

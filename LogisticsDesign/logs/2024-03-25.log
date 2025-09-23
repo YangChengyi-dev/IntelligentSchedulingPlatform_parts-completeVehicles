@@ -1,0 +1,12 @@
+[2024-03-25 10:24:59|21320|INFO|base_model.py:91]  session [1752707874480] and [Vehicle] has an operator: QUERY.
+[2024-03-25 10:24:59|21320|INFO|vehicle_view.py:23]  Vehicle init successfully
+[2024-03-25 10:24:59|13008|INFO|base_model.py:91]  session [1752708334304] and [Vehicle] has an operator: QUERY.
+[2024-03-25 10:24:59|13008|INFO|vehicle_view.py:23]  Vehicle init successfully
+[2024-03-25 10:25:29|10008|INFO|base_model.py:91]  session [1752710136112] and [Transport] has an operator: QUERY.
+[2024-03-25 10:25:29|10008|INFO|vehicle_view.py:60]  transport init successfully
+[2024-03-25 10:25:29|21164|INFO|base_model.py:91]  session [1752709772960] and [Transport] has an operator: QUERY.
+[2024-03-25 10:25:29|21164|INFO|vehicle_view.py:60]  transport init successfully
+[2024-03-25 10:25:59|19080|INFO|base_model.py:91]  session [1752710143936] and [TransportCost] has an operator: QUERY.
+[2024-03-25 10:25:59|19080|INFO|vehicle_view.py:91]  transport cost successfully
+[2024-03-25 10:25:59|22464|INFO|base_model.py:91]  session [1752710144032] and [TransportCost] has an operator: QUERY.
+[2024-03-25 10:25:59|22464|INFO|vehicle_view.py:91]  transport cost successfully

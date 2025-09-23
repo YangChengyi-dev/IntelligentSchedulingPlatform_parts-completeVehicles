@@ -1,0 +1,30 @@
+[2024-04-08 21:27:28|19780|INFO|base_model.py:91]  session [1643443391072] and [TransportCost] has an operator: QUERY.
+[2024-04-08 21:27:28|19780|INFO|vehicle_view.py:93]  transport cost successfully
+[2024-04-08 21:31:53|3508|INFO|base_model.py:91]  session [1643445152176] and [TransportCost] has an operator: QUERY.
+[2024-04-08 21:31:53|3508|INFO|vehicle_view.py:93]  transport cost successfully
+[2024-04-08 21:31:53|21584|INFO|base_model.py:91]  session [1643445148672] and [TransportCost] has an operator: QUERY.
+[2024-04-08 21:31:53|21584|INFO|vehicle_view.py:93]  transport cost successfully
+[2024-04-08 21:31:58|21916|INFO|base_model.py:91]  session [1643445150400] and [Transport] has an operator: QUERY.
+[2024-04-08 21:31:58|21916|INFO|vehicle_view.py:62]  transport init successfully
+[2024-04-08 21:31:59|15468|INFO|base_model.py:91]  session [1643445155248] and [Transport] has an operator: QUERY.
+[2024-04-08 21:31:59|15468|INFO|vehicle_view.py:62]  transport init successfully
+[2024-04-08 21:32:03|21200|INFO|base_model.py:91]  session [1643445149920] and [Vehicle] has an operator: QUERY.
+[2024-04-08 21:32:03|21200|INFO|vehicle_view.py:25]  Vehicle init successfully
+[2024-04-08 21:32:04|4032|INFO|base_model.py:91]  session [1643443394960] and [Vehicle] has an operator: QUERY.
+[2024-04-08 21:32:04|4032|INFO|vehicle_view.py:25]  Vehicle init successfully
+[2024-04-08 21:33:25|20432|INFO|base_model.py:91]  session [1643445474768] and [RegressPredict] has an operator: QUERY.
+[2024-04-08 21:33:25|20432|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-04-08 21:33:26|16648|INFO|base_model.py:91]  session [1643445149392] and [RegressPredict] has an operator: QUERY.
+[2024-04-08 21:33:26|16648|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-04-08 21:33:40|22388|INFO|base_model.py:91]  session [1643445156688] and [Part] has an operator: QUERY.
+[2024-04-08 21:33:40|22388|INFO|part_view.py:33]  part init successfully
+[2024-04-08 21:33:41|19940|INFO|base_model.py:91]  session [1643445148384] and [Part] has an operator: QUERY.
+[2024-04-08 21:33:41|19940|INFO|part_view.py:33]  part init successfully
+[2024-04-08 21:33:46|22052|INFO|base_model.py:91]  session [1643445147712] and [Vehicle] has an operator: QUERY.
+[2024-04-08 21:33:46|22052|INFO|vehicle_view.py:25]  Vehicle init successfully
+[2024-04-08 21:33:46|22136|INFO|base_model.py:91]  session [1643445477552] and [Vehicle] has an operator: QUERY.
+[2024-04-08 21:33:46|22136|INFO|vehicle_view.py:25]  Vehicle init successfully
+[2024-04-08 21:33:48|21104|INFO|base_model.py:91]  session [1643445475872] and [Transport] has an operator: QUERY.
+[2024-04-08 21:33:48|21104|INFO|vehicle_view.py:62]  transport init successfully
+[2024-04-08 21:33:49|14876|INFO|base_model.py:91]  session [1643445482448] and [Transport] has an operator: QUERY.
+[2024-04-08 21:33:49|14876|INFO|vehicle_view.py:62]  transport init successfully

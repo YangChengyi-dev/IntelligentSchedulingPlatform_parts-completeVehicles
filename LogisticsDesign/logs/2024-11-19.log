@@ -1,0 +1,450 @@
+[2024-11-19 19:03:09|4980|ERROR|__init__.py:115]  raw_decode error, info is Expecting value: line 1 column 1 (char 0)
+[2024-11-19 19:03:09|4980|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 35, in register
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-11-19 19:03:10|26020|ERROR|__init__.py:115]  raw_decode error, info is Expecting value: line 1 column 1 (char 0)
+[2024-11-19 19:03:10|26020|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 35, in register
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-11-19 19:03:13|26764|ERROR|__init__.py:115]  raw_decode error, info is Expecting value: line 1 column 1 (char 0)
+[2024-11-19 19:03:13|26764|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 35, in register
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-11-19 19:03:24|9416|ERROR|__init__.py:115]  raw_decode error, info is Expecting value: line 1 column 1 (char 0)
+[2024-11-19 19:03:24|9416|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 35, in register
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-11-19 19:03:31|26776|ERROR|__init__.py:115]  raw_decode error, info is Expecting value: line 1 column 1 (char 0)
+[2024-11-19 19:03:31|26776|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 35, in register
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-11-19 19:03:39|20352|ERROR|__init__.py:115]  raw_decode error, info is Expecting value: line 1 column 1 (char 0)
+[2024-11-19 19:03:39|20352|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 35, in register
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-11-19 19:04:28|2584|ERROR|__init__.py:115]  raw_decode error, info is Expecting value: line 1 column 1 (char 0)
+[2024-11-19 19:04:28|2584|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 35, in register
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-11-19 19:05:53|2696|ERROR|__init__.py:115]  raw_decode error, info is Expecting value: line 1 column 1 (char 0)
+[2024-11-19 19:05:53|2696|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 35, in register
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-11-19 19:23:08|20356|INFO|base_model.py:91]  session [1596920205664] and [user] has an operator: QUERY.
+[2024-11-19 19:25:00|4928|INFO|base_model.py:91]  session [1596921800640] and [user] has an operator: QUERY.
+[2024-11-19 19:25:04|2020|INFO|base_model.py:91]  session [1596921801120] and [user] has an operator: QUERY.
+[2024-11-19 19:25:06|12888|INFO|base_model.py:91]  session [1596921827872] and [user] has an operator: QUERY.
+[2024-11-19 19:34:16|25596|INFO|base_model.py:91]  session [2627830601136] and [user] has an operator: QUERY.
+[2024-11-19 19:44:05|4688|INFO|base_model.py:91]  session [2056863471024] and [user] has an operator: QUERY.
+[2024-11-19 19:44:25|3848|INFO|base_model.py:91]  session [2056863907120] and [user] has an operator: QUERY.
+[2024-11-19 19:44:25|3848|INFO|base_model.py:46]  session [2056863907120] and [user] has an operator: ADD BATCH.
+[2024-11-19 19:44:25|3848|ERROR|__init__.py:115]  add error, info is Class 'builtins.int' is not mapped
+[2024-11-19 19:44:25|3848|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3433, in add
+    state = attributes.instance_state(instance)
+AttributeError: 'int' object has no attribute '_sa_instance_state'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 41, in register
+    user.batch_add([1, user.username, user.password])
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\base_model.py", line 47, in batch_add
+    batch_add_session.add_all(objs)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3457, in add_all
+    self.add(instance, _warn=False)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3435, in add
+    raise exc.UnmappedInstanceError(instance) from err
+sqlalchemy.orm.exc.UnmappedInstanceError: Class 'builtins.int' is not mapped
+
+[2024-11-19 19:47:23|23924|INFO|base_model.py:91]  session [2587395147808] and [user] has an operator: QUERY.
+[2024-11-19 19:47:23|23924|INFO|base_model.py:46]  session [2587395147808] and [user] has an operator: ADD BATCH.
+[2024-11-19 19:47:23|23924|ERROR|__init__.py:115]  add error, info is Class 'builtins.str' is not mapped
+[2024-11-19 19:47:23|23924|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3433, in add
+    state = attributes.instance_state(instance)
+AttributeError: 'str' object has no attribute '_sa_instance_state'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 42, in register
+    user.batch_add(a)
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\base_model.py", line 47, in batch_add
+    batch_add_session.add_all(objs)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3457, in add_all
+    self.add(instance, _warn=False)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3435, in add
+    raise exc.UnmappedInstanceError(instance) from err
+sqlalchemy.orm.exc.UnmappedInstanceError: Class 'builtins.str' is not mapped
+
+[2024-11-19 19:48:30|3128|INFO|base_model.py:91]  session [2533057091568] and [user] has an operator: QUERY.
+[2024-11-19 19:48:30|3128|ERROR|__init__.py:115]  register error, info is 'list' object has no attribute 'batch_add'
+[2024-11-19 19:48:30|3128|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 42, in register
+    a.batch_add(a)
+AttributeError: 'list' object has no attribute 'batch_add'
+
+[2024-11-19 19:48:54|13100|INFO|base_model.py:91]  session [2706031568928] and [user] has an operator: QUERY.
+[2024-11-19 19:48:54|13100|INFO|base_model.py:46]  session [2706031568928] and [user] has an operator: ADD BATCH.
+[2024-11-19 19:48:54|13100|ERROR|__init__.py:115]  add error, info is Class 'builtins.int' is not mapped
+[2024-11-19 19:48:54|13100|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3433, in add
+    state = attributes.instance_state(instance)
+AttributeError: 'int' object has no attribute '_sa_instance_state'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 42, in register
+    user.batch_add(a)
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\base_model.py", line 47, in batch_add
+    batch_add_session.add_all(objs)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3457, in add_all
+    self.add(instance, _warn=False)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3435, in add
+    raise exc.UnmappedInstanceError(instance) from err
+sqlalchemy.orm.exc.UnmappedInstanceError: Class 'builtins.int' is not mapped
+
+[2024-11-19 19:49:19|27092|INFO|base_model.py:91]  session [1945322117152] and [user] has an operator: QUERY.
+[2024-11-19 19:49:19|27092|INFO|base_model.py:46]  session [1945322117152] and [user] has an operator: ADD BATCH.
+[2024-11-19 19:49:19|27092|ERROR|__init__.py:115]  add error, info is Class 'builtins.str' is not mapped
+[2024-11-19 19:49:19|27092|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3433, in add
+    state = attributes.instance_state(instance)
+AttributeError: 'str' object has no attribute '_sa_instance_state'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 42, in register
+    user.batch_add(a)
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\base_model.py", line 47, in batch_add
+    batch_add_session.add_all(objs)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3457, in add_all
+    self.add(instance, _warn=False)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3435, in add
+    raise exc.UnmappedInstanceError(instance) from err
+sqlalchemy.orm.exc.UnmappedInstanceError: Class 'builtins.str' is not mapped
+
+[2024-11-19 19:50:23|10288|INFO|base_model.py:91]  session [2402804357152] and [user] has an operator: QUERY.
+[2024-11-19 19:50:23|10288|INFO|base_model.py:46]  session [2402804357152] and [user] has an operator: ADD BATCH.
+[2024-11-19 19:50:23|10288|ERROR|__init__.py:115]  add error, info is Class 'builtins.str' is not mapped
+[2024-11-19 19:50:23|10288|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3433, in add
+    state = attributes.instance_state(instance)
+AttributeError: 'str' object has no attribute '_sa_instance_state'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 42, in register
+    user.batch_add(a)
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\base_model.py", line 47, in batch_add
+    batch_add_session.add_all(objs)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3457, in add_all
+    self.add(instance, _warn=False)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3435, in add
+    raise exc.UnmappedInstanceError(instance) from err
+sqlalchemy.orm.exc.UnmappedInstanceError: Class 'builtins.str' is not mapped
+
+[2024-11-19 20:37:39|16464|INFO|base_model.py:91]  session [3024533321520] and [user] has an operator: QUERY.
+[2024-11-19 20:39:01|27152|INFO|base_model.py:91]  session [1689060583216] and [user] has an operator: QUERY.
+[2024-11-19 20:39:01|27152|INFO|base_model.py:46]  session [1689060583216] and [user] has an operator: ADD BATCH.
+[2024-11-19 20:39:01|27152|ERROR|__init__.py:115]  add_all error, info is 'user' object is not iterable
+[2024-11-19 20:39:01|27152|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 44, in register
+    user.batch_add(a)
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\base_model.py", line 47, in batch_add
+    batch_add_session.add_all(objs)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3456, in add_all
+    for instance in instances:
+TypeError: 'user' object is not iterable
+
+[2024-11-19 20:39:04|26128|INFO|base_model.py:91]  session [1689060584032] and [user] has an operator: QUERY.
+[2024-11-19 20:39:04|26128|INFO|base_model.py:46]  session [1689060584032] and [user] has an operator: ADD BATCH.
+[2024-11-19 20:39:04|26128|ERROR|__init__.py:115]  add_all error, info is 'user' object is not iterable
+[2024-11-19 20:39:04|26128|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 44, in register
+    user.batch_add(a)
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\base_model.py", line 47, in batch_add
+    batch_add_session.add_all(objs)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3456, in add_all
+    for instance in instances:
+TypeError: 'user' object is not iterable
+
+[2024-11-19 20:39:26|25184|INFO|base_model.py:91]  session [1689061781712] and [user] has an operator: QUERY.
+[2024-11-19 20:39:26|25184|INFO|base_model.py:46]  session [1689061781712] and [user] has an operator: ADD BATCH.
+[2024-11-19 20:39:26|25184|ERROR|__init__.py:115]  add_all error, info is 'user' object is not iterable
+[2024-11-19 20:39:26|25184|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 44, in register
+    print(a)
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\base_model.py", line 47, in batch_add
+    batch_add_session.add_all(objs)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3456, in add_all
+    for instance in instances:
+TypeError: 'user' object is not iterable
+
+[2024-11-19 20:39:34|23700|INFO|base_model.py:91]  session [2756779296608] and [user] has an operator: QUERY.
+[2024-11-19 20:39:34|23700|INFO|base_model.py:46]  session [2756779296608] and [user] has an operator: ADD BATCH.
+[2024-11-19 20:39:34|23700|ERROR|__init__.py:115]  add_all error, info is 'user' object is not iterable
+[2024-11-19 20:39:34|23700|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 45, in register
+    user.batch_add(a)
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\base_model.py", line 47, in batch_add
+    batch_add_session.add_all(objs)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3456, in add_all
+    for instance in instances:
+TypeError: 'user' object is not iterable
+
+[2024-11-19 20:39:58|25188|INFO|base_model.py:91]  session [2756779297808] and [user] has an operator: QUERY.
+[2024-11-19 20:39:58|25188|INFO|base_model.py:46]  session [2756779297808] and [user] has an operator: ADD BATCH.
+[2024-11-19 20:39:58|25188|ERROR|__init__.py:115]  add_all error, info is 'user' object is not iterable
+[2024-11-19 20:39:58|25188|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 45, in register
+    user.batch_add(a)
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\base_model.py", line 47, in batch_add
+    batch_add_session.add_all(objs)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3456, in add_all
+    for instance in instances:
+TypeError: 'user' object is not iterable
+
+[2024-11-19 20:40:05|26996|INFO|base_model.py:91]  session [2484926625632] and [user] has an operator: QUERY.
+[2024-11-19 20:40:05|26996|INFO|base_model.py:46]  session [2484926625632] and [user] has an operator: ADD BATCH.
+[2024-11-19 20:40:05|26996|ERROR|__init__.py:115]  add_all error, info is 'user' object is not iterable
+[2024-11-19 20:40:06|26996|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 45, in register
+    user.batch_add(a)
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\base_model.py", line 47, in batch_add
+    batch_add_session.add_all(objs)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3456, in add_all
+    for instance in instances:
+TypeError: 'user' object is not iterable
+
+[2024-11-19 20:43:43|21920|INFO|base_model.py:91]  session [1215998842912] and [user] has an operator: QUERY.
+[2024-11-19 20:43:43|21920|INFO|base_model.py:46]  session [1215998842912] and [user] has an operator: ADD BATCH.
+[2024-11-19 20:43:43|21920|ERROR|__init__.py:115]  add_all error, info is 'user' object is not iterable
+[2024-11-19 20:43:43|21920|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 45, in register
+    user.batch_add(a)
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\base_model.py", line 47, in batch_add
+    batch_add_session.add_all(objs)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3456, in add_all
+    for instance in instances:
+TypeError: 'user' object is not iterable
+
+[2024-11-19 20:44:22|26400|INFO|base_model.py:91]  session [1215998842864] and [user] has an operator: QUERY.
+[2024-11-19 20:44:22|26400|INFO|base_model.py:46]  session [1215998842864] and [user] has an operator: ADD BATCH.
+[2024-11-19 20:44:22|26400|ERROR|__init__.py:115]  add_all error, info is 'user' object is not iterable
+[2024-11-19 20:44:22|26400|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 45, in register
+    user.batch_add(a)
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\base_model.py", line 47, in batch_add
+    batch_add_session.add_all(objs)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3456, in add_all
+    for instance in instances:
+TypeError: 'user' object is not iterable
+
+[2024-11-19 20:44:45|22660|INFO|base_model.py:91]  session [2865618544672] and [user] has an operator: QUERY.
+[2024-11-19 20:44:45|22660|INFO|base_model.py:46]  session [2865618544672] and [user] has an operator: ADD BATCH.
+[2024-11-19 20:44:45|22660|ERROR|__init__.py:115]  add_all error, info is 'user' object is not iterable
+[2024-11-19 20:44:45|22660|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 45, in register
+    user.batch_add(a)
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\base_model.py", line 47, in batch_add
+    batch_add_session.add_all(objs)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3456, in add_all
+    for instance in instances:
+TypeError: 'user' object is not iterable
+
+[2024-11-19 20:45:25|26668|INFO|base_model.py:91]  session [2865618544672] and [user] has an operator: QUERY.
+[2024-11-19 20:45:25|26668|INFO|base_model.py:46]  session [2865618544672] and [user] has an operator: ADD BATCH.
+[2024-11-19 20:45:25|26668|ERROR|__init__.py:115]  add_all error, info is 'user' object is not iterable
+[2024-11-19 20:45:25|26668|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 45, in register
+    user.batch_add([a])
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\base_model.py", line 47, in batch_add
+    batch_add_session.add_all(objs)
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3456, in add_all
+    for instance in instances:
+TypeError: 'user' object is not iterable
+
+[2024-11-19 20:45:38|9436|INFO|base_model.py:91]  session [1724207273104] and [user] has an operator: QUERY.
+[2024-11-19 20:45:38|9436|INFO|base_model.py:46]  session [1724207273104] and [user] has an operator: ADD BATCH.
+[2024-11-19 20:47:18|27232|INFO|base_model.py:91]  session [2650557629776] and [user] has an operator: QUERY.
+[2024-11-19 20:47:18|27232|INFO|base_model.py:46]  session [2650557629776] and [user] has an operator: ADD BATCH.
+[2024-11-19 20:48:49|10144|INFO|base_model.py:91]  session [2665263552400] and [user] has an operator: QUERY.
+[2024-11-19 20:48:49|10144|ERROR|__init__.py:115]  register error, info is 'list' object has no attribute 'id'
+[2024-11-19 20:48:49|10144|ERROR|__init__.py:116]  Traceback (most recent call last):
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\git3\kg-demo\kg-demo\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\login_view.py", line 44, in register
+    print(a.id)
+AttributeError: 'list' object has no attribute 'id'
+
+[2024-11-19 20:49:31|11680|INFO|base_model.py:91]  session [2278301030480] and [user] has an operator: QUERY.
+[2024-11-19 20:49:31|11680|INFO|base_model.py:46]  session [2278301030480] and [user] has an operator: ADD BATCH.
+[2024-11-19 20:50:24|12368|INFO|base_model.py:91]  session [2278301029904] and [user] has an operator: QUERY.
+[2024-11-19 20:50:24|12368|INFO|base_model.py:46]  session [2278301029904] and [user] has an operator: ADD BATCH.

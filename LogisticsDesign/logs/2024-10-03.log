@@ -1,0 +1,372 @@
+[2024-10-03 00:17:12|30752|ERROR|__init__.py:113]  send_from_directory error, info is 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2024-10-03 00:17:12|30752|ERROR|__init__.py:114]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 260, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore # noqa: B950
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 308, in send_static_file
+    return send_from_directory(
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\helpers.py", line 552, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\werkzeug\utils.py", line 574, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+[2024-10-03 00:17:12|16616|ERROR|__init__.py:113]  send_from_directory error, info is 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2024-10-03 00:17:12|16616|ERROR|__init__.py:114]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 260, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore # noqa: B950
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 308, in send_static_file
+    return send_from_directory(
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\helpers.py", line 552, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\werkzeug\utils.py", line 574, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+[2024-10-03 00:17:18|2748|INFO|base_model.py:91]  session [2933090618624] and [RegressPredict] has an operator: QUERY.
+[2024-10-03 00:17:18|2748|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-03 00:17:18|32084|INFO|base_model.py:91]  session [2933089507152] and [RegressPredict] has an operator: QUERY.
+[2024-10-03 00:17:18|32084|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-03 00:18:05|13888|INFO|base_model.py:91]  session [2933089511952] and [RegressPredict] has an operator: QUERY.
+[2024-10-03 00:18:05|13888|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-03 00:18:06|32084|INFO|base_model.py:91]  session [2932681642080] and [RegressPredict] has an operator: QUERY.
+[2024-10-03 00:18:06|32084|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-03 00:21:16|23032|ERROR|__init__.py:113]  raw_decode error, info is Expecting value: line 1 column 1 (char 0)
+[2024-10-03 00:21:16|23032|ERROR|__init__.py:114]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 36, in explore
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-10-03 00:21:21|20624|ERROR|__init__.py:113]  raw_decode error, info is Expecting value: line 1 column 1 (char 0)
+[2024-10-03 00:21:21|20624|ERROR|__init__.py:114]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 36, in explore
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-10-03 00:21:38|18608|ERROR|__init__.py:113]  match error, info is 405 Method Not Allowed: The method is not allowed for the requested URL.
+[2024-10-03 00:21:38|18608|ERROR|__init__.py:114]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 844, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 453, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\ruanjian\Python\Python310\lib\site-packages\werkzeug\routing\map.py", line 619, in match
+    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+
+[2024-10-03 00:21:44|26740|ERROR|__init__.py:113]  raw_decode error, info is Expecting value: line 1 column 1 (char 0)
+[2024-10-03 00:21:44|26740|ERROR|__init__.py:114]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 36, in explore
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-10-03 00:21:52|28492|INFO|base_model.py:91]  session [2933089513248] and [RegressPredict] has an operator: QUERY.
+[2024-10-03 00:21:52|28492|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-03 00:21:52|28596|INFO|base_model.py:91]  session [2933089505808] and [RegressPredict] has an operator: QUERY.
+[2024-10-03 00:21:52|28596|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-03 00:22:01|25160|INFO|base_model.py:91]  session [2932681644336] and [Part] has an operator: QUERY.
+[2024-10-03 00:22:01|25160|INFO|part_view.py:28]  part init successfully
+[2024-10-03 00:22:01|30240|INFO|base_model.py:91]  session [2933089510032] and [Part] has an operator: QUERY.
+[2024-10-03 00:22:01|30240|INFO|part_view.py:28]  part init successfully
+[2024-10-03 00:22:04|30808|INFO|base_model.py:91]  session [2932681639536] and [Vehicle] has an operator: QUERY.
+[2024-10-03 00:22:04|30808|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-10-03 00:22:04|20848|INFO|base_model.py:91]  session [2933089508112] and [Vehicle] has an operator: QUERY.
+[2024-10-03 00:22:04|20848|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-10-03 00:22:04|30688|INFO|base_model.py:91]  session [2932681642176] and [Transport] has an operator: QUERY.
+[2024-10-03 00:22:04|30688|INFO|vehicle_view.py:58]  transport init successfully
+[2024-10-03 00:22:05|18252|INFO|base_model.py:91]  session [2933089513296] and [Transport] has an operator: QUERY.
+[2024-10-03 00:22:05|18252|INFO|vehicle_view.py:58]  transport init successfully
+[2024-10-03 00:22:18|27268|ERROR|__init__.py:113]  raw_decode error, info is Expecting value: line 1 column 1 (char 0)
+[2024-10-03 00:22:18|27268|ERROR|__init__.py:114]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 65, in transport_search
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-10-03 00:22:32|26584|INFO|base_model.py:91]  session [2932681653456] and [TransportCost] has an operator: QUERY.
+[2024-10-03 00:22:32|26584|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-10-03 00:22:32|25484|INFO|base_model.py:91]  session [2933089506336] and [TransportCost] has an operator: QUERY.
+[2024-10-03 00:22:32|25484|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-10-03 00:22:33|27444|INFO|base_model.py:91]  session [2933091590944] and [Transport] has an operator: QUERY.
+[2024-10-03 00:22:33|27444|INFO|vehicle_view.py:58]  transport init successfully
+[2024-10-03 00:22:33|27988|INFO|base_model.py:91]  session [2932681653984] and [Transport] has an operator: QUERY.
+[2024-10-03 00:22:33|27988|INFO|vehicle_view.py:58]  transport init successfully
+[2024-10-03 00:22:42|17584|INFO|base_model.py:91]  session [2933091586384] and [TransportCost] has an operator: QUERY.
+[2024-10-03 00:22:42|17584|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-10-03 00:22:43|11836|INFO|base_model.py:91]  session [2933091585904] and [TransportCost] has an operator: QUERY.
+[2024-10-03 00:22:43|11836|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-10-03 00:22:43|30476|INFO|base_model.py:91]  session [2933091594400] and [Transport] has an operator: QUERY.
+[2024-10-03 00:22:43|30476|INFO|vehicle_view.py:58]  transport init successfully
+[2024-10-03 00:22:43|25404|INFO|base_model.py:91]  session [2932681647744] and [Transport] has an operator: QUERY.
+[2024-10-03 00:22:43|25404|INFO|vehicle_view.py:58]  transport init successfully
+[2024-10-03 00:23:21|25020|INFO|base_model.py:91]  session [2933091592576] and [RegressPredict] has an operator: QUERY.
+[2024-10-03 00:23:21|25020|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-03 00:23:22|1304|INFO|base_model.py:91]  session [2933091586672] and [RegressPredict] has an operator: QUERY.
+[2024-10-03 00:23:22|1304|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-03 00:23:28|30884|INFO|sales_view.py:44]  使用多元线性回归预测2024/01~2024/03的汽车销量情况
+[2024-10-03 00:23:29|30884|INFO|base_model.py:32]  session [2933091596512] and [RegressPredict] has an operator: ADD.
+[2024-10-03 00:23:29|30884|INFO|base_model.py:91]  session [2933091596512] and [RegressPredict] has an operator: QUERY.
+[2024-10-03 00:23:29|30884|INFO|sales_view.py:56]  Regress Predict successfully
+[2024-10-03 00:23:42|27516|ERROR|db_connection.py:53]  [Except]transaction function error, info is Expecting value: line 1 column 1 (char 0)
+[2024-10-03 00:23:42|27516|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\sales_view.py", line 39, in sales_regress
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-10-03 00:23:42|27516|ERROR|__init__.py:113]  raw_decode error, info is Expecting value: line 1 column 1 (char 0)
+[2024-10-03 00:23:42|27516|ERROR|__init__.py:114]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\sales_view.py", line 39, in sales_regress
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-10-03 00:25:12|6932|INFO|base_model.py:91]  session [2933092772896] and [TransportCost] has an operator: QUERY.
+[2024-10-03 00:25:12|6932|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-10-03 00:25:12|31408|INFO|base_model.py:91]  session [2933099291520] and [TransportCost] has an operator: QUERY.
+[2024-10-03 00:25:12|31408|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-10-03 00:25:13|30920|INFO|base_model.py:91]  session [2933099551936] and [RegressPredict] has an operator: QUERY.
+[2024-10-03 00:25:13|30920|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-03 00:25:13|23532|INFO|base_model.py:91]  session [2933091596656] and [RegressPredict] has an operator: QUERY.
+[2024-10-03 00:25:13|23532|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-03 00:26:01|20704|ERROR|__init__.py:113]  match error, info is 405 Method Not Allowed: The method is not allowed for the requested URL.
+[2024-10-03 00:26:01|20704|ERROR|__init__.py:114]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 844, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 453, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\ruanjian\Python\Python310\lib\site-packages\werkzeug\routing\map.py", line 619, in match
+    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+
+[2024-10-03 00:28:00|23392|ERROR|__init__.py:113]  raw_decode error, info is Expecting value: line 1 column 1 (char 0)
+[2024-10-03 00:28:00|23392|ERROR|__init__.py:114]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 36, in explore
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-10-03 01:17:33|14960|ERROR|__init__.py:113]  _get_source_fast error, info is index.html
+[2024-10-03 01:17:33|14960|ERROR|__init__.py:114]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\__init__.py", line 128, in index
+    return render_template('index.html', name='index')
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\ruanjian\Python\Python310\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+
+[2024-10-03 01:17:33|24884|ERROR|__init__.py:113]  _get_source_fast error, info is index.html
+[2024-10-03 01:17:33|24884|ERROR|__init__.py:114]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\__init__.py", line 128, in index
+    return render_template('index.html', name='index')
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\ruanjian\Python\Python310\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+
+[2024-10-03 10:01:04|26136|ERROR|__init__.py:113]  raw_decode error, info is Expecting value: line 1 column 1 (char 0)
+[2024-10-03 10:01:04|26136|ERROR|__init__.py:114]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\vehicle_view.py", line 36, in explore
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-10-03 10:02:02|33108|INFO|base_model.py:91]  session [2428067993328] and [RegressPredict] has an operator: QUERY.
+[2024-10-03 10:02:02|33108|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-03 10:02:02|24700|INFO|base_model.py:91]  session [2428067997936] and [RegressPredict] has an operator: QUERY.
+[2024-10-03 10:02:02|24700|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-03 10:02:09|27360|INFO|base_model.py:91]  session [2428069792064] and [Part] has an operator: QUERY.
+[2024-10-03 10:02:09|27360|INFO|part_view.py:28]  part init successfully
+[2024-10-03 10:02:09|19148|INFO|base_model.py:91]  session [2428067999472] and [Part] has an operator: QUERY.
+[2024-10-03 10:02:09|19148|INFO|part_view.py:28]  part init successfully
+[2024-10-03 10:02:21|25684|ERROR|__init__.py:113]  raw_decode error, info is Expecting value: line 1 column 1 (char 0)
+[2024-10-03 10:02:21|25684|ERROR|__init__.py:114]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\views\part_view.py", line 58, in optimize
+    upload_data = json.loads(request.get_data().decode('utf-8'))
+  File "D:\ruanjian\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\ruanjian\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-10-03 10:02:56|25240|INFO|base_model.py:91]  session [2427643896896] and [PartOptimize] has an operator: QUERY.
+[2024-10-03 10:02:56|25240|INFO|part_view.py:66]  part optimize successfully
+[2024-10-03 10:03:14|34476|INFO|base_model.py:91]  session [2428067995920] and [PartOptimize] has an operator: QUERY.
+[2024-10-03 10:03:14|34476|INFO|part_view.py:66]  part optimize successfully
+[2024-10-03 14:36:17|34364|ERROR|__init__.py:113]  _get_source_fast error, info is index.html
+[2024-10-03 14:36:17|34364|ERROR|__init__.py:114]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\__init__.py", line 128, in index
+    return render_template('index.html', name='index')
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\ruanjian\Python\Python310\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+
+[2024-10-03 14:49:17|34256|INFO|base_model.py:91]  session [2400842554560] and [Transport] has an operator: QUERY.
+[2024-10-03 14:49:17|34256|INFO|vehicle_view.py:83]  transport search successfully
+[2024-10-03 14:49:28|26888|ERROR|__init__.py:113]  _get_source_fast error, info is index.html
+[2024-10-03 14:49:28|26888|ERROR|__init__.py:114]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\LogisticsDesign\back_end\__init__.py", line 128, in index
+    return render_template('index.html', name='index')
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\ruanjian\Python\Python310\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+

@@ -1,0 +1,10 @@
+[2024-03-22 16:38:33|7560|INFO|base_model.py:91]  session [2042613317888] and [PartOptimize] has an operator: QUERY.
+[2024-03-22 16:38:33|7560|INFO|part_view.py:100]  part optimize successfully
+[2024-03-22 16:42:45|21172|INFO|base_model.py:91]  session [2042615048768] and [RegressPredict] has an operator: QUERY.
+[2024-03-22 16:42:45|21172|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-22 16:42:45|22456|INFO|base_model.py:91]  session [2042615048768] and [RegressPredict] has an operator: QUERY.
+[2024-03-22 16:42:45|22456|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-03-22 16:42:59|14468|INFO|sales_view.py:45]  使用循环神经网络预测2024/04~2025/03的汽车销量情况
+[2024-03-22 16:42:59|14468|INFO|base_model.py:32]  session [2042615046992] and [RegressPredict] has an operator: ADD.
+[2024-03-22 16:42:59|14468|INFO|base_model.py:91]  session [2042615046992] and [RegressPredict] has an operator: QUERY.
+[2024-03-22 16:43:00|14468|INFO|sales_view.py:57]  Regress Predict successfully

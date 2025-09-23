@@ -1,0 +1,1126 @@
+[2024-06-02 14:49:39|996|INFO|db_init.py:107]  drop my table successfully
+[2024-06-02 14:49:39|996|INFO|db_init.py:115]  create my table successfully
+[2024-06-02 14:49:39|996|INFO|db_init.py:144]  Import excel data [part] successfully
+[2024-06-02 14:49:39|996|ERROR|db_init.py:146]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 1938, in _exec_single_context
+    self.dialect.do_executemany(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\dialects\mysql\mysqldb.py", line 175, in do_executemany
+    rowcount = cursor.executemany(statement, parameters)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\cursors.py", line 182, in executemany
+    return self._do_execute_many(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\cursors.py", line 220, in _do_execute_many
+    rows += self.execute(sql + postfix)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 822, in _read_query_result
+    result.read()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'cc' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\database\db_init.py", line 143, in excel_to_sql
+    data.rename(columns=column_names).to_sql(name=mysql_table_name, con=engine, index=False, if_exists=way)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\core\generic.py", line 3081, in to_sql
+    return sql.to_sql(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\sql.py", line 2021, in to_sql
+    total_inserted = sql_engine.insert_records(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\sql.py", line 1570, in insert_records
+    raise err
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\sql.py", line 1561, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\sql.py", line 1122, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pandas\io\sql.py", line 1010, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\sql\elements.py", line 517, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 2344, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 1938, in _exec_single_context
+    self.dialect.do_executemany(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\dialects\mysql\mysqldb.py", line 175, in do_executemany
+    rowcount = cursor.executemany(statement, parameters)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\cursors.py", line 182, in executemany
+    return self._do_execute_many(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\cursors.py", line 220, in _do_execute_many
+    rows += self.execute(sql + postfix)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 822, in _read_query_result
+    result.read()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1048, "Column 'cc' cannot be null")
+[SQL: INSERT INTO part_optimize (prov, city, cc, cd, fs, qd, tj, dl, cost, programme, method) VALUES (%(prov)s, %(city)s, %(cc)s, %(cd)s, %(fs)s, %(qd)s, %(tj)s, %(dl)s, %(cost)s, %(programme)s, %(method)s)]
+[parameters: [{'prov': '江苏', 'city': '太仓', 'cc': 10529.5293404524, 'cd': 12895.4973333333, 'fs': 4823.83026666667, 'qd': 2095.704, 'tj': 437.684, 'dl': 0.0, 'cost': 1986875.0946, 'programme': '原始方法', 'method': '原始方法'}, {'prov': '江苏', 'city': '常州', 'cc': 19490.5405444083, 'cd': 3702.17466666666, 'fs': 2275.13866666667, 'qd': 1731.47866666667, 'tj': 2181.22666666666, 'dl': 319.4152, 'cost': 1831446.9414, 'programme': '原始方法', 'method': '原始方法'}, {'prov': '江苏', 'city': '无锡', 'cc': 24822.1131681513, 'cd': 985.087999999999, 'fs': 517.036, 'qd': 3798.25333333333, 'tj': 1391.81466666667, 'dl': 0.0, 'cost': 1988759.4102, 'programme': '原始方法', 'method': '原始方法'}, {'prov': '江苏', 'city': '苏州', 'cc': 7655.26411887998, 'cd': 1029.132, 'fs': 1844.856, 'qd': 794.6276, 'tj': 804.18, 'dl': 50.4746666666667, 'cost': 765139.5288, 'programme': '原始方法', 'method': '原始方法'}, {'prov': '江苏', 'city': '昆山', 'cc': 32359.5573565021, 'cd': 3632.28666666666, 'fs': 426.677333333333, 'qd': 750.88, 'tj': 692.848, 'dl': 1.99333333333333, 'cost': 2599858.728, 'programme': '原始方法', 'method': '原始方法'}, {'prov': '江苏', 'city': '南京', 'cc': 2281.11132264264, 'cd': 204.828, 'fs': 9209.512, 'qd': 4442.776, 'tj': 477.412, 'dl': 953.713313313313, 'cost': 832028.6286, 'programme': '原始方法', 'method': '原始方法'}, {'prov': '江苏', 'city': '常熟', 'cc': 3368.23137457457, 'cd': 1443.33626666667, 'fs': 1806.46266666667, 'qd': 1084.99733333333, 'tj': 2033.28666666667, 'dl': 1.99333333333333, 'cost': 544436.802, 'programme': '原始方法', 'method': '原始方法'}, {'prov': '江苏', 'city': '靖江', 'cc': 3865.86286822824, 'cd': 1037.26133333333, 'fs': 9.984, 'qd': 0.0, 'tj': 70.0093333333333, 'dl': 0.0, 'cost': 346253.787, 'programme': '原始方法', 'method': '原始方法'}  ... displaying 10 of 650 total bound parameter sets ...  {'prov': '江西', 'city': '南昌', 'cc': 0.0, 'cd': 276.41, 'fs': 0.0, 'qd': 0.0, 'tj': 0.0, 'dl': 0.0, 'cost': 15629.8464, 'programme': '城市因子(sigmoid)', 'method': '退火算法'}, {'prov': '湖南', 'city': '长沙', 'cc': 0.0, 'cd': 1522.9, 'fs': 0.0, 'qd': 0.0, 'tj': 0.0, 'dl': 0.0, 'cost': 63338.2452, 'programme': '城市因子(sigmoid)', 'method': '退火算法'}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+[2024-06-02 14:49:39|996|WARNING|app.py:29]  error code: [112]; err msg: [excel to sql error.]
+[2024-06-02 14:53:18|8472|INFO|db_init.py:107]  drop my table successfully
+[2024-06-02 14:53:18|8472|INFO|db_init.py:115]  create my table successfully
+[2024-06-02 14:53:18|8472|INFO|db_init.py:144]  Import excel data [part] successfully
+[2024-06-02 14:53:18|8472|INFO|db_init.py:144]  Import excel data [part_optimize] successfully
+[2024-06-02 14:53:18|8472|INFO|db_init.py:144]  Import excel data [vehicle] successfully
+[2024-06-02 14:53:18|8472|INFO|db_init.py:144]  Import excel data [regress_predict] successfully
+[2024-06-02 14:53:18|8472|INFO|db_init.py:144]  Import excel data [transport] successfully
+[2024-06-02 14:53:18|8472|INFO|db_init.py:144]  Import excel data [transport_cost] successfully
+[2024-06-02 14:53:18|8472|INFO|db_init.py:144]  Import excel data [empty_car] successfully
+[2024-06-02 14:55:05|2832|INFO|db_init.py:107]  drop my table successfully
+[2024-06-02 14:55:06|2832|INFO|db_init.py:115]  create my table successfully
+[2024-06-02 14:55:06|2832|INFO|db_init.py:144]  Import excel data [part] successfully
+[2024-06-02 14:55:06|2832|INFO|db_init.py:144]  Import excel data [part_optimize] successfully
+[2024-06-02 14:55:06|2832|INFO|db_init.py:144]  Import excel data [vehicle] successfully
+[2024-06-02 14:55:06|2832|INFO|db_init.py:144]  Import excel data [regress_predict] successfully
+[2024-06-02 14:55:06|2832|INFO|db_init.py:144]  Import excel data [transport] successfully
+[2024-06-02 14:55:06|2832|INFO|db_init.py:144]  Import excel data [transport_cost] successfully
+[2024-06-02 14:55:06|2832|INFO|db_init.py:144]  Import excel data [empty_car] successfully
+[2024-06-02 14:58:39|18916|INFO|base_model.py:91]  session [1508658492176] and [RegressPredict] has an operator: QUERY.
+[2024-06-02 14:58:39|18916|ERROR|__init__.py:110]  raise_mysql_exception error, info is (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2024-06-02 14:58:39|18916|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 23, in init
+    query_result = rp.query([rp.id, rp.operate, rp.regress_data, rp.create_time], order_by=desc(rp.id))
+  File "F:\python\LogisticsDesign\database\base_model.py", line 121, in query
+    return s_query.all()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2180, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2047, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 1143, in _connection_for_bind
+    conn = bind.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3269, in connect
+    return self._connection_cls(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 2431, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+[2024-06-02 14:58:40|22388|INFO|base_model.py:91]  session [1508662412864] and [RegressPredict] has an operator: QUERY.
+[2024-06-02 14:58:40|22388|ERROR|__init__.py:110]  raise_mysql_exception error, info is (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2024-06-02 14:58:40|22388|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 23, in init
+    query_result = rp.query([rp.id, rp.operate, rp.regress_data, rp.create_time], order_by=desc(rp.id))
+  File "F:\python\LogisticsDesign\database\base_model.py", line 121, in query
+    return s_query.all()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2180, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2047, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 1143, in _connection_for_bind
+    conn = bind.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3269, in connect
+    return self._connection_cls(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 2431, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+[2024-06-02 14:58:46|6208|INFO|base_model.py:91]  session [1508658493712] and [RegressPredict] has an operator: QUERY.
+[2024-06-02 14:58:46|6208|ERROR|__init__.py:110]  raise_mysql_exception error, info is (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2024-06-02 14:58:46|6208|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\back_end\views\sales_view.py", line 23, in init
+    query_result = rp.query([rp.id, rp.operate, rp.regress_data, rp.create_time], order_by=desc(rp.id))
+  File "F:\python\LogisticsDesign\database\base_model.py", line 121, in query
+    return s_query.all()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2180, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2047, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 1143, in _connection_for_bind
+    conn = bind.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3269, in connect
+    return self._connection_cls(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 2431, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+[2024-06-02 14:58:49|22948|INFO|base_model.py:91]  session [1508662419872] and [Part] has an operator: QUERY.
+[2024-06-02 14:58:49|22948|ERROR|__init__.py:110]  raise_mysql_exception error, info is (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2024-06-02 14:58:49|22948|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\back_end\views\part_view.py", line 24, in init
+    result = Part.query(part_field_list)
+  File "F:\python\LogisticsDesign\database\base_model.py", line 121, in query
+    return s_query.all()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2180, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2047, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 1143, in _connection_for_bind
+    conn = bind.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3269, in connect
+    return self._connection_cls(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 2431, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+[2024-06-02 14:58:49|23196|INFO|base_model.py:91]  session [1508658492320] and [Part] has an operator: QUERY.
+[2024-06-02 14:58:49|23196|ERROR|__init__.py:110]  raise_mysql_exception error, info is (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2024-06-02 14:58:49|23196|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\back_end\views\part_view.py", line 24, in init
+    result = Part.query(part_field_list)
+  File "F:\python\LogisticsDesign\database\base_model.py", line 121, in query
+    return s_query.all()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2180, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2047, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 1143, in _connection_for_bind
+    conn = bind.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3269, in connect
+    return self._connection_cls(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 2431, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+[2024-06-02 14:58:52|13400|INFO|base_model.py:91]  session [1508662415552] and [Part] has an operator: QUERY.
+[2024-06-02 14:58:52|13400|ERROR|__init__.py:110]  raise_mysql_exception error, info is (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2024-06-02 14:58:52|13400|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\back_end\views\part_view.py", line 24, in init
+    result = Part.query(part_field_list)
+  File "F:\python\LogisticsDesign\database\base_model.py", line 121, in query
+    return s_query.all()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2180, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2047, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 1143, in _connection_for_bind
+    conn = bind.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3269, in connect
+    return self._connection_cls(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 2431, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+[2024-06-02 14:58:53|3476|INFO|base_model.py:91]  session [1508662425680] and [Part] has an operator: QUERY.
+[2024-06-02 14:58:53|3476|ERROR|__init__.py:110]  raise_mysql_exception error, info is (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2024-06-02 14:58:53|3476|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "F:\python\LogisticsDesign\back_end\views\part_view.py", line 24, in init
+    result = Part.query(part_field_list)
+  File "F:\python\LogisticsDesign\database\base_model.py", line 121, in query
+    return s_query.all()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2180, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 2047, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\orm\session.py", line 1143, in _connection_for_bind
+    conn = bind.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3269, in connect
+    return self._connection_cls(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 2431, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "F:\python\LogisticsDesign\bvnev\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+[2024-06-02 14:59:50|7124|INFO|base_model.py:91]  session [2177237102560] and [Part] has an operator: QUERY.
+[2024-06-02 14:59:50|7124|INFO|part_view.py:28]  part init successfully
+[2024-06-02 14:59:54|20568|INFO|base_model.py:91]  session [2177237101504] and [Part] has an operator: QUERY.
+[2024-06-02 14:59:54|20568|INFO|part_view.py:28]  part init successfully
+[2024-06-02 14:59:57|11544|INFO|base_model.py:91]  session [2177239531728] and [RegressPredict] has an operator: QUERY.
+[2024-06-02 14:59:57|11544|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-06-02 14:59:57|2116|INFO|base_model.py:91]  session [2177239540272] and [RegressPredict] has an operator: QUERY.
+[2024-06-02 14:59:57|2116|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-06-02 15:00:01|9108|INFO|base_model.py:91]  session [2177237100304] and [Vehicle] has an operator: QUERY.
+[2024-06-02 15:00:01|9108|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-06-02 15:00:01|6072|INFO|base_model.py:91]  session [2177239537392] and [Vehicle] has an operator: QUERY.
+[2024-06-02 15:00:01|6072|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-06-02 15:00:03|17284|INFO|base_model.py:91]  session [2177239532352] and [Transport] has an operator: QUERY.
+[2024-06-02 15:00:03|17284|INFO|vehicle_view.py:65]  transport init successfully
+[2024-06-02 15:00:03|21676|INFO|base_model.py:91]  session [2177239541856] and [Transport] has an operator: QUERY.
+[2024-06-02 15:00:03|21676|INFO|vehicle_view.py:65]  transport init successfully
+[2024-06-02 15:00:05|22432|INFO|base_model.py:91]  session [2177238614944] and [TransportCost] has an operator: QUERY.
+[2024-06-02 15:00:05|22432|INFO|vehicle_view.py:125]  transport cost successfully
+[2024-06-02 15:00:05|2500|INFO|base_model.py:91]  session [2177239533600] and [TransportCost] has an operator: QUERY.
+[2024-06-02 15:00:05|2500|INFO|vehicle_view.py:125]  transport cost successfully
+[2024-06-02 15:00:10|21236|INFO|base_model.py:91]  session [2177238622672] and [Transport] has an operator: QUERY.
+[2024-06-02 15:00:10|21236|INFO|vehicle_view.py:65]  transport init successfully
+[2024-06-02 15:00:10|9060|INFO|base_model.py:91]  session [2177239542000] and [Transport] has an operator: QUERY.
+[2024-06-02 15:00:10|9060|INFO|vehicle_view.py:65]  transport init successfully
+[2024-06-02 15:00:10|2748|INFO|base_model.py:91]  session [2177238622672] and [Vehicle] has an operator: QUERY.
+[2024-06-02 15:00:10|2748|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-06-02 15:00:11|8160|INFO|base_model.py:91]  session [2177238620128] and [Vehicle] has an operator: QUERY.
+[2024-06-02 15:00:11|8160|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-06-02 15:00:11|5304|INFO|base_model.py:91]  session [2177238619552] and [RegressPredict] has an operator: QUERY.
+[2024-06-02 15:00:11|5304|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-06-02 15:00:12|10964|INFO|base_model.py:91]  session [2177238621520] and [RegressPredict] has an operator: QUERY.
+[2024-06-02 15:00:12|10964|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-06-02 15:00:15|11936|INFO|base_model.py:91]  session [2177238629392] and [RegressPredict] has an operator: QUERY.
+[2024-06-02 15:00:15|11936|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-06-02 15:00:17|5960|INFO|base_model.py:91]  session [2177239089792] and [Part] has an operator: QUERY.
+[2024-06-02 15:00:18|5960|INFO|part_view.py:28]  part init successfully
+[2024-06-02 15:00:18|2968|INFO|base_model.py:91]  session [2177239546368] and [Part] has an operator: QUERY.
+[2024-06-02 15:00:18|2968|INFO|part_view.py:28]  part init successfully
+[2024-06-02 15:00:27|21056|INFO|base_model.py:91]  session [2177239542432] and [Part] has an operator: QUERY.
+[2024-06-02 15:00:27|21056|INFO|part_view.py:28]  part init successfully
+[2024-06-02 15:00:27|21932|INFO|base_model.py:91]  session [2177239540368] and [Part] has an operator: QUERY.
+[2024-06-02 15:00:27|21932|INFO|part_view.py:28]  part init successfully
+[2024-06-02 15:00:33|10104|INFO|base_model.py:91]  session [2177239533264] and [Vehicle] has an operator: QUERY.
+[2024-06-02 15:00:33|10104|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-06-02 15:00:33|23136|INFO|base_model.py:91]  session [2177238627664] and [Vehicle] has an operator: QUERY.
+[2024-06-02 15:00:33|23136|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-06-02 15:00:34|1012|INFO|base_model.py:91]  session [2177237104624] and [Transport] has an operator: QUERY.
+[2024-06-02 15:00:34|1012|INFO|vehicle_view.py:65]  transport init successfully
+[2024-06-02 15:00:34|23400|INFO|base_model.py:91]  session [2177238628000] and [Transport] has an operator: QUERY.
+[2024-06-02 15:00:34|23400|INFO|vehicle_view.py:65]  transport init successfully
+[2024-06-02 15:00:36|22068|INFO|base_model.py:91]  session [2177238614800] and [Transport] has an operator: QUERY.
+[2024-06-02 15:00:36|22068|INFO|vehicle_view.py:65]  transport init successfully
+[2024-06-02 15:00:39|20064|INFO|base_model.py:91]  session [2177239535856] and [TransportCost] has an operator: QUERY.
+[2024-06-02 15:00:39|20064|INFO|vehicle_view.py:125]  transport cost successfully
+[2024-06-02 15:00:39|23020|INFO|base_model.py:91]  session [2177239543392] and [TransportCost] has an operator: QUERY.
+[2024-06-02 15:00:39|23020|INFO|vehicle_view.py:125]  transport cost successfully
+[2024-06-02 15:00:45|6184|INFO|base_model.py:91]  session [2177238624448] and [Part] has an operator: QUERY.
+[2024-06-02 15:00:45|6184|INFO|part_view.py:28]  part init successfully
+[2024-06-02 15:00:45|22564|INFO|base_model.py:91]  session [2177239537104] and [Part] has an operator: QUERY.
+[2024-06-02 15:00:45|22564|INFO|part_view.py:28]  part init successfully
+[2024-06-02 15:00:48|3448|INFO|base_model.py:91]  session [2177238228880] and [RegressPredict] has an operator: QUERY.
+[2024-06-02 15:00:48|3448|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-06-02 15:00:48|13860|INFO|base_model.py:91]  session [2177238627856] and [RegressPredict] has an operator: QUERY.
+[2024-06-02 15:00:48|13860|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-06-02 15:00:59|17020|INFO|base_model.py:91]  session [2177238620512] and [Part] has an operator: QUERY.
+[2024-06-02 15:00:59|17020|INFO|part_view.py:28]  part init successfully
+[2024-06-02 15:01:00|13728|INFO|base_model.py:91]  session [2177239544880] and [Part] has an operator: QUERY.
+[2024-06-02 15:01:00|13728|INFO|part_view.py:28]  part init successfully
+[2024-06-02 15:01:06|21684|INFO|base_model.py:91]  session [2177239544544] and [Part] has an operator: QUERY.
+[2024-06-02 15:01:06|21684|INFO|part_view.py:28]  part init successfully
+[2024-06-02 15:01:06|21972|INFO|base_model.py:91]  session [2177238623536] and [Part] has an operator: QUERY.
+[2024-06-02 15:01:06|21972|INFO|part_view.py:28]  part init successfully
+[2024-06-02 15:01:14|2928|INFO|base_model.py:91]  session [2177239544544] and [Part] has an operator: QUERY.
+[2024-06-02 15:01:14|2928|INFO|part_view.py:28]  part init successfully
+[2024-06-02 15:01:24|2044|INFO|base_model.py:91]  session [2177238626704] and [RegressPredict] has an operator: QUERY.
+[2024-06-02 15:01:24|2044|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-06-02 15:01:24|9108|INFO|base_model.py:91]  session [2177238623440] and [RegressPredict] has an operator: QUERY.
+[2024-06-02 15:01:24|9108|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-06-02 15:01:27|6812|INFO|base_model.py:91]  session [2177238627856] and [Part] has an operator: QUERY.
+[2024-06-02 15:01:27|6812|INFO|part_view.py:28]  part init successfully
+[2024-06-02 15:01:28|21660|INFO|base_model.py:91]  session [2177239541520] and [Part] has an operator: QUERY.
+[2024-06-02 15:01:28|21660|INFO|part_view.py:28]  part init successfully
+[2024-06-02 15:01:36|21676|INFO|base_model.py:91]  session [2177238625216] and [Part] has an operator: QUERY.
+[2024-06-02 15:01:36|21676|INFO|part_view.py:28]  part init successfully

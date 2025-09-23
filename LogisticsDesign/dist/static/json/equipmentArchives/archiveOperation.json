@@ -1,0 +1,113 @@
+{
+  "data": [{
+      "UNIT_NAME": "六合区",
+      "MARKET_NAME": "短路",
+      "TYPE_NAME": "长深高速六合服务区快充站（深圳方向）",
+      "CAPACITY": "4号充电桩",
+      "START_TIME": "换线",
+      "END_TIME": "运维数据2",
+      "FILE_NAME": "中智",
+      "YEAR": "1",
+      "RESULT":""
+    },
+    {
+      "UNIT_NAME": "建邺区",
+      "MARKET_NAME": "电压表异常",
+      "TYPE_NAME": "南京市建邺区南河站（公交专用）",
+      "CAPACITY": "2号充电桩",
+      "START_TIME": "更换电压表",
+      "END_TIME": "运维数据2",
+      "FILE_NAME": "中智",
+      "YEAR": "2",
+      "RESULT":""
+    },
+    {
+      "UNIT_NAME": "江宁区",
+      "MARKET_NAME": "刷卡异常",
+      "TYPE_NAME": "沪蓉高速黄栗墅服务区站（成都方向）",
+      "CAPACITY": "1B号充电桩",
+      "START_TIME": "更换刷卡配件",
+      "END_TIME": "运维数据2",
+      "FILE_NAME": "中智",
+      "YEAR": "4",
+      "RESULT":""
+    },
+    {
+        "UNIT_NAME": "江宁区",
+        "MARKET_NAME": "充电枪损坏",
+        "TYPE_NAME": "南京市江宁区滨江开发区站（公交专用）",
+        "CAPACITY": "13号充电桩",
+        "START_TIME": "更换充电枪",
+        "END_TIME": "运维数据2",
+        "FILE_NAME": "中智",
+        "YEAR": "3",
+        "RESULT":""
+      },
+      {
+        "UNIT_NAME": "秦淮区",
+        "MARKET_NAME": "屏幕损坏",
+        "TYPE_NAME": "南京市秦淮区夫子庙站",
+        "CAPACITY": "测试桩2",
+        "START_TIME": "更换屏幕",
+        "END_TIME": "运维数据2",
+        "FILE_NAME": "中智",
+        "YEAR": "2",
+        "RESULT":""
+      },
+      {
+        "UNIT_NAME": "六合区",
+        "MARKET_NAME": "短路",
+        "TYPE_NAME": "长深高速六合服务区快充站（深圳方向）",
+        "CAPACITY": "4号充电桩",
+        "START_TIME": "换线",
+        "END_TIME": "运维数据2",
+        "FILE_NAME": "中智",
+        "YEAR": "6",
+        "RESULT":""
+      },
+      {
+        "UNIT_NAME": "六合区",
+        "MARKET_NAME": "电压表异常",
+        "TYPE_NAME": "长深高速六合服务区快充站（深圳方向）",
+        "CAPACITY": "4号充电桩",
+        "START_TIME": "更换电压表",
+        "END_TIME": "运维数据2",
+        "FILE_NAME": "中智",
+        "YEAR": "1",
+        "RESULT":""
+      },
+      {
+        "UNIT_NAME": "江宁区",
+        "MARKET_NAME": "短路",
+        "TYPE_NAME": "南京市江宁区滨江开发区站（公交专用）",
+        "CAPACITY": "6号充电桩",
+        "START_TIME": "换线",
+        "END_TIME": "运维数据2",
+        "FILE_NAME": "中智",
+        "YEAR": "1",
+        "RESULT":""
+      },
+      {
+        "UNIT_NAME": "浦口区",
+        "MARKET_NAME": "电压表异常",
+        "TYPE_NAME": "沪蓉高速三桥服务区站（成都方向）",
+        "CAPACITY": "5号充电桩",
+        "START_TIME": "更换电压表",
+        "END_TIME": "运维数据2",
+        "FILE_NAME": "中智",
+        "YEAR": "3",
+        "RESULT":""
+      },
+      {
+        "UNIT_NAME": "六合区",
+        "MARKET_NAME": "短路",
+        "TYPE_NAME": "长深高速六合服务区快充站（深圳方向）",
+        "CAPACITY": "4号充电桩",
+        "START_TIME": "换线",
+        "END_TIME": "运维数据2",
+        "FILE_NAME": "中智",
+        "YEAR": "1",
+        "RESULT":""
+      }
+  ]
+}

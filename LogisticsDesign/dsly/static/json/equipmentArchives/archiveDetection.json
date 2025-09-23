@@ -1,0 +1,103 @@
+{
+  "data": [{
+      "UNIT_NAME": "六合区",
+      "MARKET_NAME": "到货检测",
+      "TYPE_NAME": "长深高速六合服务区快充站（深圳方向）",
+      "CAPACITY": "4号充电桩",
+      "START_TIME": "2022-05-18 09:41:16",
+      "END_TIME": "中智",
+      "FILE_NAME": "管理员",
+      "YEAR": "合格"
+    },
+    {
+      "UNIT_NAME": "建邺区",
+      "MARKET_NAME": "验收检测",
+      "TYPE_NAME": "南京市建邺区南河站（公交专用）",
+      "CAPACITY": "2号充电桩",
+      "START_TIME": "2022-05-18 09:41:16",
+      "END_TIME": "富华",
+      "FILE_NAME": "管理员",
+      "YEAR": "合格"
+    },
+    {
+      "UNIT_NAME": "江宁区",
+      "MARKET_NAME": "现场抽检",
+      "TYPE_NAME": "沪蓉高速黄栗墅服务区站（成都方向）",
+      "CAPACITY": "1B号充电桩",
+      "START_TIME": "2022-05-18 09:41:16",
+      "END_TIME": "中智",
+      "FILE_NAME": "管理员",
+      "YEAR": "合格"
+    },
+    {
+        "UNIT_NAME": "江宁区",
+        "MARKET_NAME": "验收检测",
+        "TYPE_NAME": "南京市江宁区滨江开发区站（公交专用）",
+        "CAPACITY": "13号充电桩",
+        "START_TIME": "2022-05-18 09:41:16",
+        "END_TIME": "南瑞",
+        "FILE_NAME": "管理员",
+        "YEAR": "合格"
+      },
+      {
+        "UNIT_NAME": "秦淮区",
+        "MARKET_NAME": "现场抽检",
+        "TYPE_NAME": "南京市秦淮区夫子庙站",
+        "CAPACITY": "测试桩2",
+        "START_TIME": "2022-05-18 09:41:16",
+        "END_TIME": "中智",
+        "FILE_NAME": "管理员",
+        "YEAR": "合格"
+      },
+      {
+        "UNIT_NAME": "六合区",
+        "MARKET_NAME": "现场抽检",
+        "TYPE_NAME": "长深高速六合服务区快充站（深圳方向）",
+        "CAPACITY": "4号充电桩",
+        "START_TIME": "2022-05-18 09:41:16",
+        "END_TIME": "南瑞",
+        "FILE_NAME": "管理员",
+        "YEAR": "合格"
+      },
+      {
+        "UNIT_NAME": "六合区",
+        "MARKET_NAME": "到货检测",
+        "TYPE_NAME": "长深高速六合服务区快充站（深圳方向）",
+        "CAPACITY": "4号充电桩",
+        "START_TIME": "2022-05-18 09:41:16",
+        "END_TIME": "中智",
+        "FILE_NAME": "管理员",
+        "YEAR": "合格"
+      },
+      {
+        "UNIT_NAME": "江宁区",
+        "MARKET_NAME": "现场抽检",
+        "TYPE_NAME": "南京市江宁区滨江开发区站（公交专用）",
+        "CAPACITY": "6号充电桩",
+        "START_TIME": "2022-05-18 09:41:16",
+        "END_TIME": "富华",
+        "FILE_NAME": "管理员",
+        "YEAR": "合格"
+      },
+      {
+        "UNIT_NAME": "浦口区",
+        "MARKET_NAME": "到货检测",
+        "TYPE_NAME": "沪蓉高速三桥服务区站（成都方向）",
+        "CAPACITY": "5号充电桩",
+        "START_TIME": "2022-05-18 09:41:16",
+        "END_TIME": "中智",
+        "FILE_NAME": "管理员",
+        "YEAR": "合格"
+      },
+      {
+        "UNIT_NAME": "六合区",
+        "MARKET_NAME": "验收检测",
+        "TYPE_NAME": "长深高速六合服务区快充站（深圳方向）",
+        "CAPACITY": "4号充电桩",
+        "START_TIME": "2022-05-18 09:41:16",
+        "END_TIME": "中智",
+        "FILE_NAME": "管理员",
+        "YEAR": "合格"
+      }
+  ]
+}

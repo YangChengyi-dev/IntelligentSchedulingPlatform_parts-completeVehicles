@@ -1,0 +1,188 @@
+[2024-06-14 11:08:50|22144|INFO|base_model.py:91]  session [2456428760272] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 11:08:50|22144|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-06-14 11:08:50|8436|INFO|base_model.py:91]  session [2456427620736] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 11:08:50|8436|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-06-14 11:09:12|4960|INFO|base_model.py:91]  session [2456427623808] and [Vehicle] has an operator: QUERY.
+[2024-06-14 11:09:12|4960|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-06-14 11:09:12|21884|INFO|base_model.py:91]  session [2456427617472] and [Vehicle] has an operator: QUERY.
+[2024-06-14 11:09:12|21884|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-06-14 11:09:17|18992|INFO|base_model.py:91]  session [2456427618816] and [Vehicle] has an operator: QUERY.
+[2024-06-14 11:09:17|18992|INFO|vehicle_view.py:48]  Vehicle explore successfully
+[2024-06-14 11:17:10|21812|INFO|base_model.py:91]  session [1406798011680] and [Vehicle] has an operator: QUERY.
+[2024-06-14 11:17:10|21812|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-06-14 11:17:28|12596|INFO|base_model.py:91]  session [1406799244704] and [Vehicle] has an operator: QUERY.
+[2024-06-14 11:17:28|12596|INFO|vehicle_view.py:28]  Vehicle init successfully
+[2024-06-14 11:17:29|16424|INFO|base_model.py:91]  session [1406799247200] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 11:17:29|16424|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-06-14 11:17:33|25324|INFO|base_model.py:91]  session [1406799246192] and [Transport] has an operator: QUERY.
+[2024-06-14 11:17:33|25324|INFO|vehicle_view.py:58]  transport init successfully
+[2024-06-14 11:17:33|18936|INFO|base_model.py:91]  session [1406799244032] and [Transport] has an operator: QUERY.
+[2024-06-14 11:17:33|18936|INFO|vehicle_view.py:58]  transport init successfully
+[2024-06-14 11:17:41|12316|INFO|base_model.py:91]  session [1406799548992] and [Transport] has an operator: QUERY.
+[2024-06-14 11:17:41|12316|INFO|vehicle_view.py:84]  transport search successfully
+[2024-06-14 11:25:24|25488|INFO|base_model.py:91]  session [2339454001136] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 11:25:24|25488|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-06-14 11:25:25|9672|INFO|base_model.py:91]  session [2339453999600] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 11:25:25|9672|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-06-14 11:25:42|25448|INFO|base_model.py:91]  session [2339455120336] and [Part] has an operator: QUERY.
+[2024-06-14 11:25:42|25448|INFO|part_view.py:28]  part init successfully
+[2024-06-14 11:25:43|19792|INFO|base_model.py:91]  session [2339454000272] and [Part] has an operator: QUERY.
+[2024-06-14 11:25:43|19792|INFO|part_view.py:28]  part init successfully
+[2024-06-14 11:25:46|16584|INFO|base_model.py:91]  session [2339455648192] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 11:25:46|16584|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-06-14 11:25:48|23724|INFO|base_model.py:91]  session [2339455649776] and [Part] has an operator: QUERY.
+[2024-06-14 11:25:48|23724|INFO|part_view.py:28]  part init successfully
+[2024-06-14 11:25:59|23624|INFO|base_model.py:91]  session [2339455652464] and [EmptyCar] has an operator: QUERY.
+[2024-06-14 11:25:59|23624|INFO|vehicle_view.py:148]  Empty car search successfully
+[2024-06-14 11:26:11|18084|INFO|base_model.py:91]  session [2339455658272] and [TransportCost] has an operator: QUERY.
+[2024-06-14 11:26:11|18084|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-06-14 11:26:11|1300|INFO|base_model.py:91]  session [2339455656112] and [TransportCost] has an operator: QUERY.
+[2024-06-14 11:26:11|1300|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-06-14 11:26:13|8508|INFO|base_model.py:91]  session [2339455516976] and [TransportCost] has an operator: QUERY.
+[2024-06-14 11:26:13|8508|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-06-14 11:46:02|7700|INFO|base_model.py:91]  session [2421812289328] and [TransportCost] has an operator: QUERY.
+[2024-06-14 11:46:02|7700|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-06-14 11:46:04|20276|INFO|base_model.py:91]  session [2421813393344] and [EmptyCar] has an operator: QUERY.
+[2024-06-14 11:46:04|20276|INFO|vehicle_view.py:147]  Empty car search successfully
+[2024-06-14 13:52:48|13880|INFO|base_model.py:91]  session [2277268376688] and [TransportCost] has an operator: QUERY.
+[2024-06-14 13:52:48|13880|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-06-14 13:52:48|13632|INFO|base_model.py:91]  session [2277267273184] and [TransportCost] has an operator: QUERY.
+[2024-06-14 13:52:48|13632|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-06-14 13:53:15|14212|INFO|base_model.py:91]  session [2276859333168] and [TransportCost] has an operator: QUERY.
+[2024-06-14 13:53:15|14212|INFO|vehicle_view.py:111]  transport cost successfully
+[2024-06-14 13:53:18|9604|INFO|base_model.py:91]  session [2276859335952] and [EmptyCar] has an operator: QUERY.
+[2024-06-14 13:53:18|9604|INFO|vehicle_view.py:147]  Empty car search successfully
+[2024-06-14 13:55:50|19552|INFO|base_model.py:91]  session [2072109916480] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 13:55:50|19552|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-06-14 13:55:50|14752|INFO|base_model.py:91]  session [2072109917200] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 13:55:50|14752|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-06-14 13:56:04|15812|INFO|sales_view.py:44]  使用多元线性回归预测2024/01~2024/12的汽车销量情况
+[2024-06-14 13:56:05|15812|INFO|base_model.py:32]  session [2072111149456] and [RegressPredict] has an operator: ADD.
+[2024-06-14 13:56:05|15812|INFO|base_model.py:91]  session [2072111149456] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 13:56:05|15812|INFO|sales_view.py:56]  Regress Predict successfully
+[2024-06-14 13:56:12|20968|INFO|base_model.py:91]  session [2072119645648] and [Part] has an operator: QUERY.
+[2024-06-14 13:56:12|20968|INFO|part_view.py:28]  part init successfully
+[2024-06-14 13:56:12|17484|INFO|base_model.py:91]  session [2072119653472] and [Part] has an operator: QUERY.
+[2024-06-14 13:56:12|17484|INFO|part_view.py:28]  part init successfully
+[2024-06-14 13:56:16|15172|INFO|base_model.py:91]  session [2072119521344] and [Part] has an operator: QUERY.
+[2024-06-14 13:56:16|15172|INFO|part_view.py:51]  part search successfully
+[2024-06-14 13:56:18|1712|INFO|base_model.py:91]  session [2072119513376] and [Part] has an operator: QUERY.
+[2024-06-14 13:56:18|1712|INFO|part_view.py:51]  part search successfully
+[2024-06-14 13:56:21|23700|INFO|base_model.py:91]  session [2072121519424] and [Part] has an operator: QUERY.
+[2024-06-14 13:56:21|23700|INFO|part_view.py:51]  part search successfully
+[2024-06-14 13:56:21|21672|INFO|base_model.py:91]  session [2072121518272] and [Part] has an operator: QUERY.
+[2024-06-14 13:56:21|21672|INFO|part_view.py:51]  part search successfully
+[2024-06-14 13:56:25|22436|INFO|base_model.py:91]  session [2072111151664] and [Part] has an operator: QUERY.
+[2024-06-14 13:56:25|22436|INFO|part_view.py:51]  part search successfully
+[2024-06-14 13:56:25|25356|INFO|base_model.py:91]  session [2072119516640] and [Part] has an operator: QUERY.
+[2024-06-14 13:56:25|25356|INFO|part_view.py:51]  part search successfully
+[2024-06-14 13:58:09|22564|INFO|base_model.py:91]  session [1224060755904] and [Part] has an operator: QUERY.
+[2024-06-14 13:58:09|22564|INFO|part_view.py:51]  part search successfully
+[2024-06-14 14:01:39|6300|INFO|base_model.py:91]  session [1837125263248] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 14:01:39|6300|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-06-14 14:01:39|1228|INFO|base_model.py:91]  session [1837125263968] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 14:01:39|1228|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-06-14 14:01:44|12788|INFO|base_model.py:91]  session [1837126395136] and [Part] has an operator: QUERY.
+[2024-06-14 14:01:44|12788|INFO|part_view.py:28]  part init successfully
+[2024-06-14 14:01:45|376|INFO|base_model.py:91]  session [1837126398400] and [Part] has an operator: QUERY.
+[2024-06-14 14:01:45|376|INFO|part_view.py:28]  part init successfully
+[2024-06-14 14:01:59|3824|INFO|base_model.py:91]  session [1837126600304] and [PartOptimize] has an operator: QUERY.
+[2024-06-14 14:01:59|3824|INFO|part_view.py:66]  part optimize successfully
+[2024-06-14 14:11:42|16716|INFO|base_model.py:91]  session [2208543088480] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 14:11:42|16716|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-06-14 14:11:43|19668|INFO|base_model.py:91]  session [2208543089200] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 14:11:43|19668|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-06-14 14:11:54|21992|INFO|sales_view.py:44]  使用线性回归预测2024/01~2024/05的汽车销量情况
+[2024-06-14 14:11:54|21992|INFO|base_model.py:32]  session [2208544207776] and [RegressPredict] has an operator: ADD.
+[2024-06-14 14:11:54|21992|INFO|base_model.py:91]  session [2208544207776] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 14:11:54|21992|INFO|sales_view.py:56]  Regress Predict successfully
+[2024-06-14 14:11:54|21992|ERROR|db_connection.py:53]  [Except]transaction function error, info is can only concatenate list (not "str") to list
+[2024-06-14 14:11:54|21992|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "D:\py_learn\learn\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "D:\py_learn\learn\LogisticsDesign\back_end\views\sales_view.py", line 57, in sales_regress
+    print(json_data+"\n")
+TypeError: can only concatenate list (not "str") to list
+
+[2024-06-14 14:11:54|21992|ERROR|__init__.py:110]  sales_regress error, info is can only concatenate list (not "str") to list
+[2024-06-14 14:11:54|21992|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "D:\py_learn\learn\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "D:\py_learn\learn\LogisticsDesign\back_end\views\sales_view.py", line 57, in sales_regress
+    print(json_data+"\n")
+TypeError: can only concatenate list (not "str") to list
+
+[2024-06-14 14:12:25|14000|INFO|sales_view.py:44]  使用线性回归预测2024/01~2024/12的汽车销量情况
+[2024-06-14 14:12:26|14000|INFO|base_model.py:32]  session [2208544208352] and [RegressPredict] has an operator: ADD.
+[2024-06-14 14:12:26|14000|INFO|base_model.py:91]  session [2208544208352] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 14:12:26|14000|INFO|sales_view.py:56]  Regress Predict successfully
+[2024-06-14 14:12:26|14000|ERROR|db_connection.py:53]  [Except]transaction function error, info is can only concatenate list (not "str") to list
+[2024-06-14 14:12:26|14000|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "D:\py_learn\learn\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "D:\py_learn\learn\LogisticsDesign\back_end\views\sales_view.py", line 57, in sales_regress
+    print(json_data+"\n")
+TypeError: can only concatenate list (not "str") to list
+
+[2024-06-14 14:12:26|14000|ERROR|__init__.py:110]  sales_regress error, info is can only concatenate list (not "str") to list
+[2024-06-14 14:12:26|14000|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "D:\py_learn\learn\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "D:\py_learn\learn\LogisticsDesign\back_end\views\sales_view.py", line 57, in sales_regress
+    print(json_data+"\n")
+TypeError: can only concatenate list (not "str") to list
+
+[2024-06-14 14:12:29|19084|INFO|sales_view.py:44]  使用线性回归预测2024/01~2024/12的汽车销量情况
+[2024-06-14 14:12:30|19084|INFO|base_model.py:32]  session [2208552798096] and [RegressPredict] has an operator: ADD.
+[2024-06-14 14:12:30|19084|INFO|base_model.py:91]  session [2208552798096] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 14:12:30|19084|INFO|sales_view.py:56]  Regress Predict successfully
+[2024-06-14 14:12:30|19084|ERROR|db_connection.py:53]  [Except]transaction function error, info is can only concatenate list (not "str") to list
+[2024-06-14 14:12:30|19084|ERROR|db_connection.py:54]  Traceback (most recent call last):
+  File "D:\py_learn\learn\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "D:\py_learn\learn\LogisticsDesign\back_end\views\sales_view.py", line 57, in sales_regress
+    print(json_data+"\n")
+TypeError: can only concatenate list (not "str") to list
+
+[2024-06-14 14:12:30|19084|ERROR|__init__.py:110]  sales_regress error, info is can only concatenate list (not "str") to list
+[2024-06-14 14:12:30|19084|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\database\db_connection.py", line 56, in wrapper
+    raise e
+  File "D:\py_learn\learn\LogisticsDesign\database\db_connection.py", line 44, in wrapper
+    res = func(*args, **kwargs)
+  File "D:\py_learn\learn\LogisticsDesign\back_end\views\sales_view.py", line 57, in sales_regress
+    print(json_data+"\n")
+TypeError: can only concatenate list (not "str") to list
+
+[2024-06-14 14:13:06|2608|INFO|sales_view.py:44]  使用线性回归预测2024/01~2024/12的汽车销量情况
+[2024-06-14 14:13:06|2608|INFO|base_model.py:32]  session [2543468616752] and [RegressPredict] has an operator: ADD.
+[2024-06-14 14:13:06|2608|INFO|base_model.py:91]  session [2543468616752] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 14:13:06|2608|INFO|sales_view.py:56]  Regress Predict successfully
+[2024-06-14 14:13:18|24016|INFO|sales_view.py:44]  使用线性回归预测2024/01~2024/06的汽车销量情况
+[2024-06-14 14:13:18|24016|INFO|base_model.py:32]  session [2543480210912] and [RegressPredict] has an operator: ADD.
+[2024-06-14 14:13:18|24016|INFO|base_model.py:91]  session [2543480210912] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 14:13:18|24016|INFO|sales_view.py:56]  Regress Predict successfully
+[2024-06-14 14:29:50|9828|INFO|base_model.py:91]  session [1953424531392] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 14:29:50|9828|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-06-14 14:29:50|15660|INFO|base_model.py:91]  session [1953424531440] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 14:29:50|15660|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-06-14 14:34:48|24672|INFO|base_model.py:91]  session [1953425665776] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 14:34:48|24672|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-06-14 14:34:48|7016|INFO|base_model.py:91]  session [1953425666064] and [RegressPredict] has an operator: QUERY.
+[2024-06-14 14:34:48|7016|INFO|sales_view.py:31]  Regress Predict init successfully

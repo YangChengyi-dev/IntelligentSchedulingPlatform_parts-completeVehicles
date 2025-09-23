@@ -1,0 +1,9 @@
+[2024-11-14 16:07:59|24396|INFO|base_model.py:91]  session [1770101260640] and [user] has an operator: QUERY.
+[2024-11-14 17:02:30|33136|INFO|base_model.py:91]  session [1770101261264] and [user] has an operator: QUERY.
+[2024-11-14 17:37:12|28744|INFO|base_model.py:91]  session [1770101623632] and [RegressPredict] has an operator: QUERY.
+[2024-11-14 17:37:12|28744|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-14 17:37:12|33248|INFO|base_model.py:91]  session [1770101004032] and [RegressPredict] has an operator: QUERY.
+[2024-11-14 17:37:12|33248|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-14 17:39:09|26008|INFO|base_model.py:91]  session [1770101004944] and [PartOptimize] has an operator: QUERY.
+[2024-11-14 17:39:09|26008|INFO|part_view.py:66]  part optimize successfully
+[2024-11-14 18:04:29|33576|INFO|base_model.py:91]  session [2792198258896] and [user] has an operator: QUERY.

@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "UNIT_NAME": "直流充电桩",
+      "MARKET_NAME": "",
+      "TYPE_NAME": "直流充电桩",
+      "CAPACITY": "无",
+      "START_TIME": "",
+      "END_TIME": ""
+    },
+    {
+      "UNIT_NAME": "交流充电桩",
+      "MARKET_NAME": "",
+      "TYPE_NAME": "交流充电桩",
+      "CAPACITY": "无",
+      "START_TIME": "",
+      "END_TIME": ""
+    },
+    {
+      "UNIT_NAME": "交直流一体桩",
+      "MARKET_NAME": "",
+      "TYPE_NAME": "交直流一体桩",
+      "CAPACITY": "无",
+      "START_TIME": "",
+      "END_TIME": ""
+    }
+  ],
+  "treeData":[
+    {
+      "label":"直流充电桩"
+    },
+    {
+      "label":"交流充电桩"
+    },
+    {
+      "label":"交直流一体桩"
+    }
+  ]
+}

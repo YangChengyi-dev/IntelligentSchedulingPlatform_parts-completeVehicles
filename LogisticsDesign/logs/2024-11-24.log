@@ -1,0 +1,39 @@
+[2024-11-24 16:58:41|22696|INFO|base_model.py:91]  session [2519288425584] and [user] has an operator: QUERY.
+[2024-11-24 17:44:43|5684|INFO|base_model.py:91]  session [2519288426256] and [TransportCost] has an operator: QUERY.
+[2024-11-24 17:44:43|25768|INFO|base_model.py:91]  session [2519289286816] and [TransportCost] has an operator: QUERY.
+[2024-11-24 17:44:43|5684|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-24 17:44:43|25768|INFO|vehicle_view.py:113]  transport cost successfully
+[2024-11-24 17:45:09|3104|INFO|base_model.py:91]  session [2519289045824] and [Vehicle] has an operator: QUERY.
+[2024-11-24 17:45:09|3104|INFO|vehicle_view.py:30]  Vehicle init successfully
+[2024-11-24 17:45:09|3952|INFO|base_model.py:91]  session [2519290529872] and [Vehicle] has an operator: QUERY.
+[2024-11-24 17:45:09|3952|INFO|vehicle_view.py:30]  Vehicle init successfully
+[2024-11-24 17:45:09|26188|INFO|base_model.py:91]  session [2519290348400] and [Transport] has an operator: QUERY.
+[2024-11-24 17:45:09|26188|INFO|vehicle_view.py:60]  transport init successfully
+[2024-11-24 17:45:09|15680|INFO|base_model.py:91]  session [2519289047696] and [Transport] has an operator: QUERY.
+[2024-11-24 17:45:09|15680|INFO|vehicle_view.py:60]  transport init successfully
+[2024-11-24 17:45:11|22476|INFO|base_model.py:91]  session [2519290530256] and [Part] has an operator: QUERY.
+[2024-11-24 17:45:11|22476|INFO|part_view.py:29]  part init successfully
+[2024-11-24 17:45:11|19404|INFO|base_model.py:91]  session [2519296946384] and [Part] has an operator: QUERY.
+[2024-11-24 17:45:11|19404|INFO|part_view.py:29]  part init successfully
+[2024-11-24 17:45:12|17576|INFO|base_model.py:91]  session [2519296946624] and [RegressPredict] has an operator: QUERY.
+[2024-11-24 17:45:13|17576|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-24 17:45:13|13096|INFO|base_model.py:91]  session [2519290348928] and [RegressPredict] has an operator: QUERY.
+[2024-11-24 17:45:13|13096|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-24 17:46:33|22136|INFO|base_model.py:91]  session [2519290350128] and [RegressPredict] has an operator: QUERY.
+[2024-11-24 17:46:33|22136|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-24 17:46:37|21596|INFO|base_model.py:91]  session [2519296924112] and [RegressPredict] has an operator: QUERY.
+[2024-11-24 17:46:37|21596|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-24 17:48:13|21352|INFO|base_model.py:91]  session [2519296924160] and [RegressPredict] has an operator: QUERY.
+[2024-11-24 17:48:14|21352|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-24 17:48:37|3476|INFO|base_model.py:91]  session [2519296767216] and [RegressPredict] has an operator: QUERY.
+[2024-11-24 17:48:37|3476|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-24 17:53:08|26364|INFO|base_model.py:91]  session [2519296768224] and [RegressPredict] has an operator: QUERY.
+[2024-11-24 17:53:08|26364|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-24 17:53:08|12756|INFO|base_model.py:91]  session [2519296923344] and [RegressPredict] has an operator: QUERY.
+[2024-11-24 17:53:08|12756|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-24 20:56:51|27412|INFO|base_model.py:91]  session [2519296925024] and [RegressPredict] has an operator: QUERY.
+[2024-11-24 20:56:51|27412|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-24 20:56:51|23092|INFO|base_model.py:91]  session [2519296948208] and [RegressPredict] has an operator: QUERY.
+[2024-11-24 20:56:51|23092|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-24 20:56:51|1248|INFO|base_model.py:91]  session [2519296948208] and [RegressPredict] has an operator: QUERY.
+[2024-11-24 20:56:51|1248|INFO|sales_view.py:31]  Regress Predict init successfully

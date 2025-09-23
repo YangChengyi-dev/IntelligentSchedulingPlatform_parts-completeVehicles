@@ -1,0 +1,5 @@
+[2024-11-27 20:19:20|27416|INFO|base_model.py:91]  session [1684757323632] and [user] has an operator: QUERY.
+[2024-11-27 20:23:12|10208|INFO|base_model.py:91]  session [1684758263744] and [RegressPredict] has an operator: QUERY.
+[2024-11-27 20:23:12|10208|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-11-27 20:23:12|7992|INFO|base_model.py:91]  session [1684758263744] and [RegressPredict] has an operator: QUERY.
+[2024-11-27 20:23:12|7992|INFO|sales_view.py:31]  Regress Predict init successfully

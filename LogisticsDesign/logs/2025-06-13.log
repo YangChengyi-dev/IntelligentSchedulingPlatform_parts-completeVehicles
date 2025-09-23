@@ -1,0 +1,7 @@
+[2025-06-13 21:17:17|3080|INFO|base_model.py:91]  session [1890291903664] and [user] has an operator: QUERY.
+[2025-06-13 21:20:10|2216|INFO|base_model.py:91]  session [1890293084800] and [user] has an operator: QUERY.
+[2025-06-13 21:22:39|5400|INFO|base_model.py:91]  session [1890293086816] and [user] has an operator: QUERY.
+[2025-06-13 21:30:21|27212|INFO|base_model.py:91]  session [1890293334704] and [user] has an operator: QUERY.
+[2025-06-13 21:33:13|16612|INFO|base_model.py:91]  session [1890293338496] and [user] has an operator: QUERY.
+[2025-06-13 21:33:31|14928|INFO|base_model.py:91]  session [1890293341424] and [user] has an operator: QUERY.
+[2025-06-13 21:44:46|5552|INFO|base_model.py:91]  session [1890293345120] and [user] has an operator: QUERY.

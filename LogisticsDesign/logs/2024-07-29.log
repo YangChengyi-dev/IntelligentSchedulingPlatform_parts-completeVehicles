@@ -1,0 +1,54 @@
+[2024-07-29 01:54:50|3312|INFO|base_model.py:91]  session [1245624535312] and [Transport] has an operator: QUERY.
+[2024-07-29 01:54:51|3312|INFO|vehicle_view.py:58]  transport init successfully
+[2024-07-29 01:54:51|24360|INFO|base_model.py:91]  session [1247686751760] and [Transport] has an operator: QUERY.
+[2024-07-29 01:54:51|24360|INFO|vehicle_view.py:58]  transport init successfully
+[2024-07-29 01:54:52|28112|INFO|base_model.py:91]  session [1245625627168] and [Transport] has an operator: QUERY.
+[2024-07-29 01:54:52|28112|INFO|vehicle_view.py:58]  transport init successfully
+[2024-07-29 01:54:53|3720|INFO|base_model.py:91]  session [1245625629424] and [Transport] has an operator: QUERY.
+[2024-07-29 01:54:53|3720|INFO|vehicle_view.py:58]  transport init successfully
+[2024-07-29 02:04:51|26336|INFO|base_model.py:91]  session [1245625861648] and [Transport] has an operator: QUERY.
+[2024-07-29 02:04:51|26336|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:04:57|28148|INFO|base_model.py:91]  session [1245625625104] and [Transport] has an operator: QUERY.
+[2024-07-29 02:04:57|28148|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:05:00|27940|INFO|base_model.py:91]  session [1245625625104] and [Transport] has an operator: QUERY.
+[2024-07-29 02:05:00|27940|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:05:10|5960|INFO|base_model.py:91]  session [1245624534400] and [Transport] has an operator: QUERY.
+[2024-07-29 02:05:10|5960|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:05:11|11384|INFO|base_model.py:91]  session [1245625628944] and [Transport] has an operator: QUERY.
+[2024-07-29 02:05:11|11384|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:05:11|21980|INFO|base_model.py:91]  session [1245625628080] and [Transport] has an operator: QUERY.
+[2024-07-29 02:05:11|21980|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:05:12|6600|INFO|base_model.py:91]  session [1245625867600] and [Transport] has an operator: QUERY.
+[2024-07-29 02:05:12|6600|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:05:13|27044|INFO|base_model.py:91]  session [1245625866784] and [Transport] has an operator: QUERY.
+[2024-07-29 02:05:13|27044|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:05:13|18480|INFO|base_model.py:91]  session [1245625863856] and [Transport] has an operator: QUERY.
+[2024-07-29 02:05:13|18480|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:05:15|27804|INFO|base_model.py:91]  session [1245625871440] and [Transport] has an operator: QUERY.
+[2024-07-29 02:05:15|27804|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:05:18|28624|INFO|base_model.py:91]  session [1245625862464] and [Transport] has an operator: QUERY.
+[2024-07-29 02:05:18|28624|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:05:19|27204|INFO|base_model.py:91]  session [1247686745568] and [Transport] has an operator: QUERY.
+[2024-07-29 02:05:19|27204|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:05:20|25912|INFO|base_model.py:91]  session [1245625872448] and [Transport] has an operator: QUERY.
+[2024-07-29 02:05:20|25912|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:09:07|26812|INFO|base_model.py:91]  session [1245625867600] and [Transport] has an operator: QUERY.
+[2024-07-29 02:09:07|26812|INFO|vehicle_view.py:58]  transport init successfully
+[2024-07-29 02:12:48|2712|INFO|base_model.py:91]  session [1245625864288] and [Transport] has an operator: QUERY.
+[2024-07-29 02:12:48|2712|INFO|vehicle_view.py:58]  transport init successfully
+[2024-07-29 02:12:49|23124|INFO|base_model.py:91]  session [1245625870240] and [Transport] has an operator: QUERY.
+[2024-07-29 02:12:49|23124|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:12:50|13076|INFO|base_model.py:91]  session [1245625873312] and [Transport] has an operator: QUERY.
+[2024-07-29 02:12:50|13076|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:12:50|10324|INFO|base_model.py:91]  session [1245625870816] and [Transport] has an operator: QUERY.
+[2024-07-29 02:12:50|10324|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:12:51|1880|INFO|base_model.py:91]  session [1247686749552] and [Transport] has an operator: QUERY.
+[2024-07-29 02:12:51|1880|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:12:51|1528|INFO|base_model.py:91]  session [1245625623568] and [Transport] has an operator: QUERY.
+[2024-07-29 02:12:51|1528|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:12:52|26020|INFO|base_model.py:91]  session [1245626140752] and [Transport] has an operator: QUERY.
+[2024-07-29 02:12:52|26020|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:12:53|26180|INFO|base_model.py:91]  session [1245625626256] and [Transport] has an operator: QUERY.
+[2024-07-29 02:12:53|26180|INFO|vehicle_view.py:83]  transport search successfully
+[2024-07-29 02:12:53|23332|INFO|base_model.py:91]  session [1245625867216] and [Transport] has an operator: QUERY.
+[2024-07-29 02:12:53|23332|INFO|vehicle_view.py:83]  transport search successfully

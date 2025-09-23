@@ -1,0 +1,4 @@
+[2024-05-10 23:22:53|23916|INFO|base_model.py:91]  session [1996738179328] and [EmptyCar] has an operator: QUERY.
+[2024-05-10 23:22:53|23916|INFO|vehicle_view.py:168]  Empty car search successfully
+[2024-05-10 23:26:04|17352|INFO|base_model.py:91]  session [1996740546512] and [EmptyCar] has an operator: QUERY.
+[2024-05-10 23:26:04|17352|INFO|vehicle_view.py:168]  Empty car search successfully

@@ -1,0 +1,27 @@
+[2024-10-18 10:40:18|15968|INFO|db_init.py:108]  drop my table successfully
+[2024-10-18 10:40:19|15968|INFO|db_init.py:141]  create my table successfully
+[2024-10-18 10:40:20|15968|INFO|db_init.py:170]  Import excel data [part] successfully
+[2024-10-18 10:40:21|15968|INFO|db_init.py:170]  Import excel data [part_optimize] successfully
+[2024-10-18 10:40:21|15968|INFO|db_init.py:170]  Import excel data [vehicle] successfully
+[2024-10-18 10:40:21|15968|INFO|db_init.py:170]  Import excel data [regress_predict] successfully
+[2024-10-18 10:40:21|15968|INFO|db_init.py:170]  Import excel data [transport] successfully
+[2024-10-18 10:40:21|15968|INFO|db_init.py:170]  Import excel data [transport_cost] successfully
+[2024-10-18 10:40:21|15968|INFO|db_init.py:170]  Import excel data [empty_car] successfully
+[2024-10-18 10:43:34|12520|INFO|db_init.py:108]  drop my table successfully
+[2024-10-18 10:43:34|12520|INFO|db_init.py:141]  create my table successfully
+[2024-10-18 10:43:34|12520|INFO|db_init.py:170]  Import excel data [part] successfully
+[2024-10-18 10:43:35|12520|INFO|db_init.py:170]  Import excel data [part_optimize] successfully
+[2024-10-18 10:43:35|12520|INFO|db_init.py:170]  Import excel data [vehicle] successfully
+[2024-10-18 10:43:35|12520|INFO|db_init.py:170]  Import excel data [regress_predict] successfully
+[2024-10-18 10:43:35|12520|INFO|db_init.py:170]  Import excel data [transport] successfully
+[2024-10-18 10:43:35|12520|INFO|db_init.py:170]  Import excel data [transport_cost] successfully
+[2024-10-18 10:43:35|12520|INFO|db_init.py:170]  Import excel data [empty_car] successfully
+[2024-10-18 10:46:17|16864|INFO|db_init.py:108]  drop my table successfully
+[2024-10-18 10:46:18|16864|INFO|db_init.py:141]  create my table successfully
+[2024-10-18 10:46:18|16864|INFO|db_init.py:170]  Import excel data [part] successfully
+[2024-10-18 10:46:19|16864|INFO|db_init.py:170]  Import excel data [part_optimize] successfully
+[2024-10-18 10:46:19|16864|INFO|db_init.py:170]  Import excel data [vehicle] successfully
+[2024-10-18 10:46:19|16864|INFO|db_init.py:170]  Import excel data [regress_predict] successfully
+[2024-10-18 10:46:19|16864|INFO|db_init.py:170]  Import excel data [transport] successfully
+[2024-10-18 10:46:19|16864|INFO|db_init.py:170]  Import excel data [transport_cost] successfully
+[2024-10-18 10:46:19|16864|INFO|db_init.py:170]  Import excel data [empty_car] successfully

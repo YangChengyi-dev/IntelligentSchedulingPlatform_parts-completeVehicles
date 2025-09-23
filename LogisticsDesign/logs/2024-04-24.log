@@ -1,0 +1,12 @@
+[2024-04-24 13:33:00|25008|INFO|base_model.py:91]  session [1630587776512] and [Part] has an operator: QUERY.
+[2024-04-24 13:33:01|25008|INFO|part_view.py:33]  part init successfully
+[2024-04-24 13:33:01|22296|INFO|base_model.py:91]  session [1630587775264] and [Part] has an operator: QUERY.
+[2024-04-24 13:33:01|22296|INFO|part_view.py:33]  part init successfully
+[2024-04-24 13:33:19|22804|INFO|base_model.py:91]  session [1630589859536] and [RegressPredict] has an operator: QUERY.
+[2024-04-24 13:33:19|22804|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-04-24 13:33:19|24304|INFO|base_model.py:91]  session [1630589861504] and [RegressPredict] has an operator: QUERY.
+[2024-04-24 13:33:19|24304|INFO|sales_view.py:28]  Regress Predict init successfully
+[2024-04-24 13:35:26|25376|INFO|base_model.py:91]  session [1630589859392] and [EmptyCar] has an operator: QUERY.
+[2024-04-24 13:35:26|25376|INFO|vehicle_view.py:139]  Empty car search successfully
+[2024-04-24 13:37:43|21672|INFO|base_model.py:91]  session [1630590350192] and [EmptyCar] has an operator: QUERY.
+[2024-04-24 13:37:43|21672|INFO|vehicle_view.py:139]  Empty car search successfully

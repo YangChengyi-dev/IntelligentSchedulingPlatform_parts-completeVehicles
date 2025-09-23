@@ -1,0 +1,19 @@
+[2024-10-31 10:38:15|22624|INFO|base_model.py:91]  session [3174108129328] and [user] has an operator: QUERY.
+[2024-10-31 10:53:43|13500|INFO|base_model.py:91]  session [2454260591360] and [user] has an operator: QUERY.
+[2024-10-31 10:56:18|13992|INFO|base_model.py:91]  session [2454261805984] and [user] has an operator: QUERY.
+[2024-10-31 10:56:22|16408|INFO|base_model.py:91]  session [2454261806704] and [RegressPredict] has an operator: QUERY.
+[2024-10-31 10:56:22|16408|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-31 10:56:22|15568|INFO|base_model.py:91]  session [2454260590784] and [RegressPredict] has an operator: QUERY.
+[2024-10-31 10:56:22|15568|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-31 11:02:24|23564|INFO|base_model.py:91]  session [2671020172976] and [RegressPredict] has an operator: QUERY.
+[2024-10-31 11:02:24|23564|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-31 11:02:30|18452|INFO|sales_view.py:44]  使用线性回归预测2024/01~2024/07的汽车销量情况
+[2024-10-31 11:02:31|18452|INFO|base_model.py:32]  session [2671021325952] and [RegressPredict] has an operator: ADD.
+[2024-10-31 11:02:31|18452|INFO|base_model.py:91]  session [2671021325952] and [RegressPredict] has an operator: QUERY.
+[2024-10-31 11:02:31|18452|INFO|sales_view.py:56]  Regress Predict successfully
+[2024-10-31 11:04:25|26224|INFO|base_model.py:91]  session [2671028825888] and [RegressPredict] has an operator: QUERY.
+[2024-10-31 11:04:25|26224|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-31 11:05:27|23328|INFO|base_model.py:91]  session [2671029776064] and [RegressPredict] has an operator: QUERY.
+[2024-10-31 11:05:27|23328|INFO|sales_view.py:31]  Regress Predict init successfully
+[2024-10-31 11:06:11|13964|INFO|base_model.py:91]  session [2671029764832] and [RegressPredict] has an operator: QUERY.
+[2024-10-31 11:06:11|13964|INFO|sales_view.py:31]  Regress Predict init successfully

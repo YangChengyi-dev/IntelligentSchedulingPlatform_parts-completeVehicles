@@ -1,0 +1,377 @@
+[2024-06-06 09:56:00|9936|ERROR|__init__.py:110]  send_from_directory error, info is 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2024-06-06 09:56:00|9936|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 260, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore # noqa: B950
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 308, in send_static_file
+    return send_from_directory(
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\helpers.py", line 552, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\werkzeug\utils.py", line 574, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+[2024-06-06 10:02:00|23984|ERROR|__init__.py:110]  send_from_directory error, info is 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2024-06-06 10:02:00|23984|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 260, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore # noqa: B950
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 308, in send_static_file
+    return send_from_directory(
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\helpers.py", line 552, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\werkzeug\utils.py", line 574, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+[2024-06-06 20:20:35|11956|ERROR|__init__.py:110]  send_from_directory error, info is 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2024-06-06 20:20:35|11956|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 260, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore # noqa: B950
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 308, in send_static_file
+    return send_from_directory(
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\helpers.py", line 552, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\werkzeug\utils.py", line 574, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+[2024-06-06 20:39:36|8552|ERROR|__init__.py:110]  send_from_directory error, info is 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2024-06-06 20:39:36|8552|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 260, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore # noqa: B950
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 308, in send_static_file
+    return send_from_directory(
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\helpers.py", line 552, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "D:\ruanjian\Python\Python310\lib\site-packages\werkzeug\utils.py", line 574, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+[2024-06-06 21:07:47|29168|INFO|base_model.py:91]  session [2651428720160] and [RegressPredict] has an operator: QUERY.
+[2024-06-06 21:07:47|29168|ERROR|__init__.py:110]  raise_mysql_exception error, info is (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2024-06-06 21:07:47|29168|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\back_end\views\sales_view.py", line 23, in init
+    query_result = rp.query([rp.id, rp.operate, rp.regress_data, rp.create_time], order_by=desc(rp.id))
+  File "D:\py_learn\learn\LogisticsDesign\database\base_model.py", line 121, in query
+    return s_query.all()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2180, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2047, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 1143, in _connection_for_bind
+    conn = bind.connect()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3269, in connect
+    return self._connection_cls(self)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2431, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+[2024-06-06 21:08:10|30556|INFO|base_model.py:91]  session [2651431859392] and [RegressPredict] has an operator: QUERY.
+[2024-06-06 21:08:10|30556|ERROR|__init__.py:110]  raise_mysql_exception error, info is (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2024-06-06 21:08:10|30556|ERROR|__init__.py:111]  Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\py_learn\learn\LogisticsDesign\back_end\views\sales_view.py", line 23, in init
+    query_result = rp.query([rp.id, rp.operate, rp.regress_data, rp.create_time], order_by=desc(rp.id))
+  File "D:\py_learn\learn\LogisticsDesign\database\base_model.py", line 121, in query
+    return s_query.all()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\orm\query.py", line 2693, in all
+    return self._iter().all()  # type: ignore
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\orm\query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2308, in execute
+    return self._execute_internal(
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2180, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2047, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 1143, in _connection_for_bind
+    conn = bind.connect()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3269, in connect
+    return self._connection_cls(self)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2431, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in raw_connection
+    return self.pool.connect()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\connections.py", line 976, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\_auth.py", line 120, in _roundtrip
+    pkt = conn._read_packet()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\ruanjian\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+[2024-06-06 21:10:47|4700|INFO|db_init.py:107]  drop my table successfully
+[2024-06-06 21:10:47|4700|INFO|db_init.py:115]  create my table successfully
+[2024-06-06 21:10:47|4700|INFO|db_init.py:144]  Import excel data [part] successfully
+[2024-06-06 21:10:48|4700|INFO|db_init.py:144]  Import excel data [part_optimize] successfully
+[2024-06-06 21:10:48|4700|INFO|db_init.py:144]  Import excel data [vehicle] successfully
+[2024-06-06 21:10:48|4700|INFO|db_init.py:144]  Import excel data [regress_predict] successfully
+[2024-06-06 21:10:48|4700|INFO|db_init.py:144]  Import excel data [transport] successfully
+[2024-06-06 21:10:48|4700|INFO|db_init.py:144]  Import excel data [transport_cost] successfully
+[2024-06-06 21:10:48|4700|INFO|db_init.py:144]  Import excel data [empty_car] successfully
+[2024-06-06 21:50:38|25984|INFO|db_init.py:108]  drop my table successfully
+[2024-06-06 21:50:38|25984|INFO|db_init.py:116]  create my table successfully
+[2024-06-06 21:50:39|25984|INFO|db_init.py:145]  Import excel data [part] successfully
+[2024-06-06 21:50:39|25984|INFO|db_init.py:145]  Import excel data [part_optimize] successfully
+[2024-06-06 21:50:39|25984|INFO|db_init.py:145]  Import excel data [vehicle] successfully
+[2024-06-06 21:50:39|25984|INFO|db_init.py:145]  Import excel data [regress_predict] successfully
+[2024-06-06 21:50:39|25984|INFO|db_init.py:145]  Import excel data [transport] successfully
+[2024-06-06 21:50:39|25984|INFO|db_init.py:145]  Import excel data [transport_cost] successfully
+[2024-06-06 21:50:39|25984|INFO|db_init.py:145]  Import excel data [empty_car] successfully
+[2024-06-06 21:50:48|13396|INFO|db_init.py:108]  drop my table successfully
+[2024-06-06 21:50:48|13396|INFO|db_init.py:116]  create my table successfully
+[2024-06-06 21:50:49|13396|INFO|db_init.py:145]  Import excel data [part] successfully
+[2024-06-06 21:50:49|13396|INFO|db_init.py:145]  Import excel data [part_optimize] successfully
+[2024-06-06 21:50:49|13396|INFO|db_init.py:145]  Import excel data [vehicle] successfully
+[2024-06-06 21:50:49|13396|INFO|db_init.py:145]  Import excel data [regress_predict] successfully
+[2024-06-06 21:50:49|13396|INFO|db_init.py:145]  Import excel data [transport] successfully
+[2024-06-06 21:50:49|13396|INFO|db_init.py:145]  Import excel data [transport_cost] successfully
+[2024-06-06 21:50:49|13396|INFO|db_init.py:145]  Import excel data [empty_car] successfully
+[2024-06-06 21:51:17|18060|INFO|base_model.py:91]  session [2691775972976] and [RegressPredict] has an operator: QUERY.
+[2024-06-06 21:51:17|18060|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-06-06 21:51:17|13908|INFO|base_model.py:91]  session [2691774848768] and [RegressPredict] has an operator: QUERY.
+[2024-06-06 21:51:17|13908|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-06-06 21:51:24|12980|INFO|sales_view.py:46]  使用线性回归预测2024/01~2024/12的汽车销量情况
+[2024-06-06 21:51:24|12980|INFO|base_model.py:32]  session [2691774846608] and [RegressPredict] has an operator: ADD.
+[2024-06-06 21:51:24|12980|INFO|base_model.py:91]  session [2691774846608] and [RegressPredict] has an operator: QUERY.
+[2024-06-06 21:51:24|12980|INFO|sales_view.py:58]  Regress Predict successfully
+[2024-06-06 21:52:20|31036|INFO|base_model.py:91]  session [2691784417168] and [RegressPredict] has an operator: QUERY.
+[2024-06-06 21:52:20|31036|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-06-06 21:52:21|22524|INFO|base_model.py:91]  session [2691784420672] and [RegressPredict] has an operator: QUERY.
+[2024-06-06 21:52:21|22524|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-06-06 21:52:24|33496|INFO|base_model.py:91]  session [2691786883568] and [Part] has an operator: QUERY.
+[2024-06-06 21:52:24|33496|INFO|part_view.py:28]  part init successfully
+[2024-06-06 21:52:25|16872|INFO|base_model.py:91]  session [2691784504512] and [Part] has an operator: QUERY.
+[2024-06-06 21:52:25|16872|INFO|part_view.py:28]  part init successfully
+[2024-06-06 21:52:35|24880|INFO|base_model.py:91]  session [2691784492032] and [RegressPredict] has an operator: QUERY.
+[2024-06-06 21:52:35|24880|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-06-06 21:52:36|31324|INFO|base_model.py:91]  session [2691784500096] and [RegressPredict] has an operator: QUERY.
+[2024-06-06 21:52:36|31324|INFO|sales_view.py:29]  Regress Predict init successfully

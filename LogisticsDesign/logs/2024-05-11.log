@@ -1,0 +1,12 @@
+[2024-05-11 21:50:54|28068|INFO|base_model.py:91]  session [2653178213328] and [RegressPredict] has an operator: QUERY.
+[2024-05-11 21:50:54|28068|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-05-11 21:50:54|1836|INFO|base_model.py:91]  session [2653180358864] and [RegressPredict] has an operator: QUERY.
+[2024-05-11 21:50:54|1836|INFO|sales_view.py:29]  Regress Predict init successfully
+[2024-05-11 22:33:15|21976|INFO|base_model.py:91]  session [2653180361456] and [TransportCost] has an operator: QUERY.
+[2024-05-11 22:33:15|21976|INFO|vehicle_view.py:125]  transport cost successfully
+[2024-05-11 22:33:15|25252|INFO|base_model.py:91]  session [2653180358624] and [TransportCost] has an operator: QUERY.
+[2024-05-11 22:33:15|25252|INFO|vehicle_view.py:125]  transport cost successfully
+[2024-05-11 23:49:14|22276|INFO|base_model.py:91]  session [2652770443776] and [TransportCost] has an operator: QUERY.
+[2024-05-11 23:49:14|22276|INFO|vehicle_view.py:125]  transport cost successfully
+[2024-05-11 23:49:15|14932|INFO|base_model.py:91]  session [2653180358816] and [TransportCost] has an operator: QUERY.
+[2024-05-11 23:49:15|14932|INFO|vehicle_view.py:125]  transport cost successfully
