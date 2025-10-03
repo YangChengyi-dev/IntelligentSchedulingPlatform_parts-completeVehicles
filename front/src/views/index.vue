@@ -81,6 +81,10 @@ export default {
     }),
     // 获取当前管理员信息
     getUserInfo() {
+      // 由于API调用被注释，直接设置loading为false以显示页面内容
+      this.loading = false;
+      
+      // 注释掉的API调用部分
       // this.$http({
       //   url: this.$http.adornUrl(`/index`),
       //   method: "get",
@@ -90,7 +94,6 @@ export default {
       //   this.loading = false;
       //   if (res.data.user) {
       //     this.getUser(res.data.user);
-
       //   } else {
       //     this.$router.replace({
       //       name: 'login'
