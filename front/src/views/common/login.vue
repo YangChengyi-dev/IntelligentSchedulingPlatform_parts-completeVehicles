@@ -121,7 +121,7 @@ export default {
           // });
           // 使用配置的API地址
           axios({
-            url: this.baseurl + "/api/user/login", // 使用/api前缀
+            url: this.baseurl + "/user/login", // 使用正确路径，移除/api前缀
             method: "POST",
             data: {
               username: params.username,
