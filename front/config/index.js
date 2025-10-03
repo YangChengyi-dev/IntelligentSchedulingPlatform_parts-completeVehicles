@@ -16,14 +16,14 @@ module.exports = {
         ? {}
         : {
             "/proxyApi": {
-              target: "http://127.0.0.1:7000/",
+              target: "http://127.0.0.1:5000/",
               changeOrigin: true,
               pathRewrite: {
                 "^/proxyApi": "/"
               }
             },
             "/api": {
-              target: "http://127.0.0.1:5001/",
+              target: "http://127.0.0.1:5000/",
               changeOrigin: true,
               pathRewrite: {
                 "^/api": ""
