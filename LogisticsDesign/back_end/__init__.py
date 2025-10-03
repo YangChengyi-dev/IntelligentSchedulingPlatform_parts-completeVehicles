@@ -24,7 +24,7 @@ log = Logging().get_logger()
 # login = LoginManager()
 # mail = Mail()
 
-n='D:\py_learn\learn\LogisticsDesign\LogisticsDesign\dist'
+n=os.path.join(BASE_DIR, '..', 'front', 'dist')
 
 def create_app(config_name):
     # 设置vue编译输出目录dist文件夹，为Flask模板文件目录
