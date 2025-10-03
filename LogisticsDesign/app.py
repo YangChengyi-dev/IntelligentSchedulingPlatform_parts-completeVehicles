@@ -43,7 +43,7 @@ def training():
 
 
 if __name__ == '__main__':
-    # create()  # 创建数据库
+    # create()  # 创建数据库 (MySQL服务未启动，暂时注释)
     app.run(host='0.0.0.0', debug=True, port=5000)
 
 

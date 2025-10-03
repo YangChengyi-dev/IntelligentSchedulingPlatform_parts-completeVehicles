@@ -71,6 +71,7 @@ import axios from "axios";
 export default {
   data() {
     return {
+      baseurl: window.SITE_CONFIG.baseUrl,
       data: "",
       ruleForm: {
         userName: "",
@@ -85,7 +86,7 @@ export default {
         password: [{ required: true, message: "密码不能为空", trigger: "blur" }]
       },
 
-      img: "http://10.160.24.112:7000/captcha/captchaImage?type=math"
+      img: "验证码暂时不可用"
     };
   },
   mounted() {},
@@ -118,16 +119,17 @@ export default {
           //     this.$message.error(data.msg);
           //   }
           // });
+          // 使用配置的API地址
           axios({
-            url: this.baseurl + "/user/login", // 替换为实际的后端接口
+            url: this.baseurl + "/api/user/login", // 使用/api前缀
             method: "POST",
             data: {
               username: params.username,
               password: params.password
             }
           }).then(res => {
-            const data = res.data.data;
-            console.log(data);
+            console.log("登录响应:", res.data);
+            const data = res.data.data || {};
             if (data.isSuccess === true) {
               this.$message({
                 message: "登录成功！",
@@ -135,12 +137,13 @@ export default {
               });
               setTimeout(() => {
                 this.$router.replace({ name: "index" });
-                console.log(this.$route);
-                // this.$router.push("/peakIntranet/protocolManagerment/index");
-              }, 2000);
+              }, 1000);
             } else {
-              this.$message.error("账号或者密码输入错误！！！");
+              this.$message.error("账号或者密码输入错误！");
             }
+          }).catch(error => {
+            console.error("登录错误:", error);
+            this.$message.error("登录失败，请检查网络或稍后重试");
           });
 
           // 模拟登录成功后的跳转
