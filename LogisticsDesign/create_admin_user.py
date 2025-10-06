@@ -17,7 +17,7 @@ def create_admin_user():
     
     # 初始化数据库连接
     t = TransactionalSession()
-    session = t.session()
+    session = t.get_session()
     
     try:
         # 检查admin用户是否已存在
@@ -59,17 +59,19 @@ def check_database_connection():
     print("检查数据库连接...")
     try:
         t = TransactionalSession()
-        engine = t.engine
-        with engine.connect() as conn:
-            result = conn.execute("SELECT 1")
-            print("✓ 数据库连接正常")
-            return True
+        # 简化连接检查，直接使用session
+        session = t.get_session()
+        # 尝试查询用户表
+        session.query(user).first()
+        session.close()
+        print("✓ 数据库连接正常")
+        return True
     except Exception as e:
-        print(f"✗ 数据库连接失败: {str(e)}")
+        print(f"✗ 数据库连接或表结构检查失败: {str(e)}")
         print("请确保:")
         print("1. MySQL服务器已启动")
         print("2. 数据库logistics_test已创建")
-        print("3. 用户有权限访问该数据库")
+        print("3. 数据库初始化已完成（已运行flask create命令）")
         return False
 
 def main():
